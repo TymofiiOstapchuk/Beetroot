@@ -1,0 +1,15 @@
+img {
+	width: 200px;
+	height: 200px;
+	/* this is a comment */
+}
+
+.site-name {
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	color: violet;
+	text-align: center;
+	text-decoration: underline;
+	background-color: teal;
+}
