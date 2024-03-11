@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+}
+
+h1, h4 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url('../img/image.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.content {
+	max-width: 413px;
+	margin-left: 100px;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.site-name {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 64px;
+	color: #ffffff;
+	line-height: 0.9;
+	max-width: 412px;
+	margin-bottom: 55px;
+}
+
+.discount {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.1;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.button {
+	width: 130.5px;
+	height: 56px;
+	background: #00C17C;
+	border-radius: 100px;
+	border: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.1;
+	color: #ffffff;
+}
