@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="Name"><br>
+            <label for="Fmail">Email</label>
+            <input type="email" id="fEmail" name="Email"><br>
+            <label for="fPass">Password</label>
+            <input type="password" name="Password" id="fPass"><br>
+            <label for="fPass2">Repeat password</label>
+            <input type="password" name="Password2" id="fPass2"><br>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="Male">Man
+            <input type="radio" name="gender" value="Female">Woman<br>
+            <label for="age">Age</label>
+            <input type="date" id="age"><br>
+            <label for="class">Course</label>
+            <select name="type" id="list" autofocus >
+                <option value="Front-End" selected disabled>Which course do you attend?</option>
+                <option value="Front-End" >Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+            </select><br>
+            <label for="fiels">Full address</label>
+            <textarea name="field" id="fiels" cols="20" rows="5" placeholder="Country, region, city, district, street"></textarea><br>
+            <label for="checkbox"><input type="checkbox">I agree to the processing of personal data</label><br>
+            <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
