@@ -4,35 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-family: Arial;
+            margin-bottom: 7px;
+        }
+        fieldset {
+            width: 400px;
+            height: 370px;
+            background-color: gainsboro;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
+    <form action="#" method="post">
         <fieldset>
-            <label for="fName">Name</label>
-            <input type="text" id="fName" name="Name"><br>
-            <label for="Fmail">Email</label>
-            <input type="email" id="fEmail" name="Email"><br>
-            <label for="fPass">Password</label>
-            <input type="password" name="Password" id="fPass"><br>
-            <label for="fPass2">Repeat password</label>
-            <input type="password" name="Password2" id="fPass2"><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Surname Name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="*******" required><br>
+
+            <label for="password2">Repeat password</label>
+            <input type="password" name="password2" id="password2" placeholder="Same password" required><br>
+
             <label for="">Gender</label>
             <input type="radio" name="gender" value="Male">Man
             <input type="radio" name="gender" value="Female">Woman<br>
+
             <label for="age">Age</label>
-            <input type="date" id="age"><br>
+            <input type="date" id="age" name="date" required><br>
+
             <label for="class">Course</label>
-            <select name="type" id="list" autofocus >
-                <option value="Front-End" selected disabled>Which course do you attend?</option>
+            <select name="type" id="list" >
+                <option value="" selected disabled>Which course do you attend?</option>
                 <option value="Front-End" >Front-End</option>
                 <option value="Back-End">Back-End</option>
                 <option value="Project Management">Project Management</option>
                 <option value="QA Manual">QA Manual</option>
             </select><br>
-            <label for="fiels">Full address</label>
-            <textarea name="field" id="fiels" cols="20" rows="5" placeholder="Country, region, city, district, street"></textarea><br>
+
+            <label for="field">Full address</label>
+            <textarea name="field" id="field" cols="20" rows="5" placeholder="Country, region, city, district, street" required></textarea><br>
+
+            <input type="file" name="file" id="file" value="Add a file"><br>
+
             <label for="checkbox"><input type="checkbox">I agree to the processing of personal data</label><br>
+
             <button type="submit" value="submit">Submit</button>
+
             <button type="reset" value="reset">Reset</button>
         </fieldset>
     </form>
