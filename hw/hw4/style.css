@@ -1,4 +1,4 @@
-/* .header-menu {
+.header-menu {
     width: Fixed (1,440px);
     height: Fixed (80px);
     padding: 0px, 120px, 0px, 120px;    
@@ -7,5 +7,5 @@
     list-style-type: none;
 }
 .first-screen {
-    background-image: url(images/First\ screen.png);
-}  це не входить в домашку тому так лишу його*/
+    background: url(../hw4/images/first_screen.jpg) no-repeat fixed cover;
+}
