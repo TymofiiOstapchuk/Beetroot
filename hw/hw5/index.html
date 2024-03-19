@@ -32,9 +32,13 @@
             <label for="password2">Repeat password</label>
             <input type="password" name="password2" id="password2" placeholder="Same password" required><br>
 
-            <label for="">Gender</label>
-            <input type="radio" name="gender" value="Male">Man
-            <input type="radio" name="gender" value="Female">Woman<br>
+            <label for="gender">Gender</label>
+            <div id="gender">
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Man</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Woman</label>
+            </div>
 
             <label for="age">Age</label>
             <input type="date" id="age" name="date" required><br>
