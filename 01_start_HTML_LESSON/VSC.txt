@@ -1,0 +1,105 @@
+-------------------------- 
+windows     |  MacOs
+========================== 
+Alt	        |  Option
+-------------------------- 
+Ctrl	    | Command
+-------------------------- 
+Window key	| Command
+-------------------------- 
+
+
+============================= Hot keys
+-------------------------------------------------------
+1 |   Shift + Ctrl + P      |  command pallet
+-------------------------------------------------------
+2 |   Ctrl + p              |  search 
+-------------------------------------------------------
+3 |   Ctrl +  ,             |  settings
+-------------------------------------------------------
+4 |   Shift + Ctrl + E      |  files explorer
+-------------------------------------------------------
+5 |   Shift + Ctrl + F      |  panel for search files
+-------------------------------------------------------
+6 |   Shift + Ctrl + X      |  panel for extensions
+-------------------------------------------------------
+7 |   Ctrl + K,  S          |  see keybinding
+-------------------------------------------------------
+
+=========================================
+
+Download visual studio code
+    https://code.visualstudio.com
+
+------- MacOS => start from cli
+
+https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+
+Ctr + Shift + p and type
+shell command
+click Enter
+
+
+************************** Встановлюємо та обираємо тему  
+Shift + Ctrl + X 
+
+Material Theme
+Night Owl
+
+----------- іконки
+Material Icon Theme
+VSCode Great Icons
+
+
+=============== Як вибрати тему
+     Shift + Ctrl + P
+У рядку команди почати набирати слово theme,
+та коли з'явиться Preferences Color Theme вибрати цей пункт
+З'явиться список тем
+
+
+===============  Набір іконок 
+	Shift + Ctrl + P	
+У рядку команди почати набирати слово icon,
+і коли з'явиться Preferences File Icon Theme вибрати цей пункт
+З'явиться список іконок
+
+
+******************** Встановлюємо розширення  Shift + Ctrl + X 
+
+
+Auto Close Tag
+Auto Complete Tag
+Auto Rename Tag
+Live Server
+ESLint
+Prettier - Code formatter
+
+
+******************** Налаштування користувача ******************* 
+Це JSON файл, в який зберігаються всі налаштування користувача
+
+!!!! Усі строкові налаштування вказуються у подвійних лапках ""
+
+-------------- 2 способу відкрити користувальницький json файл
+
+1. Ctrl + ,  
+Вгорі панелі знайти та натиснути іконку Open Settings (JSON)
+
+2. Shift + Ctrl + P
+У рядку команди почати набирати слово json
+і коли з'явиться Preferences Open Settings (JSON)
+вибрати цей пункт
+--------------------------
+У файлі вже побачимо встановлені шрифти, тему
+
+Рекомендовані настройки
+
+    "window.zoomLevel": 1,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.tabCompletion": "on", 
+    "breadcrumbs.enabled": false
+    

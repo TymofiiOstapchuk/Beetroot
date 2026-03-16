@@ -1,0 +1,57 @@
+----- Tip:  як відкрити в 2 вікна проводника поруч
+- відкриваємо 1-й проводник (click по іконці),  далі Win + LeftArrow
+- відкриваємо 2-й проводник (Shift + click по іконці), далі Win + RightArrow
+
+
+==============📣 1. Підготовка каталогів для роботи
+--- Для OS Windows
+В КОРНІ будь якого диска або на на desktop створити 2 каталога 
+ Projects  та _Lessons
+
+--- Для MacOS
+Створити такі самі  каталоги  на desktop
+---------
+
+В каталог _Lessons копіюємо каталог 01_start_HTML_LESSON
+Каталоги з заняттями будуть на кожне заняття
+Ці каталоги містять:
+- матеріали для занять -> презентації, текстові файли з інформацією
+- обов'язково буде zip архів з файлами для занять - наприклад сьогодня це 01_html     
+
+Архів 01_html  КОПІЮЄМО в каталог  Projects
+
+
+==============📣 2. Інсталяція soft  
+
+1. Visual Studio Code 
+https://code.visualstudio.com
+
+2. GIT 
+--- Windows => https://git-scm.com/download/win  
+---- Mac => https://git-scm.com/download/mac
+
+3. Node 
+https://nodejs.org/en
+❗ Встановлювати версію LTS - 20.xx.xxLTS
+
+Після встановлення Node відкрити термінал gitbash,
+набрати в ньому слідуючу команду
+
+   npm i -g browser-sync
+-- для macOS 
+sudo npm i -g browser-sync
+
+
+та натиснути клавішу Enter
+
+
+========== Зареєструватися на 
+ https://github.com/
+
+===== SSH keys
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
+
+
+=============== MacOS terminal 
+
+https://medium.com/@charlesdobson/how-to-customize-your-macos-terminal-7cce5823006e

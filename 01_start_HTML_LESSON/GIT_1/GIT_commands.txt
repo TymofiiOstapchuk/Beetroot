@@ -1,0 +1,29 @@
+ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
+
+
+Настройка GIT  - виконується один раз, після встановлення на комп'ютер
+
+
+git config  --global user.name  "тут ваше ім'я"
+git config  --global user.email  "тут ваш email"
+git config  --global color.ui  true
+git config --global core.editor "code -w"
+
+-----------------  Check out config
+git config --list
+
+
+===========  Ініціалізація локального репозіторія
+git init 
+
+===========  Workflow (main commands)
+git add .
+git commit -m "тут пишемо текст описання коміту"
+git status
+git log --oneline
+git log
+
+
+
+
+
