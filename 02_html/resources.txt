@@ -1,0 +1,33 @@
+=============== categories of elements
+https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content
+https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories
+
+
+
+===================== semantics, role, landmark 
+
+https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/HTML5.html
+
+https://developer.chrome.com/docs/lighthouse/accessibility/use-landmarks/
+
+https://a11y-101.com/development/landmarks
+
+
+=============================================== Sections
+
+https://www.w3.org/TR/html52/sections.html#sections
+
+https://www.w3.org/TR/html52/sections.html#creating-an-outline
+
+https://www.tempertemper.net/blog/using-the-html-document-outline
+
+OUTLINER
+https://gsnedders.html5.org/outliner/
+
+
+http://www.thehtml5herald.com
+
+
+
+Demo HTML 5
+http://html5demos.com/

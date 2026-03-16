@@ -1,0 +1,33 @@
+Домашнє завдання – зробити html розмітку сторінки
+ відповідно до структури
+
+- використовувати семантичні теги <nav>, <section>, <article>, <aside>
+- для перевірки структури встановити в браузер chrome розширення  HTML5 Outliner
+
+https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo
+
+header, footer, nav, section, article, aside
+-------------------------------------------------
+1. Welcome
+  1. Slogan
+  2. Navigation
+  3. Articles
+	1. Article 1
+	2. Article 2
+	3. Article 3
+  4. User's data
+  5. Popular posts
+	1. Post 1
+	2. Post 2
+	3. Post 3
+  6. Sponsors
+	1. Sponsor 1
+	2. Sponsor 2
+	3. Sponsor 3
+  7. Social links
+	1.Twitter
+	2.Facebook
+-------------------------------------------------
+
+
+

@@ -1,0 +1,90 @@
+https://gsnedders.html5.org/outliner
+
+---------------------------------------- 
+<h1>Heder H1</h1>
+<h2>Heder H2</h2>
+<h3>Heder H3</h3>
+<h4>Heder H4</h4>
+<h5>Heder H5</h5>
+<h6>Heder H6</h6>
+---------------------------------------- 
+<h1>Heder H1</h1>
+
+    <h2>Heder H2</h2>
+        <h3>Heder H3</h3>
+        <h3>Heder H3</h3>
+
+    <h2>Heder H2</h2>
+        <h3>Heder H3</h3>
+        <h3>Heder H3</h3>
+
+
+---------------------------- !!!! Error
+<h1>Heder H1</h1>
+
+<h2>Heder H2</h2>
+<h3>Heder H3</h3>
+<h3>Heder H3</h3>
+
+<h1>Heder H1</h1>
+<h2>Heder H2</h2>
+
+---------------------------- !!!! Error 
+<h1>Heder H1</h1>
+
+<h3>Heder H3</h3>
+<h3>Heder H3</h3>
+<h3>Heder H3</h3>
+
+<h2>Heder H2</h2>
+
+<h2>Heder H2</h2>
+<h3>Heder H3</h3>
+<h3>Heder H3</h3>
+<h3>Heder H3</h3>
+
+
+---------------------- Алгоритм outliner передбачав так 
+
+<h1>Heder H1</h1>
+
+<section>
+    <h3>Heder H3</h3>
+    <article><h3>Heder H3</h3></article>
+    <article><h3>Heder H3</h3></article>
+    <article><h1>Heder H1</h1></article>
+</section>
+
+<article><h1>Heder H1</h1></article>
+
+---------------------------------------- 
+Але алгоритм outliner в браузерах так і не реалізован
+Крім того він шкодить accessibility !!! 
+
+Тому ми структуруємо сторінку використовуючи тільки  заголовки h1 ... <h6>
+І якщо треба групуємо контент за допомогою sections elements 
+
+
+
+---------------------- Алгоритм outliner передбачав так 
+<h1>Product's page</h1>
+
+<nav>
+    <h2>Navigation</h2>
+</nav>
+<section>
+   <h2>Products</h2>
+
+   <article><h3>Product 1</h3></article>
+   <article><h3>Product 2</h3></article>
+   <article><h3>Product 3</h3></article>
+</section>
+
+<aside>
+ <h2>About us</h2>
+
+ <article><h2>Ad banner</h2></article>
+</aside>
+
+......
+---------------------------------------- 
