@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Articles</title>
+   <meta charset="utf-8">
+   <style>
+      body {
+         font-size: 1.3rem;
+      }
+
+      pre {
+         background-color: #e2e2e2;
+         border: 1px solid grey;
+      }
+   </style>
+
+</head>
+
+<body>
+   <h1><a name="содерж">Зміст</a></h1>
+   <!-- todo  -->
+   <p><a href="#heading">The HTML Section Heading elements</a></p>
+   <p><a href="#example">Example page</a></p>
+   <p><a href="#navigation">Navigation</a></p>
+
+   <hr>
+   <!-- The HTML Section Heading elements  -->
+   <section>
+      <h2 id="heading">The HTML Section Heading elements</h2>
+
+      <p>The &laquo;h1&raquo; to &laquo;h6&laquo; HTML elements represent six levels of section headings.
+         &laquo;h1&raquo; is the highest section level and &laquo;h6&raquo; is the lowest.</p>
+      <p>
+         Heading information can be used by user agents to construct a table of contents for a document automatically.
+         Avoid using heading elements to resize text.
+         Instead, use the CSS font-size property.
+         Avoid skipping heading levels: always start from &laquo;h1&raquo;, followed by &laquo;h2&raquo; and so on.
+         Use only one &laquo;h1&raquo; per page or view. It should concisely describe the overall purpose of the
+         content.
+      </p>
+
+
+      <h2>Do not use multiple &laquo;h1&raquo; elements on one page</h2>
+      <p>Using more than one &laquo;h1&raquo; on one page was allowed in older versions of the HTML specification that
+         included the concept of an outline algorithm. However, this was never considered a best practice.
+         <a href="https://adrianroselli.com/2016/08/there-is-no-document-outline-algorithm.html" target="_blank"> Read
+            more in</a>
+      </p>
+      <p>
+         The following code shows all the heading levels, in use
+      <pre>
+<code>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Heading level 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Heading level 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Heading level 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Heading level 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>Heading level 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>Heading level 6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+      </p>
+      <p>
+      <h2>Demo</h2>
+      <iframe class="sample-code-frame" title="All headings sample" id="frame_all_headings" width="280" height="300"
+         src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/Heading_Elements/_sample_.all_headings.html"
+         loading="lazy"></iframe>
+      </p>
+   </section>
+
+   <!--  Example page  -->
+   <section>
+      <h2 id="example">Example page</h2>
+      <p>The following code shows a few headings with some content under them.</p>
+      <pre class="brush: html notranslate">
+<code>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Heading elements<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Summary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Some text here…<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Examples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Example 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Some text here…<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Example 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Some text here…<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>See also<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Some text here…<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code>
+   </pre>
+      <p>Here is the result of this code:</p>
+      <p><iframe class="sample-code-frame" title="Example page sample" id="frame_example_page" width="280" height="480"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/Heading_Elements/_sample_.example_page.html"
+            loading="lazy"></iframe></p>
+   </section>
+
+
+   <!-- Navigation -->
+
+   <section>
+      <h2 id="navigation">Navigation</h2>
+      <p>A common navigation technique for users of screen reading software is jumping from heading to quickly determine
+         the
+         content of the page. Because of this, it is important to not skip one or more heading levels. Doing so may
+         create
+         confusion, as the person navigating this way may be left wondering where the missing heading is.</p>
+      <h3>Don't</h3>
+      <pre style="background: rgba(212, 57, 57, 0.346);">
+<code>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Heading level 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Heading level 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Heading level 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+      <h3>Do</h3>
+      <pre class="brush: html example-good notranslate">
+<code>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Heading level 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Heading level 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Heading level 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+      <h2>Nesting</h2>
+      <p>Headings may be nested as subsections to reflect the organization of the content of the page. Most screen
+         readers can also generate an ordered list of all the headings on a page, which can help a person quickly
+         determine the
+         hierarchy of the content:
+      </p>
+      <ol>
+         <li><code>h1</code> Beetles
+            <ol>
+               <li><code>h2</code> Etymology</li>
+               <li><code>h2</code> Distribution and Diversity</li>
+               <li><code>h2</code> Evolution
+                  <ol>
+                     <li><code>h3</code> Late Paleozoic</li>
+                     <li><code>h3</code> Jurassic</li>
+                     <li><code>h3</code> Cretaceous</li>
+                     <li><code>h3</code> Cenozoic</li>
+                  </ol>
+               </li>
+               <li><code>h2</code> External Morphology
+                  <ol>
+                     <li><code>h3</code> Head
+                        <ol>
+                           <li><code>h4</code> Mouthparts</li>
+                        </ol>
+                     </li>
+                     <li><code>h3</code> Thorax
+                        <ol>
+                           <li><code>h4</code> Prothorax</li>
+                           <li><code>h4</code> Pterothorax</li>
+                        </ol>
+                     </li>
+                     <li><code>h3</code> Legs</li>
+                     <li><code>h3</code> Wings</li>
+                     <li><code>h3</code> Abdomen</li>
+                  </ol>
+               </li>
+            </ol>
+         </li>
+      </ol>
+   </section>
+
+   <p>Link for this document is <a
+         href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#example_page">The HTML Section
+         Heading elements</a></p>
+</body>
+
+</html>

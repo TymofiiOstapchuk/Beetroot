@@ -1,0 +1,118 @@
+*************************  Сase 1  *************************
+
+ 1. Відкрити термінал в каталозі проектів  
+ Створити каталог проектів каталог trainig_branches,
+   перейти до нього та ініціалізувати репозіторій 
+
+---- виконати в терміналі команди
+mkdir trainig_branches 
+cd trainig_branches
+git init     
+code .
+
+2. До створеного каталогу додати файл .gitignore
+
+3. Створити файл index.html додати до нього наступний код
+
+-------------------------------- 
+<ul class="menu">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">Contacts</a></li>
+</ul>
+--------------------------------
+
+4. Зробити commit цього файлу в репозіторій 
+
+---- виконати в терміналі команди
+git add .
+git commit -m "initial commit"
+git status
+
+5. Створити новий branch який назвати cat та перейти до нього
+
+---- виконати в терміналі команди
+git checkout -b cat
+
+
+6. Створити  файл cat.html  та додати до нього наступний код
+
+--------------------------------------- 
+	
+	<h1>I am product's catalog</h1>
+
+--------------------------------------- 
+
+7. Зробити commit змін
+
+---- виконати в терміналі команди
+git add .
+git commit -m "add file cat.html"
+git status 
+
+8. Перейти в branch master
+
+    git checkout  master
+
+Звернути увагу що в branch master немає файлу cat.html
+Виконати команду 
+   git log 
+
+9. Здійснити злиття branches
+     git merge	cat
+
+
+***********************************************************
+*************************  Case 2  ************************
+
+1. Перейти в branch cat
+
+	git checkout cat
+
+2.Внести зміни до файлу	cat.html
+замість (<h1>I am product's catalog</h1>) буде
+--------------------------------------- 
+<h1>I am product's catalog</h1>
+<p>Hello from cat.html</p>
+--------------------------------------- 
+
+3. Зробити commit змін
+
+
+4. Перейти в branch master
+
+	git checkout master
+
+5. Внести зміни до файлу	index.html
+
+-------------------------------- 
+
+<ul class="menu">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">Contacts</a></li>
+    <li><a href="#">About us</a></li>
+</ul>
+
+--------------------------------
+
+6. Зробити commit змін
+
+
+7. Здійснити злиття branches
+     git merge	cat
+
+!!! DON'T PANIC  - автоматично буде включений редактор   VSC
+Потрібно зробити опис commit та зберегти його
+  
+------------------------------------------------
+8. Переглянути історію змін
+
+  git log --oneline --graph
+
+ 
+9. Видалити branch cat 
+     git branch -D cat    	 
+
+
+

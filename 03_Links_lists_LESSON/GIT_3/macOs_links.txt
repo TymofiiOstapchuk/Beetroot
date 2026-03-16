@@ -1,0 +1,41 @@
+1. ----- check what shell mac is using
+ps -p $$
+
+2. --- open .zshrc 
+
+touch ~/.zshrc
+code ~/.zshrc 
+
+
+
+3. ---- add  to .zshrc 
+====== variant 1
+https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Zsh
+
+
+touch ~/.zshrc
+code ~/.zshrc
+-----------------------------
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT='${vcs_info_msg_0_}'
+# PROMPT='${vcs_info_msg_0_}%# '
+zstyle ':vcs_info:git:*' formats '%b'
+-----------------------------
+
+
+
+====== variant 2
+
+function parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+COLOR_DEF=$'%f'
+COLOR_USR=$'%F{243}'
+COLOR_DIR=$'%F{197}'
+COLOR_GIT=$'%F{39}'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '

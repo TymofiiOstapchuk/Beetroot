@@ -1,0 +1,15 @@
+ <!-- todo  1 -->
+У кожному файлі
+
+        index.html
+        one/one.html
+        two/two.html
+        three/three.html
+
+зв'язати за допомогою href між собою всі сторінки
+(як ми це робили у lab_2)
+
+
+ <!-- todo  2 -->
+В файлі index.html зробити посилання з прокруткою на відповідні
+глави в файлі apart/index.html   
