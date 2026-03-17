@@ -1,0 +1,50 @@
+# =========================
+# Залежності (Node.js)
+# =========================
+node_modules/
+/.pnp
+.pnp.js
+
+# =========================
+# Збірка (React / Frontend)
+# =========================
+build/
+dist/
+out/
+
+# =========================
+# Змінні середовища (Секрети)
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Логи
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Кеш та тестування
+# =========================
+.eslintcache
+coverage/
+.npm/
+
+# =========================
+# Системні файли та редактори (VS Code, WebStorm, macOS)
+# =========================
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
