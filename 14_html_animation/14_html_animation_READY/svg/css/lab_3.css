@@ -1,0 +1,26 @@
+body {
+   padding-top: 60px;
+}
+
+svg {
+	margin: auto;
+    width: 350px;
+    display: block;
+}
+/* #E5231E; -> #7ABC68;   dasharray, dashoffset - 563 */
+
+@keyframes line {
+    100% {stroke-dashoffset: 0;}
+}
+@keyframes beetroot {
+    100% {
+        fill: #7ABC68;
+        stroke-width: 1px;stroke: darkred;
+    }
+}
+.logo {
+    stroke-dasharray: 563;
+    stroke-dashoffset: 563;
+    animation: line 4s linear forwards, beetroot 2s ease-out 4s forwards;
+    
+}

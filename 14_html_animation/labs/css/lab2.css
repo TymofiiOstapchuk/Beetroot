@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 960px;
+  height: 200px;
+  margin: 50px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+.sky {
+  width: 1920px;
+  background: url(../img/sky.jpg) no-repeat;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sky 10s linear infinite;
+}
+
+@keyframes sky {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -960px;
+  }
+}
+
+.plane {
+  width: 960px;
+  background: url(../img/plane.png) no-repeat;
+  height: 100%;
+  position: absolute;
+  left: -960px;
+  top: 0;
+  animation: plane 12s linear infinite;
+}
+@keyframes plane {
+  0% {
+    left: -960px;
+  }
+  10% {
+    top: 25%;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: -25%;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: 25%;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: -25%;
+  }
+  80% {
+    top: 0;
+  }
+  90% {
+    top: 25%;
+  }
+  100% {
+    left: 960px;
+    top: 0;
+  }
+}

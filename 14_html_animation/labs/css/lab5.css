@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    margin: 0;
+    font-size: 8rem;
+    z-index: 1;
+}
+
+.fade-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+.mask {
+    
+}
+
+.fade1 {
+    background: #c9d6ea;
+}
+.fade2 {
+    background: #5e9eff;
+}
+
+.fade3 {
+    background: #2c80ff;
+}
+
+.fade1, 
+.fade2, 
+.fade3 {
+
+} 
+

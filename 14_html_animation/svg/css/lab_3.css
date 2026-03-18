@@ -1,0 +1,11 @@
+body {
+   padding-top: 60px;
+}
+
+svg {
+	margin: auto;
+    width: 350px;
+    display: block;
+}
+/* #E5231E; -> #7ABC68;   dasharray, dashoffset - 563 */
+
