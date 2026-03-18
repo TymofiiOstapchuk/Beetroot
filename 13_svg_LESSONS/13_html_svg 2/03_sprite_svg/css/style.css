@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Ubuntu, sans-serif;
+	font-size: 14px;
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.content-box {
+	flex: 1;
+	padding: 1rem 0;
+}
+.header-box {
+	background: #e2e2e2;
+	padding: 1rem 0;
+}
+.header-box__title {
+	text-align: center;
+}
+footer {
+	background: #e2e2e2;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+
+.services__title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 2rem;	
+		color: #ED652E;
+}
+
+.services-items {
+	display: flex;
+	justify-content: space-between;
+}
+.service-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 30%;
+	background: lightgreen;
+	padding: 1rem;
+	border-radius: 8px;
+}
+.service-box__item {
+	font-size: 1.5rem;
+	color:  #ED652E;
+}
+
+/* ============================ */
+
+.header-box__text {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-box__text::before {
+	content: '';
+	background: url(../i/mail.png) no-repeat;	
+	width: 32px;
+	height:  32px;
+	display: inline-block;
+	margin-right: 1rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="index-box">
+  <head>
+    <title>Tables</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      .index-box * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .index-box body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .index-box .container-index {
+        max-width: 80%;
+        margin: auto;
+      }
+      .index-box .title {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .index-box .nav {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        padding-bottom: 2rem;
+      }
+      .index-box .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        background: #22556e;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #fff;
+      }
+
+      .index-box .nav__item:hover {
+        background: #4799b7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-index">
+      <h1 class="title">SASS</h1>
+      <div class="nav">
+        <a class="nav__item" href="index_1.html">Index_1.html</a>
+        <a class="nav__item" href="nested.html">Nested.html</a>
+        <a class="nav__item" href="variables.html">variables.html</a>
+        <a class="nav__item" href="mixins.html">mixins.html</a>
+        <a class="nav__item" href="extended_selectors.html"
+          >extended_selectors.html</a
+        >
+        <a class="nav__item" href="functions.html">functions.html</a>
+        <a class="nav__item" href="loop.html">loop.html</a>
+        <a class="nav__item" href="each.html">each.html</a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>

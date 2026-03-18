@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CSS vars</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 1rem auto;
+      }
+      .box {
+        background: #e2e2e2;
+        display: flex;
+      }
+      svg {
+        fill: var(--fill-icon);
+      }
+      svg:hover {
+        --fill-icon: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="i/sprite_goroscip.svg#aquarius" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="i/sprite_goroscip.svg#aries" />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

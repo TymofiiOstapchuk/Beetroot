@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+}
+.icons {
+  width: 50%;
+  margin: 40px auto 0;
+  padding: 2rem 0;
+  border: 1px solid #ed652e;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.icons__item {
+  background: url(../i/hand_made/sprite.svg) no-repeat;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+  text-indent: -9999px;
+}
+.icons__item_fb:hover {
+  background-position: 0 -16rem;
+}
+.icons__item_tw {
+  background-position: 0 -4rem;
+}
+.icons__item_gp {
+  background-position: 0 -8rem;
+}
+.icons__item_linkedin {
+  background-position: 0 -12rem;
+}
+.icons__item:last-of-type {
+  margin-right: 0;
+}

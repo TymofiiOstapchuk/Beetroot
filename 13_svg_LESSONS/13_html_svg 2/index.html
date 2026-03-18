@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        max-width: 80%;
+        margin: auto;
+      }
+      .title {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .nav {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        padding-bottom: 2rem;
+      }
+      .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #22556e;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+      }
+      .nav__item:hover {
+        background: #4799b7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">SVG</h1>
+      <div class="nav">
+        <a class="nav__item" href="01_svg/index.html">01_svg / index.html</a>
+        <a class="nav__item" href="01_svg/logo.html">01_svg / logo.html</a>
+        <a class="nav__item" href="01_svg/viewport.html"
+          >01_svg / viewport.html</a
+        >
+        <a class="nav__item" href="01_svg/sprite.html">01_svg / sprite.html</a>
+      </div>
+      <div class="nav">
+        <a class="nav__item" href="02_inline_svg/index.html"
+          >02_inline_svg / index.html</a
+        >
+
+        <a class="nav__item" href="03_sprite_svg/index.html"
+          >03_sprite_svg / index.html</a
+        >
+        <a class="nav__item" href="04_background_svg/index.html"
+          >04_background_svg / index.html</a
+        >
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>

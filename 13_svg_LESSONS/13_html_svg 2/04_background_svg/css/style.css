@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Ubuntu, sans-serif;
+	font-size: 14px;
+}
+.icons {
+    width: 50%;
+    margin: 40px auto 0;
+    padding: 2rem 0;
+    border: 1px solid #ED652E;
+}
+.icons__item {
+    margin-right: 1rem;
+}
+.icons__item:last-of-type  {
+    margin-right: 0;
+}

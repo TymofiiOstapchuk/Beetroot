@@ -1,0 +1,34 @@
+.header-box {
+  margin-bottom: 40px;
+
+  @include e(title) {
+    background: url(#{$i}sprite.png) no-repeat 0 -388px;
+    width: 171px;
+    height: 64px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+// form
+.form-box {
+  position: relative;
+
+  @include before("sprite.png", 41px, 41px) {
+    left: 0;
+    background-position: 0 -347px;
+  }
+
+  @include e(form) {
+    width: 260px;
+    padding-left: 60px;
+  }
+
+  @include e(control) {
+    width: 100%;
+    border: 1px solid cssvar(black);
+    background: cssvar(darkGray);
+    font-size: rem(20px);
+    color: cssvar(white);
+    padding: 5px 10px;
+  }
+}

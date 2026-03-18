@@ -1,0 +1,146 @@
+
+
+1. intall project 
+npm install 
+
+2. Запуск проекта 
+  npm start 
+
+3. Зупинка проекта
+  Ctrl + C 
+
+========================= 1. Nested selectors 
+ - :hover 
+ - & вказує на parent selector
+ 
+========================= 2. Variables
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!    Variables must declare before its using    !!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// --------------------------------------- valiables.html 
+- Створити 2 змінні - $baseFontSize, $primaryColor
+- задати baseFontSize html
+- задати font-size body - 1rem;
+- .article-box__head -> задати color, 
+                   font-size 24px  в rem (target/current) * 1rem
+---------------------------------------------//
+
+
+======================= 👩‍🎓 ЗАВДАННЯ СЛУХАЧАМ:
+Значення змінних – довільний
+Завдання виконати за допомогою nested style для блоку .article-box
+
+1. задати змінні які містять значення
+- кольори тексту (наприклад, black),
+- кольори посилань
+- hover кольори посилань (наприклад, black),
+- відступів (padding) у блоках наприклад 1rem
+- Border блоку width, color, style
+
+2. Використовуючи змінні елементи з класом .article-box__item привласнити
+- колір
+- font-size 18px в rem
+- border   
+- paddings   
+
+3. Використовуючи змінні елементу .article-box__link присвоїти
+ - колір
+ - колір при hover
+==================================================================
+
+
+
+=============== 3.Виведення імені змінної як рядка
+- Призначення path to img
+- у body підключити bg.jpg
+- показати помилку при неправильній змінній
+
+
+============== 4. import 
+- каталог base
+            _index.scss
+            _vars.scss 
+            _mixins.scss 
+
+- підключення файлів в style.scss 
+❗ Підключаємі файли починаються з знака підкреслення  _ 
+   @import "path_to_file";
+
+
+============== 5. extends class
+
+
+========================= 6. Mixins  - mixins.html
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!    Mixins повинні оголошуватися до їх використання  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+- simple mixin
+- mixin з параметром
+- mixin з параметром за замовчуванням
+- mixin BEM
+- mixin before
+
+
+======================= 👩‍🎓 ЗАВДАННЯ СЛУХАЧАМ:
+
+- написати mixin під назвою rounded котрий буде стилізувати
+border блоку.
+Визначити параметри для міксіна 
+   - width, color, style для border
+
+При цьому mixin повинен мати можливість
+викликатись без аргументів з дефолтними параметрами
+
+Використовуючи створений mixin стилізувати елементи
+
+.post__title -> 3px dotted red 
+.post__item -> 1px solid green 
+
+
+==============📣 7. CSS variables 
+Їх краще створювати з змінних sass variables
+
+
+////  ------------------------- 🖍 base/_vars.scss
+
+$prefix: myprefix- !default; 
+$baseFontSize: 16px;
+$baseFontFamily: 'Ubuntu', sans-serif;
+
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red
+) !default;
+--------------------------------------------- ////
+
+
+
+============= 8. Mixins for CSS variables 
+
+
+========================= 9. function 
+ - вбудовані функції
+ - rem, em -> приклад зhtml baseFontSize на media queries
+ 
+
+
+==============  10. responsive laouts
+
+
+============= 11. Колекції and loop
+- цикл for з колекції
+- генерування grid
+- цикл each по tuple
+

@@ -1,0 +1,30 @@
+@import "base/index";
+
+@import "layouts/layout_000/index";
+
+@media (min-width: 420px) {
+  @import "layouts/layout_420/index";
+}
+
+@media (min-width: 576px) {
+  @import "layouts/layout_576/index";
+}
+
+@media (min-width: 640px) {
+  @import "layouts/layout_640/index";
+}
+
+@media (min-width: 768px) {
+  @import "layouts/layout_768/index";
+}
+
+@media (min-width: 992px) {
+  @import "layouts/layout_992/index";
+}
+
+@media (min-width: 1200px) {
+  @import "layouts/layout_1200/index";
+}
+@media (min-width: 1440px) {
+  @import "layouts/layout_1440/index";
+}

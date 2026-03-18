@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Logo</title>
+    <style>
+      .shape1:hover {
+        --circle-stroke: tomato;
+        --circle-line: lightgreen;
+      }
+
+      .shape2 {
+        --circle-stroke: rgb(229, 45, 140);
+        --circle-line: rgb(158, 25, 176);
+      }
+      .shape2:hover {
+        --circle-stroke: tomato;
+        --circle-line: lightgreen;
+      }
+    </style>
+  </head>
+  <!-- prettier-ignore -->
+
+  <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="shape1">
+        <use xlink:href="i/logo.svg#logo-shape" />
+    </svg>
+
+     <svg xmlns="http://www.w3.org/2000/svg" class="shape2">
+        <use xlink:href="i/logo.svg#logo-shape" />
+    </svg>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" class="shape3">
+        <use xlink:href="i/logo.svg#logo-shape" />
+    </svg>
+
+</body>
+</html>

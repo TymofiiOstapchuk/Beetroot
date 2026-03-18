@@ -1,0 +1,9 @@
+SVG може бути вставлений у HTML код як
+1. Тег img
+   <img src="i/html5.svg">
+
+2. Як код svg 
+   <svg  ...>
+   </svg>   
+
+   

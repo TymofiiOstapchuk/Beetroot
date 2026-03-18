@@ -1,0 +1,21 @@
+
+Завдання слухачам
+1. Використовуючи SVG_sprite_generator створити 
+   sprite.svg з файлів svg
+
+2. В елементах із класом service-box__img замість коду
+      <!--Image here -->
+
+відобразити відповідну назві блоку частину коду файлу sprite.svg
+використовуючи елемент <use> та стилі css/style.css
+
+<svg class="svg-icon">
+  <use xlink:href="icons/sprite.svg#taurus"></use>
+</svg>
+
+
+3. В елементі з класом header-box__text 
+   відобразити частину коду відповідної
+   mail значок з файлу sprite.svg використовуючи елемент 
+   <use> кольором #ED652E
+   Виправити стилі у файлі css/style.css

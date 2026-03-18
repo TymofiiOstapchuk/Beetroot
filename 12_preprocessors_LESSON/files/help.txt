@@ -1,0 +1,50 @@
+
+Page Ruler
+https://chrome.google.com/webstore/detail/page-ruler/emliamioobfffbgcfdchabfibonehkme?hl=ru
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500" rel="stylesheet">
+
+
+================= Sprite value
+
+home ->  30 x 34,  0 0
+home:hover ->  0 -105px
+
+camera -> 35 x 35, 0 -35px
+camera:hover ->  0 -140px
+
+contacts -> 35 x 30, 0 -71px
+contacts:hover ->  0  0 -175px
+
+number ->  43 x 38, 0 -208px
+
+arrow-left ->  26 x 18, 0 -253px
+
+arrow-right ->  26 x 18, -27px -253px
+
+circle-big ->  20 x 21, 0 -279px
+
+pencil ->  38 x 38, 0 -310px
+
+zoom ->  41 x 41, 0 -347px
+
+logo -> 171 x 64, 0 -388px
+
+rss -> 27 x 27, 0 -452px
+
+circle-small  -> 13 x 13, 0 -482px
+
+
+
+
+
+
+/*  =================== CLEARFIX ================= */
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+/*  =================== END  CLEARFIX ================= */

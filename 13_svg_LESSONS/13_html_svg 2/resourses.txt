@@ -1,0 +1,24 @@
+https://www.w3.org/TR/SVG/
+https://www.w3.org/TR/SVG2/
+
+https://caniuse.com/#search=svg
+
+====== Recource for SVG icons
+https://icomoon.io/app/#/select
+https://iconmonstr.com
+https://material.io/tools/icons
+https://www.flaticon.com
+https://thenounproject.com
+https://developer.wordpress.org/resource/dashicons/#admin-users
+
+
+====== Optimize SVG
+https://jakearchibald.github.io/svgomg
+https://github.com/svg/svgo
+
+
+============= Sprites generators
+https://github.com/edenspiekermann/sprite.sh
+https://github.com/frexy/svg-sprite-generator
+
+

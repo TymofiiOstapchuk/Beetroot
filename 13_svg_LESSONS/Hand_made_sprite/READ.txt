@@ -1,0 +1,48 @@
+
+
+======================= hand made sprite
+1. Увага !!!
+   Всі іконки у спрайте повинні мати однаковий viewBox
+   Наприклад, ми вирішили, що viewBox буде 0 0 100 100
+
+
+На прикладі файлу  fb.svg
+
+
+відкриваємо файл у  AdobeIllustrator
+
+     - Edit -> Preference -> Units -> виставити  px
+
+  - інструментом Selection Tool (screen_1.jpg)  выділяємо об'єкт
+     та натискаємо на верхній панелі transform (screen_2.jpg), 
+     виставляємо
+  x = 0 , y = 0, width - 100, height=100
+  (screen_3.jpg)
+
+
+ - 2 рази робимо click по інструменту Artboard Tool (screen_4.jpg)
+    Відкриється панель, на якій треба вибрати  
+       Fit to Artwork Bounds (screen_5.jpg)
+
+
+  - зберігаємо файл
+
+
+1. Створюємо файл sprite.svg
+   Наприклад робимо sprite на 2 іконки
+
+
+ width="100" визначається шириною viewBox іконок
+ height="200" визначається viewBox height * кількість_іконок
+
+
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="200">
+
+
+
+
+</svg>
+
+
+
+
