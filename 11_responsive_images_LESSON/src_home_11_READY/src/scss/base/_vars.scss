@@ -1,0 +1,28 @@
+//fonts
+$google-font: "https://fonts.googleapis.com/css?family=Bree+Serif|Raleway&display=swap";
+$prefix: prefix- !default;
+
+$baseFontSize: 16px;
+$baseFontFamily: "Raleway", sans-serif;
+$headerFontFamily: "Bree Serif", serif;
+// Paths
+
+$i: "../i/";
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$mainColor: #343434;
+$cardTitleColor: #278da4;
+$redColor: #c01f4d;
+
+$cssvars: (
+  "font-family": $baseFontFamily,
+  "headerFontFamily": $headerFontFamily,
+  "font-size": $baseFontSize,
+  "black": $black,
+  "white": $white,
+  "mainColor": $mainColor,
+  "cardTitleColor": $cardTitleColor,
+  "redColor": $redColor,
+);

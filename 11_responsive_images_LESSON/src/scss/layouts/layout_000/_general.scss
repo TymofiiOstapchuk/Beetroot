@@ -1,0 +1,14 @@
+html {
+  font-size: cssvar(font-size);
+}
+
+body {
+  font-family: cssvar(font-family);
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
+}
