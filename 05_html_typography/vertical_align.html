@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vertical-align</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      .img {
+        border: 1px solid red;
+      }
+
+      .phones-wrap {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+      }
+      .code {
+        font-size: 25px;
+        color: gray;
+        vertical-align: 26px;
+      }
+      .img-box {
+        background: grey;
+        display: inline-block;
+      }
+      .img-box__item {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-box">
+      <img class="img-box__item" src="i/reactl.png" />
+    </div>
+    <p class="test">
+      Dolphins keep <img class="img" src="i/reactl.png" /> open while sleeping.
+    </p>
+
+    <p class="phones-wrap"><span class="code">049</span> 999-99-99</p>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+генерирование шрифтов
+http://fontsquirrel.com
+-----------------------------------
+CSS Fonts Module Level 3
+	https://www.w3.org/TR/2013/CR-css-fonts-3-20131003/
+
+Посмотреть  готовность модулей CSS можно здесь
+	http://www.w3.org/Style/CSS/current-work
+
+########### Ресурсы на которых можно посмотреть применение шрифтов
+http://www.webfontsgallery.com
+http://www.webfontawards.com
+https://typekit.com
+http://typographica.org/
+http://thinkingwithtype.com/
+
+###########     Платные ресурсы
+https://typekit.com
+http://www.fonts.com
+http://www.fontslive.com
+http://fontdeck.com
+http://www.extensis.com/en/WebINK/index.jsp
+http://www.webtype.com
+
+
+###########  Открытые ресурсы
+http://google.com/webfonts
+http://kernest.com
+http://typefront.com
+
+http://fffo.grahambird.co.uk
+
+######################
+
+
+
