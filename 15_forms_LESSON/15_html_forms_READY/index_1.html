@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_form.css" />
+    <style>
+      .myform {
+        max-width: 300px;
+      }
+      input, textarea {
+        outline: none;
+        border: 0;
+        background: transparent;
+      }
+      textarea  {
+        resize: none;
+      }
+      .form-control {
+        border: 1px solid blueviolet;
+        padding: 8px 12px;
+        width: 100%;
+      }
+      .form-control:focus {
+        border-color: red;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .form-label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      .btn {
+        background: rgb(20, 132, 237);
+        color: white;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 1s;
+    }
+    .btn:hover  {
+      background: rgb(10, 99, 182);
+      box-shadow: 0 0 10px rgb(20, 132, 237, 0.6);
+      
+    }
+    .btn:disabled {
+      background: gray;
+      color: black;
+      
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container pt-3">
+      <form autocomplete="off" class="myform" action="test.html">
+
+        
+        <div class="form-group">
+          <label for="inp1" class="form-label">Enter name</label>
+          <input required placeholder="enter your name" id="inp1" type="text" name="myname" class="form-control" />
+        </div>
+  
+			<div class="form-group">
+				<label for="inp2" class="form-label">Enter password</label>
+				<input id="inp2"  type="password" name="pass" class="form-control">   
+			</div> 
+	
+       
+        <div class="form-group">
+          <label class="form-label">Enter message</label>
+          <textarea
+            name="comment"
+            rows="4"
+            cols="35"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <input  class="btn" type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>

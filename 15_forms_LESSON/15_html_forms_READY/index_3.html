@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Select</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="test.html">
+        <!-- 
+		set  size="3", multiple
+				-->
+        <div class="form-group">
+          <select name="f1">
+            <option value="s1">PHP</option>
+            <option value="s2" selected>Java Script Java Script</option>
+            <option value="s3">ASP .NET</option>
+            <option value="s4">C#</option>
+            <option value="s5">Python</option>
+            <option value="s6">Java</option>
+            <option value="s7">Ruby</option>
+          </select>
+        </div>
+
+        
+		<div class="form-group">
+			<select name = "f1">
+				<optgroup label="Web"> 
+					<option  value="s1">PHP</option>
+					<option value="s2" selected="selected">Java Script</option>
+					<option value="s3">ASP .NET</option>
+					<option value="s4">C#</option>
+				</optgroup>                  
+				<optgroup label="Windows"> 
+					<option  value="s1">C++</option>
+					<option value="s2" selected="selected">Java Script</option>
+					<option value="s3">ASP .NET</option>
+					<option value="s4">C#</option>
+				</optgroup>             
+			</select>
+		</div>
+	
+
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>

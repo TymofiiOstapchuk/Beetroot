@@ -1,0 +1,47 @@
+*  {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+.form-box__title {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-box span {
+    position: relative;
+    padding-left: 30px;
+}
+span::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../i/radiosprite.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 8px);
+}
+input[type="radio"]:checked + span::before {
+    background-position: 0 -16px;
+}
+.checkbox__span::before {
+    background-position: 0 -32px;
+}
+input[type="checkbox"]:checked + span::before {
+    background-position: 0 -48px;
+}
+
+.checkbox {
+    width: 0;
+    opacity: 0;
+}

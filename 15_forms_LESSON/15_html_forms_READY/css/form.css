@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: auto; 
+}
+
+.holder {
+    margin: 1rem 0;
+}
+
+
+.checkbox-login {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.checkbox-login + label {
+    position: relative;
+    padding: 0 0 0 28px;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    max-width: 100%;
+  } 
+
+.checkbox-login:checked + label { 
+    background: url(../img/icon-21.png) -1px no-repeat;
+}
+
+
+.checkbox-login:not(:checked) + label {
+    position: relative;
+    padding: 0 0 0 28px;
+    font-size: 14px;
+    line-height: 18px;
+ }
+
+   .checkbox-login:not(:checked) + label::before {
+    content: '';
+    border: 1px solid #455a64;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    position: absolute;
+     left: 0;
+     top: 1px;
+   
+}
