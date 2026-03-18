@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+h2,
+h3 {
+    padding: 1rem 0;
+}
+p {
+    margin: .5rem 0;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+div img {
+	width: 100%;
+	max-width: 250px; 
+}
+.col-1-2,
+.col-1-4 {
+    background-color: #ffc;
+}
+.col-2,
+.col-2-4 {
+    background-color: #ccf;
+}
+.col-3 {
+    background-color: #fcf;
+}
+.col-4 {
+    background-color: #cff;
+}
+
+/* grid system */
+.wrapper {
+
+}
+
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+
+
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+
+}
+

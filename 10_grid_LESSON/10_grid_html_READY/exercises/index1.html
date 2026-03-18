@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Grig layout</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(
+          3,
+          minmax(20px, auto) minmax(40px, auto) minmax(20px, auto)
+            minmax(100px, auto)
+        );
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content item item__green"></div>
+      <div class="header item item__blue">Header</div>
+      <div class="left-sidebar item item__purple">Left sidebar</div>
+      <div class="footer item item__orange">Footer</div>
+      <div class="right-sidebar aside-2 item item__yellow">Right sidebar</div>
+
+      <div class="item item__yellow"></div>
+      <div class="item item__maroon"></div>
+
+      <div class="item item__darkorchid"></div>
+      <div class="item item__darksalmon"></div>
+      <div class="item item__deepskyblue"></div>
+      <div class="item item__greenyellow"></div>
+      <div class="item item__maroon"></div>
+
+      <div class="item item__rebeccapurple"></div>
+
+      <div class="item item__steelblue"></div>
+      <div class="item item__tan"></div>
+      <div class="item item__tomato"></div>
+
+      <div class="item item__violet"></div>
+      <div class="item item__wheat"></div>
+      <div class="item item__gold"></div>
+      <!---->
+
+      <!--  -->
+    </div>
+    <!--  /.container  -->
+  </body>
+</html>

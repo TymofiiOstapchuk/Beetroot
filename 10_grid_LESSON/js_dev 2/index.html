@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title" id="title">Hello JS</h1>
+      <ul class="list" id="list">
+        <li class="list_item">Bill</li>
+      </ul>
+    </div>
+
+    <script>
+      /* types => number, string, boolean, undefine, null, object,
+        BigInt, Symbol 
+      */
+
+      const users = [
+        { name: "Bill", age: 77 },
+        { name: "Sam", age: 55 },
+        { name: "Pete", age: 33 },
+        { name: "Sarah", age: 23 },
+      ];
+
+      let out = "";
+
+      /*   for (let i = 0; i < users.length; i++) {
+        const user = users[i];
+        out += `<li>${i + 1}. User ${user.name} has ${user.age}</li>`;
+      }
+ */
+
+      for (let user of users) {
+        out += `<li>User ${user.name} has ${user.age}</li>`;
+      }
+
+      document.getElementById("list").innerHTML = out;
+      console.log(out);
+    </script>
+  </body>
+</html>

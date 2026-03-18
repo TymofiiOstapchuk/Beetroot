@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Twelve grid layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .grid-container {
+            min-height: 100vh;
+            display: grid;
+
+          grid-template-columns:  
+              [left-sidebar-start] 1fr 10px 1fr [left-sidebar-end]
+              10px 
+              [main-area-start]  1fr repeat(7, [gut] 10px [col] 1fr)  [main-area-end]
+              10px 
+              [right-sidebar-start] 1fr 10px 1fr [right-sidebar-end];
+
+          grid-template-rows:  
+            [header-start] 1fr [header-end]
+            10px 
+            [content-start] 3fr [subcontent-start]
+            10px 
+            [subcontent-end] 3fr [content-end]
+            10px
+            [footer-start] 1fr [footer-end]  
+          ;    
+
+        }
+    .item__content {
+          grid-column: main-area-start / gut 4;
+          grid-row: content-start / content-end;
+        }
+        .item__subcontent1 {
+            grid-column: col 4/ main-area-end;
+            grid-row: content-start / subcontent-start;
+        }
+        .item__subcontent2{
+ grid-column: col 4 / gut 6;
+            grid-row: subcontent-end / content-end;
+        }
+        .item__subcontent3 {
+           grid-column: col 6 / main-area-end;
+            grid-row: subcontent-end / content-end;
+
+        }
+
+
+        .item__header {
+          grid-column: left-sidebar-start / right-sidebar-end;
+          grid-row: header-start / header-end;
+        }
+        .item__left-sidebar {
+          grid-column: left-sidebar-start / left-sidebar-end;
+          grid-row: content-start / content-end;
+        }
+       
+          .item__right-sidebar {
+            grid-column: right-sidebar-start /right-sidebar-end;
+          grid-row: content-start / content-end;
+          }
+          .item__footer {
+            grid-column: left-sidebar-start / right-sidebar-end;
+          grid-row: footer-start / footer-end;
+          }
+    </style>
+  </head>
+
+<body>
+	<div class="container">
+
+        <div class="grid-container">
+
+            <div class="item item__content"><h1 class="text-center">Content</h1></div>
+            <div class="item item__header"><h2 class="text-center">Header</h2></h1></div>
+            <div class="item item__right-sidebar"><h2 class="text-center">Right Sidebar</h2></div>
+            <div class="item item__left-sidebar"><h2 class="text-center">Left Sidebar</h2></div>
+            <div class="item item__footer"><h2 class="text-center">Footer</h2></div>
+            <div class="item item__subcontent1"><h2 class="text-center">Subocntent</h2></div>
+            <div class="item item__subcontent2"><h2 class="text-center">Subcontent 2</h2></div>
+
+            <div class="item item__subcontent3"><h2 class="text-center">Subcontent 3</h2></div>
+            <!--
+            -->
+        </div>
+
+	</div>
+</body>
+</html>

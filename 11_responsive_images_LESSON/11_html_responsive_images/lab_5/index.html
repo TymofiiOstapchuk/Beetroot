@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @media (min-width: 371px) {
+        .img-box {
+          float: right;
+          width: 50%;
+          margin: 0 0 1em 1em;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .img-box {
+          width: 33.3%;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .img-box {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Picture</h1>
+
+      <div class="grid">
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/square.jpg"
+            srcset="img/square.jpg 1x, img/square-2x 2x"
+          />
+
+          <figcaption class="img-box__caption">
+            The fastest animal on land.
+          </figcaption>
+        </figure>
+        <div class="sidebar">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+        </div>
+      </div>
+      <!--  ./grid -->
+    </div>
+  </body>
+</html>

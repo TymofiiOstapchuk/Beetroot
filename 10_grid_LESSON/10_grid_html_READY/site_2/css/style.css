@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font: 1rem Ubuntu, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  vertical-align: top;
+}
+.img-box {
+  padding: 1rem;
+}
+.fluid-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.top-header {
+  text-align: center;
+  padding: 3rem 0;
+}
+.top-header__title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #00b1b2;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.top-header__icon {
+  font-size: 4rem;
+  color: rgb(0, 177, 178);
+}
+.top-header__img-box {
+  width: 120px;
+  margin: auto;
+}
+
+.about-us {
+  padding: 3rem 1rem;
+  background: rgba(0, 177, 178, 0.2);
+}
+.about-us-box__title {
+  text-align: center;
+}
+
+.main-content {
+  background: #3e454c;
+  padding: 2rem;
+}
+.main-content-article {
+  background: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.main-content-article__title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+.main-content-article__content {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.main-content-article__img {
+  order: -1;
+}
+
+.more-content {
+  padding: 3rem 0;
+  background: teal;
+}
+.more-content__title {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.more-content__content {
+  padding: 0 1rem;
+}
+
+.twin {
+  padding: 5rem 1rem;
+}
+.twin_first {
+  background: #2185c5;
+}
+.twin_second {
+  background: #4dc573;
+}
+
+.twin__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-box {
+  padding: 2rem 1rem;
+  background: #000;
+}
+.footer-box__content {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-box__content_second {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .about-us-box__content {
+    column-count: 2;
+    column-gap: 30px;
+  }
+  .main-content-box {
+    display: flex;
+  }
+  .main-content-article {
+    margin-right: 1rem;
+  }
+  .main-content-article:last-of-type {
+    margin-right: 0;
+  }
+}
+

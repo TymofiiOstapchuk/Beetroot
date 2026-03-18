@@ -1,0 +1,51 @@
+* {
+	 box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-center {
+    text-align: center;
+} 
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+.item {
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+    background: #e2e2e2;
+    border: 1px dotted blueviolet;
+}
+
+/*  ========================================  */
+
+.item__header {
+
+}
+.item__footer {
+
+}
+.item__left-sidebar {
+    background: lightgreen;
+}
+.item__right-sidebar {
+    background: tomato;
+}
+.item__content {
+    background: thistle;
+}
+.item__subcontent1 {
+    background: tan;
+}
+.item__subcontent2 {
+    background: teal;
+}
+
+.item__subcontent3 {
+    background: pink;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Grig layout</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .container {
+        background: yellow;
+        min-height: 100vh;
+        display: grid;
+        width: 1000px;
+        /*  % => px(rem,em) => auto => fr  */
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .header {
+        /* 
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3; */
+
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+      }
+      .left {
+        grid-column: 2 / span 2;
+      }
+      .footer {
+      }
+
+      .center {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+      }
+
+      .right {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item item__blue header"></div>
+      <div class="item item__purple left"></div>
+      <div class="item item__green center"></div>
+      <div class="item item__yellow right"></div>
+
+      <div class="item item__orange footer"></div>
+      <div class="item item__darkgrey item__darkgrey_6"></div>
+      <div class="item item__darkorchid"></div>
+      <div class="item item__darksalmon"></div>
+
+      <div class="item item__deepskyblue"></div>
+      <div class="item item__greenyellow_10 item__greenyellow"></div>
+      <div class="item item__maroon"></div>
+      <div class="item item__rebeccapurple"></div>
+
+      <div class="item item__steelblue"></div>
+      <div class="item item__tan"></div>
+      <div class="item item__tomato"></div>
+      <div class="item item__violet"></div>
+
+      <!--
+                    <div class="item item__wheat"></div>
+                        <div class="item item__gold"></div>
+                                     -->
+    </div>
+    <!--  /.container  -->
+  </body>
+</html>

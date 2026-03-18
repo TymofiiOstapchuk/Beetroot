@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @media (min-width: 600px) {
+        .container {
+          width: 600px;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Cincinnati Zoo</h1>
+
+      <div class="grid">
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/original.jpg"
+            srcset="
+              img/small.jpg       600w,
+              img/medium.jpg      800w,
+              img/large.jpg      1200w,
+              img/extralarge.jpg 1600w
+            "
+            sizes="(min-width: 470px) 800px, 100vw"
+          />
+          <figcaption class="img-box__caption">
+            The fastest animal on land, the cheetah can reach speeds up to 70
+            miles per hour over short distances.
+          </figcaption>
+        </figure>
+        <div class="sidebar">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque
+            fugit et minus similique alias maiores cupiditate quos, molestiae
+            recusandae.
+          </p>
+        </div>
+      </div>
+      <!--  ./grid -->
+    </div>
+  </body>
+</html>

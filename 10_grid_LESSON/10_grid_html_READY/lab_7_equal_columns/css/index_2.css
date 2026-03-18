@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr;
+}
+
+.service {
+  display: grid;
+  grid-row-end: span 4;
+  grid-template-rows: subgrid;
+}
+.service__img-box {
+  order: -1;
+}
+.service__btn-box {
+  justify-self: center;
+}

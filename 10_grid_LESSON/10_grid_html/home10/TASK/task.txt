@@ -1,0 +1,19 @@
+Зверстати галерею використовуючи grid 
+Для шрифтів використовувати font-family Ubuntu 400, 500
+
+Зображення загорнути в теги figure
+Текст для зображень загорнути в теги figcaption
+
+
+============= content 
+
+img/hotel.jpg => Virtual Hotel Service Announced
+img/divorce.jpg => Declining Divorce Rates Suprise Researchers
+img/room.jpg => Virtual Hotel Service Announced
+img/hotel.jpg => Hotel Gets Facelift
+
+img/story1.jpg => Roaring 20's Hotel Reopens
+img/story2.jpg => Auto Recall Stuns Owners
+img/story3.jpg => Van der Valk Hotel Apeldoorn
+img/story4.jpg => New WIFI in Airports
+

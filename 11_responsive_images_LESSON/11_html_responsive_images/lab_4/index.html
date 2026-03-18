@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 470px) {
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .img-box {
+          width: calc(50% - 1em);
+        }
+      }
+
+      @media screen and (min-width: 640px) {
+        .img-box {
+          width: calc(33% - 1em);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Cincinnati Zoo</h1>
+
+      <div class="gallery">
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/original.jpg"
+            srcset="
+              img/small.jpg       600w,
+              img/medium.jpg      800w,
+              img/large.jpg      1200w,
+              img/extralarge.jpg 1600w
+            "
+            sizes="(min-width: 48em) 800px, 100vw"
+          />
+          <figcaption class="img-box__caption">
+            The fastest animal on land, the cheetah can reach speeds.
+          </figcaption>
+        </figure>
+
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/original.jpg"
+            srcset="
+              img/small.jpg       600w,
+              img/medium.jpg      800w,
+              img/large.jpg      1200w,
+              img/extralarge.jpg 1600w
+            "
+            sizes="(min-width: 48em) 800px, 100vw"
+          />
+          <figcaption class="img-box__caption">
+            The fastest animal on land, the cheetah can reach speeds.
+          </figcaption>
+        </figure>
+
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/original.jpg"
+            srcset="
+              img/small.jpg       600w,
+              img/medium.jpg      800w,
+              img/large.jpg      1200w,
+              img/extralarge.jpg 1600w
+            "
+            sizes="(min-width: 48em) 800px, 100vw"
+          />
+          <figcaption class="img-box__caption">
+            The fastest animal on land, the cheetah can reach speeds.
+          </figcaption>
+        </figure>
+
+        <figure class="img-box">
+          <img
+            class="img-box__item"
+            alt="Cincinnati Zoo"
+            src="img/original.jpg"
+            srcset="
+              img/small.jpg       600w,
+              img/medium.jpg      800w,
+              img/large.jpg      1200w,
+              img/extralarge.jpg 1600w
+            "
+            sizes="(min-width: 48em) 800px, 100vw"
+          />
+          <figcaption class="img-box__caption">
+            The fastest animal on land, the cheetah can reach speeds.
+          </figcaption>
+        </figure>
+      </div>
+      <!--  ./ -->
+    </div>
+  </body>
+</html>

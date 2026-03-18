@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Nested Grig layout - example 2</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #e2e2e2;
+      }
+      .grid {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 2em auto;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .item {
+        background-color: #2b3745;
+        padding: 10px;
+      }
+
+      .sidebar {
+        background-color: #858881;
+      }
+
+      .wrapper {
+        grid-column: 2 / -1;
+        display: grid;
+        grid-template-columns: subgrid;
+        gap: 10px;
+      }
+
+      .subitem {
+        background-color: #474944;
+        padding: 10px;
+        color: #fff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="sidebar"></div>
+      <div class="wrapper">
+        <div class="subitem">1</div>
+        <div class="subitem">2</div>
+        <div class="subitem">3</div>
+        <div class="subitem">4</div>
+        <div class="subitem">5</div>
+        <div class="subitem">6</div>
+        <div class="subitem">7</div>
+        <div class="subitem">8</div>
+        <div class="subitem">9</div>
+        <div class="subitem">10</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        max-width: 80%;
+        margin: auto;
+      }
+      .title {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .nav {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        padding-bottom: 2rem;
+      }
+      .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #22556e;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+      }
+
+      .nav__item:hover {
+        background: #4799b7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Grid layout - exercises</h1>
+      <div class="nav">
+        <a class="nav__item" href="exercises/index.html">index.html</a>
+        <a class="nav__item" href="exercises/index1.html">index1.html</a>
+        <a class="nav__item" href="exercises/multirow/flex_multirow.html"
+          >Flex_multirow</a
+        >
+        <a class="nav__item" href="exercises/multirow/grid_multirow..html"
+          >grid-miltirow</a
+        >
+        <a class="nav__item" href="exercises/responsive.html">Responsive</a>
+        <a class="nav__item" href="exercises/ascii.html">ASCII</a>
+        <a class="nav__item" href="exercises/aligment.html">Box aligment</a>
+
+        <a class="nav__item" href="exercises/grid-sizing.html">Grid sizing</a>
+        <a class="nav__item" href="exercises/auto_fill_auto_fit.html"
+          >autofill</a
+        >
+        <a class="nav__item" href="nested/example_1.html">nested - 1</a>
+        <a class="nav__item" href="nested/example_2.html">nested - 2</a>
+        <a class="nav__item" href="nested/example_3.html">nested - 3</a>
+      </div>
+
+      <h1 class="title">Labs and tasks</h1>
+      <div class="nav">
+        <a class="nav__item" href="task/index.html">Task</a>
+        <a class="nav__item" href="lab_1_reordering/index.html">Lab 1</a>
+        <a class="nav__item" href="lab_2_reordering_ascii/index.html">Lab 2</a>
+        <a class="nav__item" href="lab_3_twelve_grid/index.html"
+          >Lab 3 - twelve grid
+        </a>
+        <a class="nav__item" href="lab_4_overlapping/index.html"
+          >Lab 4 - overlapping</a
+        >
+        <a class="nav__item" href="lab_5_overlapping/index.html"
+          >Lab 5 - overlapping</a
+        >
+        <a class="nav__item" href="lab_6_gallery/index.html">Lab 6 gallery</a>
+        <a class="nav__item" href="lab_7_equal_columns/index_1.html">Lab 7_1</a>
+        <a class="nav__item" href="lab_7_equal_columns/index_2.html">Lab 7_2</a>
+        <a class="nav__item" href="lab_8/index.html">Lab 8</a>
+        <a class="nav__item" href="site_1/index.html">Site 1</a>
+        <a class="nav__item" href="site_2/index.html">Site 2</a>
+        <a class="nav__item" href="site_3/index.html">Site 3</a>
+      </div>
+
+      <h1 class="title">Home</h1>
+      <div class="nav">
+        <a class="nav__item" href="home15/index.html">Home</a>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>

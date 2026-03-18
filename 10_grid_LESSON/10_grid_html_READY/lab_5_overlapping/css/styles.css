@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin-top: 0;
+}
+p {
+  margin-top: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
+}
+.title {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 32px;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============ layout  */
+/* ======================= todo */
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1vw;
+}
+.describe-title {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.describe-content {
+  grid-column: 1;
+  grid-row: 3;
+}
+.poster {
+  grid-column: 1;
+  grid-row: 2;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 640px) {
+  .poster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1vw;
+  }
+  .poster__first {
+    grid-column: 1/ 3;
+    grid-row: 1/3;
+  }
+  .poster__second {
+    grid-column: 3/ 5;
+    grid-row: 1/3;
+  }
+  .poster__third {
+    grid-column: 1/ 3;
+    grid-row: 3/5;
+  }
+
+  .poster__fourth {
+    grid-column: 3/ 5;
+    grid-row: 3/5;
+  }
+  .poster__fifth {
+    grid-column: 2/ 4;
+    grid-row: 2/4;
+    border: 1vw solid white;
+    transform: rotate(45deg);
+    overflow: hidden;
+  }
+
+  .poster__fifth img {
+    transform: rotate(-45deg) scale(1.4);
+  }
+}
+
+@media (min-width: 769px) {
+  .poster {
+    width: 750px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .describe-title {
+    grid-column: 1 / -1;
+  }
+  .describe-content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .poster {
+    width: initial;
+    margin-inline: initial;
+    margin-right: initial;
+    grid-column: 1;
+    grid-row: 2;
+    gap: 5px;
+  }
+  .poster__fifth {
+    border-width: 5px;
+  }
+}

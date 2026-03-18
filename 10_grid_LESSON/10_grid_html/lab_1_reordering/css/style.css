@@ -1,0 +1,28 @@
+.container {
+  font-family: Arial, sans-serif;
+}
+.container > * {
+  padding: 1em;
+  border-radius: 1em;
+}
+header {
+  background-color: blue;
+  color: white;
+}
+article {
+  background-color: green;
+  color: white;
+}
+aside {
+  background-color: yellow;
+}
+/* ==============  Todo ============  */
+
+.container {
+}
+
+@media (min-width: 650px) {
+}
+
+@media (min-width: 1000px) {
+}

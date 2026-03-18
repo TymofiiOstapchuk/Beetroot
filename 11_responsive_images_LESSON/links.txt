@@ -1,0 +1,13 @@
+---- images specification
+https://www.w3.org/MarkUp/html3/img.html
+
+
+https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
+
+https://caniuse.com/?search=srcset
+https://caniuse.com/?search=picture
+
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+https://jakearchibald.com/2015/anatomy-of-responsive-images/#varying-size-and-density

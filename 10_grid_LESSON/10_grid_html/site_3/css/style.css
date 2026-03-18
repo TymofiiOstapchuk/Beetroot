@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap");
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+button {
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}

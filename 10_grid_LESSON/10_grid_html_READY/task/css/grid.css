@@ -1,0 +1,38 @@
+/* ================================= 
+  Media Queries
+==================================== */
+.main-header {
+  display: grid;
+}
+.main-nav {
+  order: -1;
+}
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-header {
+    grid-template-columns: 1fr auto;
+  }
+  .main-nav {
+    order: initial;
+    justify-content: flex-end;
+  }
+  .name a {
+    text-align: initial;
+  }
+  .row {
+    grid-template-columns: 1fr 1.2fr 1fr;
+  }
+  .col_secondary {
+    order: -1;
+  }
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  max-width: 700px;
+  margin: 50px auto 0;
+}
+
+.card {
+  margin: 10px;
+}
+.card-wrap {
+  margin: 0 -10px;
+}
+
+.card__title {
+  background: #ff0dff;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card__content {
+  background: #e80c7a;
+  padding: 10px;
+}

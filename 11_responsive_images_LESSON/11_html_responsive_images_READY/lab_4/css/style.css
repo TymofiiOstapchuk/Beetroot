@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+figure,
+figcaption {
+  margin: 0;
+}
+.container {
+  padding: 0 1rem;
+}
+.img-box {
+  margin: 1em 0;
+  position: relative;
+}
+.img-box__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  background: #e2e2e2;
+}
+
+.img-box__item {
+  display: block;
+  width: 100%;
+  height: auto;
+}

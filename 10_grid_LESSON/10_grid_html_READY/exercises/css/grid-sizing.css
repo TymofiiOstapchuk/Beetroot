@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+ul,
+ol {
+  font-size: 1.2rem;
+}
+/* .container {
+  max-width: 1200px;
+  margin: auto;
+} */
+.item {
+  background: rgb(6, 134, 202);
+  color: white;
+  border: 2px solid rgb(104, 196, 245);
+  text-align: center;
+  padding: 30px 10px;
+}
+.container-1200 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 1rem 0;
+}
+li {
+  margin-bottom: 0.5rem;
+}

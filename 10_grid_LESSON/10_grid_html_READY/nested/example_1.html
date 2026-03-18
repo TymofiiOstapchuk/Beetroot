@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Nested Grig layout - example 1</title>
+
+    <style>
+      .container {
+        max-width: 600px;
+        margin: auto;
+        border: 1px solid red;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 2fr 1fr);
+      }
+      .row {
+        display: grid;
+        gap: 10px;
+        grid-column: 2 /6;
+        grid-template-columns: 2fr 1fr 2fr 1fr;
+        border: 1px solid blueviolet;
+      }
+      .item {
+        padding: 40px 10px;
+        text-align: center;
+        background: #e2e2e2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+      </div>
+      <div class="row">
+        <div class="item">texttexttexttexttexttexttexttext</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+      </div>
+    </div>
+    <!--  /.container  -->
+  </body>
+</html>
