@@ -1,0 +1,15 @@
+.slogan-box__title {
+  font-size: 4rem;
+}
+.header-top {
+  margin-bottom: 60px;
+
+  @include before("logo.jpg", 120px, 120px) {
+    border-radius: 120px;
+    border: 6px solid cssvar(redColor);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-size: cover;
+  }
+}

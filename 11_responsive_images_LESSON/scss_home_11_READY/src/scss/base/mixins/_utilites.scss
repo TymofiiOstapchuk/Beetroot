@@ -1,0 +1,45 @@
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}
+@mixin before($img, $w, $h) {
+  & {
+    position: relative;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(#{$i}#{$img}) no-repeat;
+    width: $w;
+    height: $h;
+    @content;
+  }
+}
+
+@mixin cssvars($css_variables, $prefix: beetroot) {
+  :root {
+    @each $name, $value in $css_variables {
+      --#{$prefix}-#{$name}: #{$value};
+    }
+  }
+}
+
+@function cssvar($name, $prefix: beetroot) {
+  @return var(--#{$prefix}-#{$name});
+}
+
+@mixin cssvar($name, $value: "", $prefix: beetroot) {
+  --#{$prefix}-#{$name}: #{$value};
+}

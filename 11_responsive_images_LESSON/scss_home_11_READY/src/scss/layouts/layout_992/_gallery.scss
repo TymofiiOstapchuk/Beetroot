@@ -1,0 +1,12 @@
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
+.teaser_lead {
+  grid-column: span 2;
+}
+.teaser_top {
+  grid-column: 3 / span 2;
+}
+.teaser_bottom {
+  grid-column: 3 / span 2;
+}
