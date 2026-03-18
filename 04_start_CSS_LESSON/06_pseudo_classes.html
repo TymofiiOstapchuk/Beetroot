@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo classes</title>
+    <meta charset="utf-8" />
+    <style>
+      a {
+        font-size: 22px;
+        text-decoration: none;
+      }
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: teal;
+      }
+    </style>
+    <style></style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="http://google.com">Google.com</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="http://yahoo.com">Yahoo.com</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="http://design-class.com.ua">Design class</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="http://ukr.net">ukr.net</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" class="myclass" href="http://reactjs.org"
+          >React</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

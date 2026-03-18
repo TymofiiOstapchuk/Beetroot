@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contexts selector</title>
+        <meta charset="utf-8">
+<style>
+
+</style>
+</head>
+<body>
+<!-- Приклади каскадування
+1. всі елементи P у яких серед parents є елемент DIV
+відобразити червоним кольором
+   div p {color:red;}
+
+2. всі елементи P у яких серед parents є елемент з class="c2" 
+   відобразити червоним кольором
+.c2 p {color:green;}	
+	
+3. елементи span у яких  є parent ​​елемент Р із класом .p3,
+    у якого у свою чергу є parent ​​елемент з class="c1"
+      відобразити шрифтом 40px
+.c3  p.p3 span {font-size:40px;}						
+	
+4. елементи SPAN у яких є прямий parent ​​елемент з class="c2"
+   відобразити червоним кольором
+.c2 > span {color:red;}
+			 -  
+5. параграф у якого сусідом зліва є елемент із class="p1"
+	відобразити червоним кольором 	
+.p1 + p{color:red;} 
+
+6. параграф у якого серед сусідів ліворуч є елемент h2
+   відобразити червоним кольором
+h2 ~ p{color:red;}
+
+-->	
+
+<div id="f1" class="c1">
+	<div id="f2" class="c2">
+		<h2  id="f3" class="c3">Header H2 </h2>
+		<p class="p1">Paragraph with class="p1"</p>
+		<p class="p2">
+		     <span>Span within paragraph with class="p2"</span>
+		</p>
+		<p class="p3">
+		     <span>Paragraph with class="p3"</span>
+		</p>
+		<p class="p4">Paragraph with class="p4"</p>
+		<p>Paragraph without class</p>
+		<span>Span without class</span>
+	</div>
+</div>  
+		
+</body>
+</html>

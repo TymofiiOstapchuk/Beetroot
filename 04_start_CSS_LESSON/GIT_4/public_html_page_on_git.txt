@@ -1,0 +1,16 @@
+1. create local  git repo 
+2. upload local repo to github
+3. click project's Settings
+4. in right menu choose Pages 
+ - click on the None button
+ - choose the main branch from the drop down provided
+ - click the save button under it
+
+ URL will be
+ https://your-username.github.io/repository-name
+
+
+  https://romannikiforov.github.io/mynewsite
+
+ 
+

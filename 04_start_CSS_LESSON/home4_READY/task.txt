@@ -1,0 +1,44 @@
+Зверстати сторінку згідно макету наведеного у файлі 
+preview.png а також на відео preview_video.mp4
+
+!!! Використовувати той матеріал по html, css які ми на даний час пройшли
+
+- css код написати в файлі css/style.css в сеції todo
+- html код написати в файлі index.html 
+
+- код огорнути в в div з класом container
+Ширина контейнера 1200px 
+Контейнер має бути вирівняний по ценнтру браузера
+
+2. зображення поруч можно поставити так 
+- зображення розташувати в блок якому призначити display: grid
+Тобто зробити сітку  - 1 строку, 2 рівних по розміру колонки  
+
+3. Блок з лінками First, Second, Third, Fourth  - це список ul - li 
+Щоб поставити поруч елементи списка тегу ul надаємо display: flex
+а кожному li ставимо margin-right: 30px;
+
+Маркери для кожного li задати за допомогою before та html-entities 
+♠ - 2660
+♣ - 2663
+♥ - 2665
+♦ - 2666
+
+====== help content 
+
+1. content 
+Use the best from every platform
+
+React is a library. It lets you put components together, but it doesn’t prescribe how to do routing and data fetching. To build an entire app with React, we recommend a full-stack React framework like:
+Next.js
+Remix
+
+
+People love web and native apps for different reasons. React lets you build both web apps and native apps using the same skills. It leans upon each platform’s unique strengths to let your interfaces feel just right on every platform.
+
+1.2 Посилання 
+nextjs => https://nextjs.org
+remixjs => https://remix.run
+
+► - 25ba 
+

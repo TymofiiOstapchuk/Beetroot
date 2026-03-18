@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo classes, pseudo elements</title>
+    <meta charset="utf-8" />
+    <style>
+      .block {
+        display: block;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body style="width: 1000px; margin: 1rem auto">
+    <p class="mb-4">
+      <b>Task 1</b><br />
+      Focus можуть отримувати лише елементи форм та посилання.<br />
+      Елемент отримав focus – означає, що елемент вибрано за допомогою миші (або
+      клавіатури), курсор знаходиться в межах цього елемента, і якщо це елемент
+      форми – ми можемо вводити до нього текст.
+    </p>
+    <form class="mb-4">
+      <label class="block mb-4">Email</label>
+      <input type="text" name="t1" class="t1" />
+    </form>
+    <hr />
+    <p class="mb-4">
+      <b>Task 2</b><br />
+      1.Відобразити назву увімкненого елемента червоним кольором<br />
+      2. Показати призначення for - id
+    </p>
+
+    <div class="mb-4">
+      <div class=".mb-4">
+        <input type="radio" name="r1" value="one" />
+        <label>First</label>
+      </div>
+      <div class=".mb-4">
+        <input type="radio" name="r1" value="two" />
+        <label>Second</label>
+      </div>
+      <div class=".mb-4">
+        <input type="radio" name="r1" value="three" />
+        <label>Third</label>
+      </div>
+    </div>
+
+    <hr />
+
+    <p class="mb-4">
+      <b>Task 3</b><br />
+      Відобразити назву включеного елемента червоним кольором
+    </p>
+
+    <div class="mb-4">
+      <div class=".mb-4">
+        <label>First</label>
+        <input type="checkbox" name="c1" value="four" />
+      </div>
+      <div class=".mb-4">
+        <label>Second</label>
+        <input type="checkbox" name="c1" value="five" />
+      </div>
+      <div class=".mb-4">
+        <label>Third</label>
+        <input type="checkbox" name="c1" value="six" />
+      </div>
+    </div>
+
+    <hr />
+    <p class="mb-4">
+      <b>Task 4</b><br />
+      Показати псевдокласи disabled, enabled
+    </p>
+    <div>
+      <button id="btn" class="btn">Click me</button>
+    </div>
+  </body>
+</html>

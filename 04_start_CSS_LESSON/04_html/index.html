@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Изучаем селекторы CSS</h1>
+      <nav class="nav">
+        <a class="nav__item" href="empty.html">empty.html</a>
+        <a class="nav__item" href="01_selector_type.html"
+          >01_selector_type.html</a
+        >
+        <a class="nav__item" href="02_selector_id.html">02_selector_id.htm</a>
+        <a class="nav__item" href="03_selector_class.html"
+          >03_selector_class.html</a
+        >
+        <a class="nav__item" href="04_selector_group.html"
+          >04_selector_group.html</a
+        >
+        <a class="nav__item" href="05_seletor_attributes.html"
+          >05_seletor_attributes.html</a
+        >
+        <a class="nav__item" href="06_pseudo_classes.html"
+          >06_pseudo_classes.html</a
+        >
+        <a class="nav__item" href="07_pseudo_elements.html"
+          >07_pseudo_elements.html</a
+        >
+        <a class="nav__item" href="08_selector_context.html"
+          >08_selector_context.html</a
+        >
+        <a class="nav__item" href="09_cascading.html">09_cascading.html</a>
+        <a class="nav__item" href="img.html">img</a>
+        <a class="nav__item" href="figure.html">Figure</a>
+      </nav>
+
+      <h1 class="title">Selectors</h1>
+      <nav class="nav">
+        <a class="nav__item" href="selectors/focus.html">Focus</a>
+        <a class="nav__item" href="selectors/target.html">Target</a>
+        <a class="nav__item" href="selectors/children.html">Children</a>
+        <a class="nav__item" href="selectors/type.html">type</a>
+      </nav>
+
+      <h1 class="title">Labs</h1>
+      <nav class="nav">
+        <a class="nav__item" href="labs/lab_1.html"
+          >lab1.html - atributes's selectors</a
+        >
+        <a class="nav__item" href="labs/lab_2.html"
+          >lab2.html - pseudo classes</a
+        >
+      </nav>
+      <h1 class="title">Homework</h1>
+
+      <nav class="nav">
+        <a class="nav__item" href="home5/index.html">Home</a>
+      </nav>
+    </div>
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>

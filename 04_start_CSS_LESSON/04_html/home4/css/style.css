@@ -1,0 +1,31 @@
+/* don't remove these styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin-bottom: 10px;
+}
+h2,
+li:hover {
+  cursor: pointer;
+}
+
+/* =============== todo =================*/
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
