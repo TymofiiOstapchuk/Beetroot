@@ -1,0 +1,27 @@
+CSS Status
+http://www.w3.org/standards/techs/css#w3c_all
+---------------------------------
+ALL STANDARDS AND DRAFTS
+http://www.w3.org/TR/#tr_CSS
+---------------------------------
+
+====== Support ======
+http://caniuse.com
+
+======== Generators =======
+http://www.colorzilla.com/gradient-editor/
+http://matthewlein.com/ceaser/
+http://www.css3generator.com/
+http://gradients.glrzad.com/
+http://css3please.com/
+
+HSLA
+http://hslpicker.com
+http://css-tricks.com/examples/HSLaExplorer/
+http://www.mattgroeber.com/utilities/random-color-generator/
+======= IE =======
+http://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx
+
+
+======== transitions ======
+http://www.w3.org/TR/css3-transitions/

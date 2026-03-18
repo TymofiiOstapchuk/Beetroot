@@ -1,0 +1,45 @@
+Завдання
+!!! При верстці використовувати grid
+------------------------------------------------------------
+1. Створити файл css/style.css та підключити його до index.html
+
+2. Підключити шрифти Ubuntu
+
+3. Зверстати “Прогноз погоди” згідно з макетом у файлі
+        Weather1.fig  (css-weather-forecast-psd.png)
+
+-------------------------   
+
+Це завдання є також в  LMS
+Lesson 10 - Блокова модель документа (CSS Box Model) в LMS
+
+https://erikflowers.github.io/weather-icons
+
+Видео инструкций 
+  https://www.youtube.com/watch?v=g9O7boOJzq4
+
+Вимоги:
+1.  Максимальна ширина макету 1200px 
+    Для  body задати min-height: 100vh;
+
+2. Верстка має бути вирівняна по центру браузера 
+
+3. breakpoints: 
+ - 1 колонка ->  320px - 575px
+ - 2 колонки ->  576px
+ - 4 колонки -> 992px
+
+4. Для ефекту зміни прозорості використовуємо :hover та opacity
+
+5. Іконки беремо від сюди
+   Самостійно розвбратись як працювати з іконками
+
+https://erikflowers.github.io/weather-icons/
+
+підключити іконки потрібно прописав в <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+
+
+
+
+

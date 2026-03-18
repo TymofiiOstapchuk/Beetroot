@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>HTML advanced</title>
+
+    <style>
+      .box {
+        height: 400px;
+        width: 600px;
+        margin: 100px auto 0;
+        border: 1px dotted red;
+      }
+      /*=============  Промежуточные цвета ================= */
+      /*
+.box {
+	background:  linear-gradient(black, white);
+}
+*/
+
+      /*
+.box{
+	background-image: linear-gradient(to bottom, green, yellow, blue);
+  }
+*/
+
+      /*
+.box{
+	background-image:-moz-linear-gradient(top, red 50%, green );
+}
+*/
+
+      /*============  radial gradients  ================== */
+
+      /*  =====  [circle ||  <length> ] [ at <position> ]  */
+
+      .box {
+        /*background: radial-gradient(white,  black);*/
+        /*background: radial-gradient(circle, white,  black);*/
+        /*background: radial-gradient(circle at 20px 50%, white,  black);*/
+        /*background: radial-gradient(100px , white,  black);*/
+        /*background: radial-gradient(100px at 80% 30px , white,  black);*/
+      }
+
+      /*  [ ellipse ||    [<length> | <percentage> ]{2}] [ at <position> ]  */
+      .box {
+        /*background: radial-gradient(ellipse, black, white);*/
+        /*background: radial-gradient(20% 40%, black, white);*/
+        /*background: radial-gradient(20% 40% at 100px 30px, black, white);*/
+      }
+      /*  [ [ circle | ellipse ]  ||  <extent-keyword> ] [ at <position> ]  */
+
+      .box {
+        /*background: radial-gradient(closest-side, white, black);*/
+        /*background: radial-gradient(closest-side at 20px 60px, white, black);*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu__item {
+  margin-bottom: 0.7rem;
+}
+.menu__item a {
+  text-decoration: none;
+  color: navy;
+}
+
+.left {
+  padding: 1rem;
+  background: #faf;
+}
+.right {
+  padding: 1rem;
+  background: #cff;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #3399cc;
+  color: #ffffff;
+  border: 15px solid #2b81ac;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+}
+
+.header {
+  padding: 35px 0;
+}
+.header__title {
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  padding: 35px 0;
+}
+
+.weather {
+  background: #ffffff;
+  padding: 5px;
+}
+
+.col {
+  padding: 26px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.col__title {
+  font-size: 22px;
+}
+.col__temp {
+  font-size: 22px;
+}
+
+.wi {
+  font-size: 42px;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+
+.col_lisabon {
+  background: #3399cc;
+}
+.col_paris {
+  background: #33cccc;
+}
+.col_belgrad {
+  background: #996699;
+}
+.col_venece {
+  background: #c24747;
+}
+.col_telavive {
+  background: #e2674a;
+}
+.col_cair {
+  background: #ffcc66;
+}
+.col_newyork {
+  background: #99cc99;
+}
+.col_delhi {
+  background: #669999;
+}
+.col_sanfran {
+  background: #cc6699;
+}
+.col_tokyo {
+  background: #339966;
+}
+.col_sydney {
+  background: #666699;
+}
+.col__temp {
+  opacity: 0.7;
+}
+
+/* =========== grid */
+.row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*  568px */
+@media (min-width: 576px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+}
+
+/*  768px */
+@media (min-width: 768px) {
+}
+
+/*  992px */
+@media (min-width: 992px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col_lisabon {
+    grid-column: 1/3;
+  }
+  .col_sanfran {
+    grid-column: 2/4;
+  }
+  .col_sydney {
+    grid-column: 1 / -1;
+  }
+  .col {
+    opacity: 0.7;
+  }
+  .col:hover {
+    opacity: 1;
+  }
+}

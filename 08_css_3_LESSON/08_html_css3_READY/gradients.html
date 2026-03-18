@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>HTML advanced</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 1000px;
+        margin-inline: auto;
+        padding-inline: 12px;
+      }
+      .btn-box {
+        padding: 30px;
+      }
+      .btn {
+        color: #ffffff;
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 12px 22px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 1s;
+      }
+      .btn:hover {
+        background-color: #0e6acc;
+        box-shadow: 0 0 12px rgba(14, 106, 204, 0.6);
+      }
+
+      /*       .box {
+        height: 220px;
+        width: 220px;
+        margin: 30px auto 0;
+       box-shadow: 0 0 0 2px lightgray, 0 0 0 4px white, 0 0 0 6px lightgray;
+      }
+ */
+      .box {
+        height: 400px;
+        width: 600px;
+        margin: 100px auto 0;
+        border: 1px dotted red;
+      }
+      /*=============  Промежуточные цвета ================= */
+
+      /* .box {
+        background: linear-gradient(to right, black, white);
+      }
+
+      .box {
+        background-image: linear-gradient(45deg, green, yellow, blue);
+      }
+ */
+      .box {
+        /* background-image: linear-gradient(to right, red 50%, green); */
+        /* background-image: linear-gradient(to right, blue 49%, red 50%); */
+        /* background-image: linear-gradient(
+          to right,
+          blue 49%,
+          yellow calc(49% + 2px),
+          green calc(49% + 4px),
+          red 50%
+        ); */
+      }
+
+      /*============  radial gradients  ================== */
+
+      /*  =====  [circle ||  <length> ] [ at <position> ]  */
+
+      .box {
+        background: radial-gradient(white, black);
+        background: radial-gradient(circle, white, black);
+        background: radial-gradient(circle at 20px 50%, white, black);
+        background: radial-gradient(100px, white, black);
+        background: radial-gradient(100px at 80% 30px, white, black);
+      }
+
+      /*  [ ellipse ||    [<length> | <percentage> ]{2}] [ at <position> ]  */
+      .box {
+        background: radial-gradient(ellipse, black, white);
+        background: radial-gradient(20% 40%, black, white);
+        background: radial-gradient(20% 40% at 100px 30px, black, white);
+      }
+      /*  [ [ circle | ellipse ]  ||  <extent-keyword> ] [ at <position> ]  */
+
+      .box {
+        /*background: radial-gradient(closest-side, white, black);*/
+        /*background: radial-gradient(closest-side at 20px 60px, white, black);*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <div class="container">
+      <div class="btn-box">
+        <button class="btn">Click me</button>
+      </div>
+    </div>
+  </body>
+</html>

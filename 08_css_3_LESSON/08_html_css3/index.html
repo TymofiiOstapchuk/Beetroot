@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">CSS 3</h1>
+      <div class="nav">
+        <a class="nav__item" href="media_queries.html">media_queries</a>
+        <a class="nav__item" href="media_queries_wrong.html"
+          >media_queries wrong</a
+        >
+        <a class="nav__item" href="gradients.html">gradients.html</a>
+        <a class="nav__item" href="gradients_example.html"
+          >gradients_example.html</a
+        >
+        <a class="nav__item" href="gradients_sides.html"
+          >gradients_sides.html</a
+        >
+      </div>
+
+      <h1 class="title">Labs</h1>
+      <div class="nav">
+        <a class="nav__item" href="labs/lab_1_mq/index.html"
+          >lab_1 media queries</a
+        >
+        <a class="nav__item" href="labs/lab_2_css_vars/index.html"
+          >lab_2 css properties</a
+        >
+      </div>
+
+      <h1 class="title">Homework</h1>
+      <div class="nav">
+        <a class="nav__item" href="home8/index.html">Home 8</a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>

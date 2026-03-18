@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css variables</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header__title">Welcome</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="section-box">
+        <h2 class="section-box__title">Articles</h2>
+
+        <div class="grid-box">
+
+          <article class="article-box article-box_first">
+            <h3 class="article__title">Завдання слухачам</h3>
+            <p class="article__content">
+              В кожному article є button з классом<br> <b>.article-box__btn</b><br>
+              Для цієї кнопки зробити з використанням css variables:  
+              <ul class="task">
+                  <li>mobile (до 768px): 
+                      <ul>
+                        <li>padding: 8px 16px;</li>
+                        <li>background-clor: lightblue;</li>
+                      </ul>
+                  </li>
+                  <li> tablet (з 768px до 992px)
+                      <ul>
+                        <li>background-clor: cyan;</li>
+                      </ul>
+
+                  </li>
+                  <li> desktop (з 992px)
+                    <ul>
+                      <li>padding: 12px 30px;</li>
+                    <li>background-clor: tomato;</li>
+                    </ul>
+                  </li>
+                </ul>
+            </p>
+            <button class="article-box__btn">Read more</button>
+          </article>
+
+          <article class="article-box article-box_second">
+            <h3 class="article__title">Post 2</h3>
+            <p class="article__content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+              dolores optio minus quidem blanditiis voluptatem sed iure
+              asperiores, enim esse quibusdam corporis repudiandae eligendi
+              fugiat vitae reprehenderit inventore? Expedita, nesciunt!
+            </p>
+            <button class="article-box__btn">Read more</button>
+          </article>
+
+          <article class="article-box article-box_third">
+            <h3 class="article__title">Post 3</h3>
+            <p class="article__content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+              dolores optio minus quidem blanditiis voluptatem sed iure
+              asperiores, enim esse quibusdam corporis repudiandae eligendi
+              fugiat vitae reprehenderit inventore? Expedita, nesciunt!
+            </p>
+            <button class="article-box__btn">Read more</button>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
