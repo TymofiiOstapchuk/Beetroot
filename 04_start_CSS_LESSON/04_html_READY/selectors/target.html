@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target</title>
+    <meta charset="utf-8" />
+    <style>
+      /* div:empty {
+        border: 10px solid red;
+      }
+ */
+      div:not(.d1) {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="test.html#gl3" target="_blank">Перейти на статтю TEST</a>
+
+    <div class="d1">
+      <p>Параграф 1 в DIV з class='d2'</p>
+      <p>Параграф 2 в DIV з class='d2'</p>
+    </div>
+    <div class="d2"></div>
+    <div class="d3">
+      <p>Параграф 1 в DIV з class='d3'</p>
+      <p>Параграф 2 в DIV з class='d3'</p>
+    </div>
+
+    <script></script>
+  </body>
+</html>

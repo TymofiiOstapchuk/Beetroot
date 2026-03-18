@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo classes, pseudo elements</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        padding: 0 20px;
+      }
+      input {
+        outline: none;
+      }
+      .block {
+        display: block;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      input[name="t1"]:focus {
+        border: 2px solid red;
+        background: yellow;
+      }
+      [type="radio"]:checked + label {
+        color: red;
+      }
+      input[name="c1"]:checked + label {
+        color: tomato;
+      }
+      .btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .btn {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body style="width: 1000px; margin: 1rem auto">
+    <p class="mb-4">
+      <b>Task 1</b><br />
+      Focus можуть отримувати лише елементи форм та посилання.<br />
+      Елемент отримав focus – означає, що елемент вибрано за допомогою миші (або
+      клавіатури), курсор знаходиться в межах цього елемента, і якщо це елемент
+      форми – ми можемо вводити до нього текст.
+    </p>
+    <form class="mb-4">
+      <label class="block mb-4">Email</label>
+      <input type="text" name="t1" class="t1" />
+    </form>
+    <hr />
+    <p class="mb-4">
+      <b>Task 2</b><br />
+      1.Відобразити назву увімкненого елемента червоним кольором<br />
+      2. Показати призначення for - id
+    </p>
+
+    <div class="mb-4">
+      <div class="mb-4">
+        <input type="radio" name="r1" id="r1" value="one" />
+        <label for="r1">First</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="r1" id="r2" value="two" />
+        <label for="r2">Second</label>
+      </div>
+      <div class="mb-4">
+        <input type="radio" name="r1" id="r3" value="three" />
+        <label for="r3">Third</label>
+      </div>
+    </div>
+
+    <hr />
+
+    <p class="mb-4">
+      <b>Task 3</b><br />
+      Відобразити назву включеного елемента червоним кольором
+    </p>
+
+    <div class="mb-4">
+      <div class="mb-4">
+        <input type="checkbox" name="c1" id="c1" value="four" />
+        <label for="c1">First</label>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" name="c1" id="c2" value="five" />
+        <label for="c2">Second</label>
+      </div>
+      <div class="mb-4">
+        <input id="c3" type="checkbox" name="c1" value="six" />
+        <label for="c3">Third</label>
+      </div>
+    </div>
+
+    <hr />
+    <p class="mb-4">
+      <b>Task 4</b><br />
+      Показати псевдокласи disabled, enabled
+    </p>
+    <div class="btn-box">
+      <label for="agree" class="agree">
+        <input type="checkbox" name="agree" id="agree" />
+        <span>I agree</span>
+      </label>
+      <button disabled id="btn" class="btn">Click me</button>
+    </div>
+
+    <script>
+      const agree = document.getElementById("agree");
+      const btn = document.getElementById("btn");
+
+      agree.onchange = function () {
+        if (agree.checked) {
+          btn.removeAttribute("disabled");
+        } else {
+          btn.setAttribute("disabled", true);
+        }
+      };
+    </script>
+  </body>
+</html>

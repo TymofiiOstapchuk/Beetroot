@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo classes</title>
+    <meta charset="utf-8" />
+    <style>
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+      }
+      .menu__link {
+        font-size: 22px;
+        text-decoration: none;
+      }
+      .menu__link:hover {
+        text-decoration: underline;
+        color: teal;
+      }
+      .menu__item {
+        display: flex;
+        align-items: center;
+      }
+      .menu__item::after {
+        visibility: hidden;
+        font-size: 22px;
+        color: red;
+        margin-left: 5px;
+      }
+      .menu__item:hover::after {
+        visibility: visible;
+      }
+
+      .menu__item_phone::after {
+        content: "►";
+      }
+      .menu__item_yahoo::after {
+        content: "♠";
+      }
+      .menu__item_dc::after {
+        content: "\2706";
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu__item menu__item_phone">
+        <a class="menu__link" href="http://google.com">Google.com</a>
+      </li>
+      <li class="menu__item menu__item_yahoo">
+        <a class="menu__link" href="http://yahoo.com">Yahoo.com</a>
+      </li>
+      <li class="menu__item menu__item_dc">
+        <a class="menu__link" href="http://design-class.com.ua">Design class</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="http://ukr.net">ukr.net</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" class="myclass" href="http://reactjs.org"
+          >React</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

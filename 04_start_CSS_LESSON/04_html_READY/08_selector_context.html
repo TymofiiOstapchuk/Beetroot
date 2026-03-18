@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contexts selector</title>
+    <meta charset="utf-8" />
+    <style>
+      .c3 ~ span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="f1" class="c1">
+      <div id="f2" class="c2">
+        <h2 id="f3" class="c3">Header H2</h2>
+        <span>Hello</span>
+        <p class="p1">Paragraph with class="p1"</p>
+        <p class="p2">
+          <span>Span within paragraph with class="p2"</span>
+        </p>
+        <p class="p3">
+          <span>Paragraph with class="p3"</span>
+        </p>
+        <p class="p4">Paragraph with class="p4"</p>
+        <p>Paragraph without class</p>
+        <span>Span without class</span>
+      </div>
+    </div>
+  </body>
+</html>
