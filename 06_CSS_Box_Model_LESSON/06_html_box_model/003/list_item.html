@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>List</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    .list-box {
+      font-size: 1.2em;
+      border: 5px dotted red;
+      /* padding: 0; */
+    }
+
+    .list-box__item {
+      /*  list-style-type: circle; */
+      /*  list-style-position: inside;  */
+      /*  list-style-image: url(img/im.png);  */
+      /*  list-style:inside url(img/im.png);  */
+    }
+  </style>
+
+  <body>
+    <!--
+За замовчуванням елемент UL має відступи зліва
+(для IE - margin-left: 40px;
+для всіх інших браузерів padding-left: 40px;
+)
+Вони потрібні для того, щоб було видно маркер у елементів LI
+Якщо елемент UL з класом .myul поставити padding:0;
+то побачимо, як маркерів не буде видно.
+-->
+    <div id="outer">
+      <h2>List</h2>
+
+      <ul class="list-box">
+        <li class="list-box__item">
+          First <br />
+          text text text text <br />
+          text text text text <br />
+          text text text text <br />
+        </li>
+        <li class="list-box__item">Second</li>
+        <li class="list-box__item">Third</li>
+        <li class="list-box__item">Fourth</li>
+      </ul>
+    </div>
+  </body>
+</html>

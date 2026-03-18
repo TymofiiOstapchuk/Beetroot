@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>negative margin</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* ========  todo ==============*/
+
+      .box__item_top {
+        background-color: #69c;
+      }
+
+      .box__item_bottom {
+        background-color: #fcf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box__item box__item_top">First</div>
+        <div class="box__item box__item_bottom">Second</div>
+      </div>
+
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+      <!-- ==========================================  -->
+
+      <ol class="right-tasks" style="flex: 2">
+        <li class="right-tasks__item">
+          Add block with class <span class="blue">box__item_top</span>
+          <code class="code">margin-bottom: 150px</code>
+          Add block with class <span class="blue">box__item_bottom</span>
+          <code class="code">margin-top: 100px</code>
+          What is the vertical margin between blocks ?
+        </li>
+        <li class="right-tasks__item">
+          Add block with class <span class="blue">box__item_top</span>
+          <code class="code">margin-bottom: -50px</code>
+          Add block with class <span class="blue">box__item_bottom</span>
+          <code class="code">margin-top: 0</code>
+          Block <span class="blue">First</span> allows the block
+          <span class="blue">Second</span> to enter its territory
+        </li>
+        <li class="right-tasks__item">
+          Add block with class <span class="blue">box__item_top</span>
+          <code class="code">margin-bottom: 0</code>
+
+          Add block with class <span class="blue">box__item_bottom</span>
+          <code class="code">margin-top: -50px</code>
+          Block <span class="blue">Second</span> moves to top
+        </li>
+      </ol>
+    </div>
+
+    <h2>Conclusion</h2>
+    <ol class="final">
+      <li class="final__item">
+        Vertical margins between stacked boxes interact, and the total margin
+        will be equal to the larger of them
+      </li>
+      <li class="final__item">
+        If you set the block to negative
+        <span class="blue">TOP margin</span> - block moves to top
+      </li>
+      <li class="final__item">
+        ЕIf you set the block to negative
+        <span class="blue">BOTTOM margin</span> - block allows to enter its
+        territory
+      </li>
+    </ol>
+  </body>
+</html>

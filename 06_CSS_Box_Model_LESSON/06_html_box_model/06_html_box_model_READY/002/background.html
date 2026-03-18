@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background properties</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .box {
+        width: 400px;
+        height: 400px;
+        border: 1px dotted red;
+        background: lightcyan url(img/im1.jpg) no-repeat;
+      }
+      .box_second {
+        background-color: rgba(0, 0, 0, 0.4);
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box box_second"></div>
+    </div>
+  </body>
+</html>

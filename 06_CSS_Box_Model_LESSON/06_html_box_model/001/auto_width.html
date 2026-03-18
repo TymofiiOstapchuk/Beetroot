@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margins collapse</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .container-auto-width {
+        width: 80%;
+        margin: 30px auto 0;
+        border: 4px dotted red;
+      }
+      .box-auto-width {
+        width: auto;
+        height: 150px;
+        background: lightblue;
+        /* margin-left: -50px; */
+        /* margin-right: -50px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-auto-width">
+      <div class="box-auto-width"></div>
+    </div>
+
+    <ol>
+      <li class="final__content">
+        Set to block with <span class="blue">margin-left: -50px</span>,
+        <span class="blue">margin-right: -50px</span>
+        <p class="final__content">
+          If the <span class="blue">block has no width</span> set, and set it to
+          negative margin-right (or margin-left) then the block's width expand
+          on this margin in the appropriate direction
+        </p>
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>display и visibility</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    div {
+      width: 500px;
+      height: 150px;
+      margin-bottom: 50px;
+      font: bold 40px arial;
+      text-align: center;
+      color: white;
+    }
+    #d1 {
+      background: teal;
+    }
+    #d2 {
+      background: tan;
+    }
+  </style>
+  <body>
+    <div id="d1">Block 1</div>
+    <div id="d2">Block 2</div>
+
+    <!--
+1. Якщо задати блоку з id="d1" властивість display:none
+то він повністю забирається їх html коду та його
+місце займе блок з id="d2"
+
+2. Якщо задати блоку з id="d1" властивість visibility:hidden;
+то блок залишається на місці але він стає прозорим
+(Властивість opacity = 0)
+-->
+  </body>
+</html>

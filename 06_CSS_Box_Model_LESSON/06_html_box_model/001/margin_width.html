@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margins</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 80%;
+        margin: 30px auto;
+        border: 4px dotted red;
+      }
+
+      .box {
+        height: 150px;
+        background: lightblue;
+      }
+      .box__first {
+        /*margin-left: -30px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box__first">First</div>
+    </div>
+  </body>
+</html>

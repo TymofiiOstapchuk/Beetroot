@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>List</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .list-box {
+      font-size: 1.2em;
+      border: 5px dotted red;
+    }
+
+    .list-box__item {
+      /* list-style-type: circle; */
+      /* list-style-position: inside; */
+      /* list-style-image: url(img/im2.png); */
+      /* list-style: inside url(img/im2.png); */
+    }
+    .top-header {
+      background: lightgrey;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .menu {
+      display: flex;
+      padding: 20px 0;
+      gap: 30px;
+    }
+    .menu__link {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 20px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      background: yellow;
+      border-radius: 8px;
+    }
+    .menu__link:hover {
+      color: tomato;
+      background: greenyellow;
+    }
+    .tomato-container {
+      background: tomato;
+    }
+    .grid-2 {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .grid-2__content {
+      font-style: italic;
+    }
+    .grid-2__content_first {
+      background: lightgoldenrodyellow;
+    }
+    .grid-2__content_second {
+      background: lightcyan;
+    }
+
+    /* ============= footer */
+    .menu_footer {
+      justify-content: flex-end;
+    }
+    .menu__link_footer {
+      padding: initial;
+      height: initial;
+      display: initial;
+      align-items: initial;
+      background: none;
+      border-radius: none;
+    }
+    .menu__link_footer:hover {
+      color: green;
+      background: none;
+      text-decoration: underline;
+    }
+  </style>
+
+  <body>
+    <header class="top-header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">First</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Second</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Third</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Fourth</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+        <h2>Hello</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+          voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+          reprehenderit. Accusamus, odit!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+          voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+          reprehenderit. Accusamus, odit!
+        </p>
+      </section>
+    </div>
+
+    <div class="tomato-container">
+      <div class="container">
+        <section>
+          <h2>Hello</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+            voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+            reprehenderit. Accusamus, odit!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+            voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+            reprehenderit. Accusamus, odit!
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div class="container">
+      <section>
+        <h2>Hello</h2>
+        <div class="grid-2">
+          <p class="grid-2__content grid-2__content_first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+            voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+            reprehenderit. Accusamus, odit!
+          </p>
+          <p class="grid-2__content grid-2__content_second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quidem labore placeat eaque qui ipsum quae tempora facilis dolor
+            voluptatem sint illum consectetur sequi maiores, reiciendis incidunt
+            reprehenderit. Accusamus, odit!
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bottom-foolter">
+      <div class="container">
+        <ul class="menu menu_footer">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_footer">First</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_footer">Second</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_footer">Third</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link_footer">Fourth</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--
+    <div id="outer">
+      <h2>List</h2>
+
+      <ul class="list-box">
+        <li class="list-box__item">
+          First <br />
+          text text text text <br />
+          text text text text <br />
+          text text text text <br />
+        </li>
+        <li class="list-box__item">Second</li>
+        <li class="list-box__item">Third</li>
+        <li class="list-box__item">Fourth</li>
+      </ul>
+    </div>
+     -->
+  </body>
+</html>

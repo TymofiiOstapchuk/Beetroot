@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	display: flex;
+}
+.box {
+    border: 1px dotted red;
+}
+.box__item {
+	height: 100px;
+	width: 250px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+
+.right-tasks {
+	width: 50%;
+    flex: 1;
+    list-style-position: inside;
+}
+.right-tasks__item {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+}
+.right-tasks__item:last-of-type {
+    border-bottom: 1px solid #e2e2e2;
+}
+.blue {
+    color: blueviolet;
+    font-weight: bold;
+}
+code {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: .5rem 0;
+    color: red;
+    font-family: cursive;
+}
+
+.box {
+	flex: 1;
+	border: 1px dotted red;
+}
+
+.final {
+    font-size: 1.2rem;
+} 
+.final__item {
+    margin-bottom: .5rem;
+}
+.final__content {
+    font-size: 1.3rem;
+    
+}
