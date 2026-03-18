@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+.address {
+  margin-bottom: 50px;
+}
+.address__contact {
+  text-transform: uppercase;
+}
+.address__contact {
+  font-size: 26px;
+  font-weight: 400;
+}
+.address__addresse {
+  font-size: 40px;
+  font-weight: 500;
+}
+.clock-box__content {
+  margin-top: 0;
+}
+/* 🔺 ======================= todo address 1 */
+
+/* 🔺 ======================= todo address 2 */
+
+/*  🔺 ======================= todo schedulle */

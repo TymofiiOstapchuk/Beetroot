@@ -1,0 +1,31 @@
+/* ================================= 
+  Page Styles
+==================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1.35em;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  background: #e8e9e9;
+  padding: 1rem;
+}
+.fluid-container {
+  padding: 10px;
+  background: #fff;
+}
+.item {
+  color: #fff;
+  padding: 15px;
+  margin: 5px;
+  background: #3db5da;
+  border-radius: 3px;
+}

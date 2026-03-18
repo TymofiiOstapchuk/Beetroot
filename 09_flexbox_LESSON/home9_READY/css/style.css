@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@300;400&display=swap");
+
+:root {
+  --padding-y-card: 10px;
+  --gap: 25px;
+  --columns: 1fr 1fr;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+.sr-only:not(:focus):not(:active) {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------- */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+/* ----------------------------------------------------- */
+
+.header {
+  padding-top: 7px;
+}
+
+.logo {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.logo__img {
+  max-width: 238px;
+}
+
+.nav {
+  font-size: 22px;
+}
+
+.nav__lang {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.menu__item {
+  display: block;
+  margin-bottom: 15px;
+}
+.menu {
+  margin-bottom: 30px;
+}
+.menu__delimiter {
+  display: none;
+}
+.header__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 35px;
+  letter-spacing: 0.04em;
+}
+
+.header__title::before {
+  content: "";
+  width: 53px;
+  height: 8px;
+  background-color: #000;
+  display: inline-block;
+  transform: translate(-19%, -100%);
+  margin-left: 10px;
+}
+
+/* --------------------------CARDS--------------------------- */
+.card {
+  border: 2px solid #858585;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+/* ============== card ui styles  */
+.card__item {
+  padding: 0 var(--padding-y-card);
+}
+
+.card__item_top {
+  border-bottom: 1px solid #858585;
+  margin-top: 9px;
+}
+
+.card__title {
+  margin-bottom: 12px;
+}
+
+.card__date {
+  color: #858585;
+  margin-bottom: 12px;
+}
+
+.card__text {
+  margin-bottom: 15px;
+}
+
+.card__friends {
+  padding: 16px 0;
+  position: relative;
+  padding-left: 45px;
+}
+.card__friends::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #858585;
+  margin-left: calc((var(--padding-y-card) + 45px) * -1);
+  margin-right: calc(var(--padding-y-card) * -1);
+  transform: translateY(calc(var(--padding-y-card) * -1));
+}
+.card__friends::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 17px);
+  width: 34px;
+  height: 34px;
+  background: url(../img/user-icon.png) no-repeat;
+}
+
+/* --------------------------MEDIA QUERIES--------------------------- */
+@media (min-width: 400px) and (max-width: 767px) {
+  .cards {
+    width: 400px;
+    margin-inline: auto;
+  }
+}
+/* ============================== tablet 768px  */
+@media (min-width: 768px) {
+  .cards {
+    width: initial;
+    margin-inline: initial;
+  }
+  .header {
+    padding-top: 10px;
+  }
+
+  .header__title::before {
+    margin-left: 19px;
+  }
+  .header__title {
+    margin-bottom: 28px;
+  }
+
+  .header__title::before {
+    width: 100px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav__lang {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .menu {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .menu__item {
+    margin-bottom: 0;
+  }
+  .menu__delimiter {
+    display: initial;
+    padding: 0 15px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: var(--columns);
+    gap: var(--gap);
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --gap: 40px;
+    --columns: repeat(3, 1fr);
+  }
+  .header {
+    padding-top: 5px;
+  }
+
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+  }
+
+  .logo {
+    order: 1;
+    margin: 0;
+  }
+
+  .header__title {
+    margin-bottom: 41px;
+  }
+}
+/*  ================================== 1200px  */
+@media (min-width: 1199px) {
+  :root {
+    --gap: 30px;
+    --columns: repeat(4, 1fr);
+  }
+  .header__top {
+    margin-bottom: 13px;
+  }
+}

@@ -1,0 +1,47 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .main-header {
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col {
+    flex-basis: 50%;
+  }
+  .col_tertiary {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+  .col {
+    flex: 1;
+  }
+  .col_tertiary {
+    flex-grow: 1;
+  }
+  .col_secondary {
+    order: -1;
+  }
+  .col_primary {
+    flex: 1.3;
+  }
+}

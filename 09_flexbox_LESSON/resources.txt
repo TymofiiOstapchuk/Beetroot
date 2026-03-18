@@ -1,0 +1,17 @@
+https://www.w3.org/TR/css-flexbox-1/
+
+
+http://caniuse.com/#search=flex
+
+https://alistapart.com/article/responsive-web-design
+https://www.youtube.com/watch?v=UdP6R1esjds
+
+
+http://bennettfeely.com/flexplorer/
+
+=====================
+
+http://flexboxfroggy.com/
+http://www.flexboxdefense.com/
+
+

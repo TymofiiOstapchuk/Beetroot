@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Courses</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/flexbox.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="name"><a href="#">Front-end courses</a></h1>
+      <ul class="main-nav">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Teachers</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </header>
+    <!--/.main-header-->
+
+    <div class="banner">
+      <img class="logo" src="img/beetroot.svg" />
+      <h1 class="headline">The Best Courses</h1>
+      <span class="tagline"
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit..</span
+      >
+    </div>
+    <!--/.banner-->
+
+    <div class="row">
+      <div class="primary col">
+        <h2>Welcome to our courses!</h2>
+        <p>Everything in this city is worth waiting in line for!</p>
+      </div>
+      <!--/.primary-->
+    </div>
+
+    <footer class="main-footer">
+      <p>
+        &copy; <span id="footer-date"></span>
+        <a href="https://beetroot.academy">Beetroot Academy</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById(
+        "footer-date"
+      ).innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

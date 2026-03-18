@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox Layout</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/page.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .item {
+      }
+      .item-1 {
+      }
+      .item-2 {
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+--------------------------------------------------------
+ flex      |  flex-grow  |  flex-shring  |  flex-basis |
+--------------------------------------------------------
+ initial   |      0      |        1      |    auto     |
+--------------------------------------------------------
+ auto      |      1      |        1      |     auto    |
+--------------------------------------------------------
+ n         |      n      |        0      |     0%      |
+--------------------------------------------------------
+ none      |      0      |        0      |     auto    |
+--------------------------------------------------------
+
+1. по default у flex-items блоків flex: 0 1 auto; === flex: initial
+   При цьому браузер встановлює ширину блоків відповідно до їх
+   базового розміру - тобто за шириною їхнього контенту.
+   Так як кількість контенту в блоках різна, то і ширина блоків
+   також буде різна
+
+
+2. flex: auto;  ===   flex-grow: 1; flex-shrink: 1; flex-basis: auto;
+   Браузер розподіляє весь вільний простір, додаючи
+  розрахований простір до контенту блоку
+  Тому блоки займуть весь вільний простір, але їхня ширина залежатиме від їхнього контенту.
+
+3. flex: 1   ===   flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+  Браузер буде розподіляти вільне місце контейнера між блоками, але без урахування їх котенту !!!.
+   Ширина блоків визначатиметься пропорціями, які ми поставимо
+
+   ======= Наприклад
+  .item-1 { flex: 2} ->  йому буде розподілено   2/3  вільного простору
+  .item-2 { flex: 1} ->  йому буде розподілено  1/3 свільного простору
+
+4. flex-basis  визначає мінімальну ширину блоку, починаючи з якої браузер 
+               розподілятиме йому вільний простір
+ 
+  Поставимо стилі
+
+     .container { display: flex; width: 1000px;}
+     .item { flex: 1;}
+     .item-1 { flex-basis: 150px;}
+
+А терпер  поміняємо
+
+   .item-1 { width: 150px;}
+
+ Ширины всех блоков  станут одинаковыми
+
+ -->
+
+    <div class="container">
+      <div class="item item-1">
+        Item 1
+        <p>Mtousled.</p>
+      </div>
+      <div class="item item-2">
+        Item 2
+        <p>Ve High Life.</p>
+        <p>Bi.</p>
+      </div>
+      <div class="item item-3">
+        Item 3
+        <p>Banksy s.</p>
+      </div>
+      <div class="item item-4">
+        Item 4
+        <p>Sriracha raw denim fixie.</p>
+      </div>
+    </div>
+  </body>
+</html>

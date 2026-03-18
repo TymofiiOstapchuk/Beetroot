@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+.box {
+  border: 1px solid #999;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.box__cotent {
+  border-left: 1px solid #999;
+  background: #e2e2e2;
+  padding: 10px;
+}
+
+@media (min-width: 420px) {
+  .box {
+  }
+  .box__img {
+  }
+}
+/*  640 - ошибочный break point.  Показать почему */
+@media (min-width: 640px) {
+  .posts {
+  }
+  .box {
+  }
+}

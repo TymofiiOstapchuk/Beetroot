@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+.address {
+  margin-bottom: 50px;
+}
+.address__contact {
+  text-transform: uppercase;
+}
+.address__contact {
+  font-size: 26px;
+  font-weight: 400;
+}
+.address__addresse {
+  font-size: 40px;
+  font-weight: 500;
+}
+.clock-box__content {
+  margin-top: 0;
+}
+/* 🔺 ======================= todo address 1 */
+.address__addresse_first::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+  background: black;
+  margin-inline: 1rem;
+  position: relative;
+  top: -10px;
+}
+/* 🔺 ======================= todo address 2 */
+.address__contact_second {
+  display: flex;
+  align-items: center;
+}
+
+.address__contact_second::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+  background: black;
+  margin-inline: 1rem;
+}
+.address__kontact-span {
+  order: -1;
+}
+/*  🔺 ======================= todo schedulle */
+.clock-box {
+  display: inline-block;
+}
+.clock-box__content {
+  display: flex;
+  justify-content: space-between;
+}
+.clock-box__time {
+  padding-left: 30px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/decor.css" />
+    <style>
+      .box {
+        width: 1000px;
+        margin: auto;
+        padding: 1rem 0;
+        display: flex;
+        background: lightgreen;
+      }
+      .box__item {
+        height: 100px;
+        background: #e2e2e2;
+        border: 1px solid #999;
+        /* todo */
+        flex-basis: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="attention">
+      Запам'ятати !!! формула flex-елементів<br />
+      <p class="attention__content">
+        content → width → flex-basis (обмежений max-width | min-width)
+      </p>
+      <p>Ширина контейнера width: 1000px;</p>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="box">
+      <div class="box__item">Item 1</div>
+      <div class="box__item">Item 2</div>
+      <div class="box__item">Item 3</div>
+      <div class="box__item">Item 4</div>
+
+      <!-- -->
+      <div class="box__item">Item 5</div>
+      <div class="box__item">Item 6</div>
+      <div class="box__item">Item 7</div>
+      <div class="box__item">Item 8</div>
+    </div>
+    <!--  /.box -->
+  </body>
+</html>
