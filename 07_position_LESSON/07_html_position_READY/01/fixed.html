@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Position:fixed</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 1.4em;
+      }
+      .block1 {
+        background: #cefbd3;
+      }
+      .block2 {
+        padding: 20px 30px;
+        text-align: right;
+        width: 300px;
+        border-radius: 0 12px 12px 0;
+        background: yellow;
+        position: fixed;
+        top: 50%;
+        transition: 1s;
+        /* transform: translate(-260px, -50%); */
+        transform: translateY(-50%);
+        left: -260px;
+      }
+      .block2:hover {
+        /* transform: translate(0, -50%); */
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block1">
+      <div class="block2">Contact us</div>
+    </div>
+
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <!--   Пояснения к примеру  -->
+    <div style="position: absolute; left: 400px; top: 0">
+      <h3 id="explain" class="close" style="cursor: pointer">
+        Відкрити пояснення
+      </h3>
+      <div id="block3">
+        <pre style="background: #e1e1e1; font: bold 20px Arial">
+	&lt;div id="block1"&gt;
+		&lt;div id="block2">Hello world !!! &lt;/div&gt;
+	&lt;/div&gt;
+</pre
+        >
+        <p></p>
+        <pre style="background: #e1e1e1; font: bold 20px Arial">
+	.block1 {
+		width:350px;
+		height:2000px;
+		background:gray;
+	}
+	.block2 {
+		width:200px;
+		height:200px;
+		background:yellow;
+   }
+</pre
+        >
+
+        <h3>Задайте для блоку .block2</h3>
+        <pre style="background: #e1e1e1; font: bold 20px Arial; padding: 5px">
+	top:200px;
+	left:200px;
+	position: fixed;
+</pre
+        >
+        <p style="background: #fcc; font: 20px Arial; padding: 5px">
+          position:fixed - аналогічно властивості position:absolute, але<br />
+          - відлік координат здійснюється блоку буде від елемента body<br />
+          - блок не скролитись (прокручуватись) вертикально по екрану
+        </p>
+      </div>
+    </div>
+    <script>
+      var explainTable = document.getElementById("block3");
+      explainTable.style.display = "none";
+      document.getElementById("explain").onclick = function () {
+        var cl = this.className;
+        switch (cl) {
+          case "close":
+            explainTable.style.display = "block";
+            this.className = "open";
+            this.innerHTML = "Закрыть задание";
+            break;
+          case "open":
+            explainTable.style.display = "none";
+            this.className = "close";
+            this.innerHTML = "Открыть задание";
+            break;
+        }
+      };
+    </script>
+  </body>
+</html>

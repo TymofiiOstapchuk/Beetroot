@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ============== todo ================ */
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: red;
+}

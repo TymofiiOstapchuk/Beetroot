@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lab 1</title>
+    <meta charset="utf-8" />
+    <style>
+      .sr-only:not(:focus):not(:active) {
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+      }
+
+      .container {
+        width: 780px;
+        margin: 100px auto 0;
+      }
+      .brand {
+        background: url(i/branding.png) no-repeat;
+        height: 167px;
+        position: relative;
+      }
+      .brand__title {
+        position: absolute;
+        background: url(i/branding_h1.png) no-repeat;
+        width: 379px;
+        height: 167px;
+        top: -50px;
+        left: -50px;
+      }
+      .brand__blockquote {
+        position: absolute;
+        background: url(i/branding_blockquote.png) no-repeat;
+        width: 199px;
+        height: 103px;
+        left: 290px;
+        top: 10px;
+        z-index: 1;
+      }
+      .brand__content {
+        position: absolute;
+        background: url(i/branding_p.png) no-repeat;
+        width: 340px;
+        height: 291px;
+        right: 0;
+        top: -120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <h1 class="brand__title">
+          <a href="#" title="Bettroot"
+            ><span class="sr-only"> Beetroot Academy</span>
+          </a>
+        </h1>
+        <blockquote class="brand__blockquote">
+          <span class="sr-only">
+            Don't worry bout a thing, becose every little thing's gonna be all
+            right!
+          </span>
+        </blockquote>
+        <p class="brand__content">
+          <span class="sr-only">A demonstration site by Beetroot Academy</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
