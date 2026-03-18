@@ -40,7 +40,7 @@ coverage/
 # =========================
 # Системні файли та редактори (VS Code, WebStorm, macOS)
 # =========================
-.DS_Store
+**/.DS_Store
 .vscode/
 .idea/
 *.suo
