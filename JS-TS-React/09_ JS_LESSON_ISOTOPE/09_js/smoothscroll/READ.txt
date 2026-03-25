@@ -1,0 +1,25 @@
+https://github.com/cferdinandi/smooth-scroll
+
+
+1. Initialize
+    new SmoothScroll('a[href*="#"]');
+
+2. Основні опції
+    speed -> швидкість
+    offset -> верхній відступ від кінцевої точки
+
+3. Якщо плаваючий header – треба використовувати опцію
+    <nav data-scroll-header>
+    ...
+    </nav>
+     header: '[data-scroll-header]'
+
+
+4. Події
+    scrollStart – запускається при старті scroll.
+    scrollStop - запускається під час зупинки scroll.
+    scrollCancel - запускається якщо є вихід із scroll
+
+    В обробниках через об'єкт event доступні
+           detail.anchor - елемент на який скролімо
+           detail.toggle - елемент, по якому клікнули
