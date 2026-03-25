@@ -1,0 +1,9 @@
+.notify-box {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  transform: translateX(100%);
+}
+.show-notify {
+  transform: translateX(0);
+}

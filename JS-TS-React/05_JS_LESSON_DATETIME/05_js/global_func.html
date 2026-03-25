@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Глобальные функции</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+    <script src="_/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Glogal functions</h2>
+      <h1 id="results"></h1>
+      <button id="btn" type="button" class="btn btn-primary">
+        Get results
+      </button>
+
+      <script>
+        /*  !!!!!   методи setTimeout ()  и  setInterval( )
+ повертають ідентифікатор у вигляді цілого числа
+ який можна зберегти в змінній і потім з ним працювати
+*/
+        /*
+Метод setTimeout(ім'я_функції, час) запускає
+вказану функцію (або код) із затримкою на вказане
+ кількість мілісекунд
+*/
+        // setTimeout(() => console.log('Вперед!'), 1000);
+
+        /* 
+function test(){
+    console.log('Из функции test');
+}
+setTimeout(test, 2000);
+*/
+
+        /* Метод setInterval(ім'я_функції, інтервал_часу) - запускає
+вказану функцію з переодичністю вказаного часу
+*/
+        /*
+let i = 0;
+function test(){
+    console.log('i = ', i);
+    i++;
+}
+setInterval(test, 1000);
+*/
+
+        /* Прибрати запуск функції після застосування методу setInterval()
+можна за допомогою методу clearInterval(id)
+де параметр id – це посилання на ідентифікатор,
+який повернув методsetInterval()
+*/
+
+        /*
+let count = 0;
+function test(){
+    console.log('Count = ', count);
+    count++;
+}
+// у змінну myId запам'ятовуємо ідентефікатор
+const interval =  setInterval(test, 1000); 
+
+// через 7 секунд запуститься код, який прибере метод setInterval()
+setTimeout( function(){ clearInterval(interval); }, 7000 ); 
+*/
+
+        /*
+ <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
+*/
+      </script>
+    </div>
+  </body>
+</html>

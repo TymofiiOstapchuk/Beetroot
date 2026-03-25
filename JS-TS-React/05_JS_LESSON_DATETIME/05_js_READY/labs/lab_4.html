@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 6 Until New year</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>До Нового року залишилось:</h2>
+      <div id="new-year" class="h4">days, hours, minutes, seconds</div>
+    </div>
+
+    <script>
+      const nDate = (v) => (v < 10 ? "0" + v : v);
+      const nMonth = (v) => v + 1;
+      const nDat = (v) => (v === 0 ? 6 : v - 1);
+
+      const newYearEl = document.getElementById("new-year");
+
+      function untilNewYear() {
+        const now = new Date();
+        const newYear = new Date(now.getFullYear() + 1, 0, 1);
+
+        const nowTime = now.getTime();
+        const newYearTime = newYear.getTime();
+
+        const diff = newYearTime - nowTime;
+
+        // Math.floor === ~~
+        const days = ~~(diff / (60 * 60 * 24 * 1000));
+
+        const hours = 23 - now.getHours();
+        const minutes = 59 - now.getMinutes();
+        const sec = 60 - now.getSeconds();
+
+        let st = "";
+        if (diff < 0) {
+          st = "Happy New Year!";
+        } else {
+          st += `${days} days, ${nDate(hours)}:${nDate(minutes)}:${nDate(sec)}`;
+        }
+        newYearEl.innerHTML = st;
+        setTimeout(untilNewYear, 1000);
+      }
+
+      untilNewYear();
+    </script>
+  </body>
+</html>

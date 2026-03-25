@@ -1,0 +1,30 @@
+#results li {font:bold 22px "courier new"; margin-left:100px;}
+.pass{color:green;}
+.fail{color:red;  text-decoration: line-through;}
+.container{padding-top: 20px;}
+.container > h2{border-bottom:1px dotted black;}
+/* ========================= */
+input.text {
+    padding: 6px 0;
+    font-size:26px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.content {
+    margin:20px 0;
+    font-size: 20px;
+}
+
+
+.d1 {width:500px; height:500px; background:green;text-align:center; margin:auto; line-height:50px;}
+.d2 {width:400px; height:400px; background:red; text-align:center;  margin:auto;}
+.d3 {width:300px; height:300px; background:yellow; text-align:center; margin:auto;}
+
+
+#d1, #d2,#d3{
+    border:1px solid black; text-align:center; margin:auto;background: white;
+    position:absolute;
+}
+#d1 {width:300px; height:300px;}
+#d2 {width:200px; height:200px; left:50px;top:50px;}
+#d3 {width:100px; height:100px;left:50px;top:50px;}

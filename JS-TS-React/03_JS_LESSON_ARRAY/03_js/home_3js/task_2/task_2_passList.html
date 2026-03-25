@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2 - pass list</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Passenger's list</h1>
+      <!--
+
+!!!!! =====  Завдання виконувати з використанням циклу for ==== !!!!!!
+
+
+Є масив пасажирів поїзда pList
+Написати дві функції
+
+addPassenger(name, list);
+Функція приймає 2 аргумента 
+    name -> ім'я пасажира
+    list -> масив пасажирів
+Завдання функції    
+- якщо масив пасажирів порожній, то просто додає ім'я пасажира name в масив
+- якщо в масиві вже є пасажири, додає ім'я пасажира name на  перший знайдений
+  вільний index (тобто в масиві не має бути пустих індексів)
+- або якщо немає вільних індексів ім'я пасажира name додається в кінець масива 
+
+removePassenger(name, list);
+Функція приймає 2 аргумента 
+    name -> ім'я пасажира
+    list -> масив пасажирів
+Завдання функції
+
+- здійснює пошук по масиву елемент в якому зберігається ім'я пасажира,
+  який сдав квиток.
+- якщо такий елемент знайдений,
+  то на індес цього елемента записує значення undefined
+-->
+
+      <script>
+        const pList = [];
+
+        function addPassenger(name, list) {
+          // todo
+        }
+
+        function removePassenger(name, list) {
+          // todo
+        }
+
+        // usage
+        // add 3 passengers
+        addPassenger("Tom", pList);
+        addPassenger("Bill", pList);
+        addPassenger("John", pList);
+        console.log(pList); // ["Tom", "Bill", "John"]
+
+        // remove  passenger
+        removePassenger("Bill", pList);
+        removePassenger("noexists", pList);
+        console.log(pList); // ["Tom", undefined, "John"]
+
+        addPassenger("Ashley", pList);
+        console.log(pList); // ["Tom", "Ashley", "John"]
+      </script>
+    </div>
+  </body>
+</html>

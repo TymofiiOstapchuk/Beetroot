@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object model</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Object model</h2>
+
+      <!-- ************************* -->
+      <a href="404.html">My page</a>
+
+      <div id="f1" class="one">One</div>
+      <div id="f2" class="two">Two</div>
+      <div id="f3" class="two">Three</div>
+      <div id="f4" class="two">Four</div>
+
+      <hr />
+      <button id="btn">Go to google</button>
+    </div>
+
+    <script>
+      const d = document;
+      const el = d.getElementById("f1");
+
+      //У змінній el знаходиться посилання на об'єкт
+      // виводимо саойство об'єкта (нашого тега) className
+      // console.log(el.className);
+
+      /* За допомогою властивості об'єкту style додамо стилі нашому тегу */
+      /*
+el.style.width = "100px";
+el.style.height = "100px";
+el.style.backgroundColor = "red";
+ */
+
+      /* Приклад застосування події click для кнопки */
+      /*
+const b1 = d.getElementById("b1");
+b1.onclick = function(){
+    el.style.width = "100px";
+    el.style.height = "100px"
+	el.style.backgroundColor = "yellow";
+};
+ */
+
+      /*Приклад роботи з іншими об'єктами браузера  */
+      /*
+console.log("<h2>ім'я браузера - " + navigator.appName  + "</h2>");
+console.log("<h2>версія браузера - " + navigator.appVersion + "</h2>");
+console.log("<h2>кодове ім'я браузера - " + navigator.appCodeName + "</h2>");
+console.log("<h2>ширина екрану - " + screen.width + "px</h2>");
+*/
+    </script>
+  </body>
+</html>

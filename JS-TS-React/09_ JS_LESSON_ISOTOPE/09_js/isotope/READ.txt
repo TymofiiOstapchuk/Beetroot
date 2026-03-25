@@ -1,0 +1,57 @@
+https://isotope.metafizzy.co/
+
+1. Install isotope
+https://isotope.metafizzy.co/#install
+
+2. Initialize isotope
+https://isotope.metafizzy.co/#initialize-with-jquery
+
+3. Layouts model
+https://isotope.metafizzy.co/layout-modes.html
+
+За замовчуванням підтримується лише моделі  masonry, fitRows,vertical
+
+
+4. Options -> для кожної моделі існують свої
+    їх можна знайти у відповідній моделі
+    Наприклад для mansonry (https://isotope.metafizzy.co/layout-modes/masonry.html)
+    - columnWidth
+    - gutter
+    - horizontalOrder
+    - fitWidth
+    - fitWidth
+
+4.1 Робота без media-queries
+ - Треба виставити в стилях ширину одного фото width: 300px;
+   і в option виставити columnWidth
+  - якщо хочемо центрування - виставляємо fitWidth: true
+Наприклад
+masonry: {
+    columnWidth: 300,
+    fitWidth: true
+}
+
+4.2 якщо працюємо з media-queries (де визначається ширина фото у %)
+ columnWidth, fitWidth при цьому прибираємо
+
+5. https://isotope.metafizzy.co/layout.html#imagesloaded
+
+
+6. Filters
+    https://isotope.metafizzy.co/filtering.html
+
+Наприклад, в обробнику події
+     const filter =  ".first";
+     gal.isotope({ filter: filter});
+
+
+7. Sort
+    https://isotope.metafizzy.co/sorting.html
+Наприклад
+ - у визначаємо як будемо сортувати, наприклад за вмістом h2
+        getSortData: {
+            name: 'h2'
+        }
+Далі в обробнику події
+    const sortVal = 'name'
+    gal.isotope({ sortBy : sortVal});

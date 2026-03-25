@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font: 1rem 'Roboto Slab', serif;
+}
+ul, li {
+    list-style:none;
+}
+p{
+    margin-bottom:8px;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+}
+.contact__title {
+    text-align: center;
+}
+.contact {
+	background:#e2e2e2;
+	padding:1em 2em;
+	position:relative;
+}
+.js .contact{
+	position:absolute;
+	top:0; 
+	width:inherit;
+	display:none;
+}
+.close{
+	position:absolute;
+	right:20px;
+	top:0;
+    font-size: 2rem;
+	cursor:pointer;
+    color: red;
+    text-transform: uppercase;
+}
+label{
+    display:block;
+}
+input, textarea{
+	width:100%;
+    line-height:2em;
+}
+input[type='submit'],
+button {
+	width:auto;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}

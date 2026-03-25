@@ -1,0 +1,28 @@
+
+==========================  Errors
+- non exists URL -> reject
+- json() error -> окремий then -> catch
+- wrong endpoint -> перевірка ответа
+
+========================== spinner 
+- remove в окремому then
+- wrong endpoint -> в then reject, не спрацює catch
+- пернос then в кінець ланцюжка
+- если catch поверне помилку, доведеться ставити onReject
+- finally 
+
+==========================  Promise.reject, Promise.resolve
+- Promise.reject  замість throw Error(...)
+- promise об'єкт in Promise.resolve 
+- приклад з  jquery getJSON 
+- Promise.all 
+-async  await
+
+==========================   
+- util.promisify in node 
+-  Promise.race -> resolveAfter
+
+
+
+
+

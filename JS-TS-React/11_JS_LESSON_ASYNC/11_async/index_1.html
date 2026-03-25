@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-3">
+        <button class="btn btn-primary mb-3">Click me</button>
+        <div class="mb-3">
+          <label for="login" class="form-label">login</label>
+          <input
+            type="email"
+            class="form-control"
+            id="login"
+            placeholder="login here"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      function blockHandle() {
+        console.log("Before");
+        let start = new Date().getTime();
+        while (new Date().getTime() - start < 4000);
+        console.log("After");
+      }
+
+      document.querySelector(".btn").onclick = blockHandle;
+    </script>
+  </body>
+</html>

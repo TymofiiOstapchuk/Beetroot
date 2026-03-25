@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>02_append_prepend.html</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="res text-danger text-center" id="res">Code</h2>
+
+      <div class="row">
+        <h3 class="text-center col-md-2">#from</h3>
+        <div id="from" class="col-md-10">
+          <p class="f1">1</p>
+          <p class="f2">2</p>
+          <p class="f3">3</p>
+          <p class="f4">4</p>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="text-center col-md-2">#to</h3>
+        <div id="to" class="col-md-10">
+          <p class="f5">5</p>
+          <p class="f6">6</p>
+          <p class="f7">7</p>
+          <p class="f8">8</p>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="my-3 text-center">Створюють child елементи</h3>
+          <ul class="list-group">
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(внутрь_чого).<span class="text-danger">append</span
+                >(що_додати_наприкінці)</b
+              >
+              <input
+                type="button"
+                value="append"
+                id="append"
+                class="btn btn-info"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(внутрь_чого).<span class="text-danger">prepend</span
+                >(що_додати_в_початок)</b
+              >
+              <input
+                type="button"
+                value="prepend"
+                id="prepend"
+                class="btn btn-success"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(що_додати_наприкінці).<span class="text-danger"
+                  >appendTo</span
+                >(внутрь_чого)</b
+              >
+              <input
+                type="button"
+                value="appendTo"
+                id="appendTo"
+                class="btn btn-danger"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(що_додати_в_початок).<span class="text-danger"
+                  >prependTo</span
+                >(внутрь_чого)</b
+              >
+              <input
+                type="button"
+                value="prependTo"
+                id="prependTo"
+                class="btn btn-primary"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 class="my-3 text-center">Створюють sibling елементи</h3>
+          <ul class="list-group">
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(перед чим).<span class="text-danger">before</span
+                >(що_додати)</b
+              >
+              <input
+                type="button"
+                value="before"
+                id="before"
+                class="btn btn-success"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(після чого).<span class="text-danger">after</span
+                >(що_додати)</b
+              >
+              <input
+                type="button"
+                value="after"
+                id="after"
+                class="btn btn-danger"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(що_додати).<span class="text-danger">insertBefore</span
+                >(перед чим)</b
+              >
+              <input
+                type="button"
+                value="insertBefore"
+                id="insertBefore"
+                class="btn btn-info"
+              />
+            </li>
+            <li class="list-group-item list-flex">
+              <b class="codebox"
+                >$(що_додати).<span class="text-danger">insertAfter</span>(після
+                чого)</b
+              >
+              <input
+                type="button"
+                value="insertAfter"
+                id="insertAfter"
+                class="btn btn-primary"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row-->
+    </div>
+
+    <script src="_/js/jquery.min.js"></script>
+    <script>
+      $(function () {
+        function showResult(msg) {
+          $("#res").text(msg);
+        }
+
+        $("#append").click(function () {
+          const element = $("#from p:first-child");
+          $("#to").append(element);
+
+          showResult("$(#to').append( $('#from p:first-child' )");
+        });
+        $("#prepend").click(function () {
+          const element = $("#from p:first-child");
+          $("#to").prepend(element);
+
+          showResult("$(#to').prepend( $('#from p:first-child' )");
+        });
+        $("#appendTo").click(function () {
+          const element = $("#from p:first-child");
+          $(element).appendTo("#to");
+          showResult(' $("#from p:first-child").appendTo("#to")');
+        });
+
+        $("#prependTo").click(function () {
+          const element = $("#from p:first-child");
+          $(element).prependTo("#to");
+          showResult('$("#from p:first-child").prependTo("#to")');
+        });
+
+        /* =============================== */
+
+        $("#before").click(function () {
+          const element = $("#from p:first-child");
+          $(".f7").before(element);
+          showResult('$(".f7").before( $("#from p:first-child") )');
+        });
+        $("#after").click(function () {
+          const element = $("#from p:first-child");
+          $(".f7").after(element);
+          showResult('$(".f7").after( $("#from p:first-child") )');
+        });
+        $("#insertBefore").click(function () {
+          const element = $("#from p:first-child");
+          $(element).insertBefore(".f7");
+          showResult(' $("#from p:first-child").insertBefore(".f7")  ');
+        });
+        $("#insertAfter").click(function () {
+          const element = $("#from p:first-child");
+          $(element).insertAfter(".f7");
+          showResult(' $("#from p:first-child").insertAfter(".f7")  ');
+        });
+      });
+    </script>
+  </body>
+</html>

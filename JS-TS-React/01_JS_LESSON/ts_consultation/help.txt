@@ -1,0 +1,33 @@
+============= install ts 
+
+npm i --global typescript ts-node
+tsc -v 
+
+//---- init tsconfig.json
+npx tsc --init
+
+
+//---- compile 
+npx tsc ./src/index.ts
+
+//----	запуск файлу ts 
+//---- https://github.com/TypeStrong/ts-node
+
+npx ts-node ./src/index.ts
+
+
+***************************************************************
+****************📣  Variable declaration 📣 *******************
+***************************************************************
+JS: number, string, boolean, undefined, null, object 
+TS: any, unknown, never, enum, tuple
+
+!!!! Функція у якій задекларовано повертаємий тип ні є void або any
+повина повертати значення того типу, який задекларовано 
+
+////  ---------------------- 🎁 Duck typing 
+When I see a bird that walks like a duck 
+and swims like a duck and quecks like a duck 
+I call that bird a duck 
+              - James Whitcomb Riley
+--------------------------------------------- ////

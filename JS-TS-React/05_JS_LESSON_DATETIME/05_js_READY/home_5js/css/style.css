@@ -1,0 +1,16 @@
+#result li {font:bold 22px "courier new"; margin-left:100px;}
+.pass{color:green;}
+.fail{color:red;  text-decoration: line-through;}
+.container{padding-top: 20px;}
+/* ========================= */
+#d1 {
+    width:150px;
+    height:150px;
+    background:tomato;
+	margin:20px;		
+}
+#showtime {
+    font-size:30px;
+	font-weight:bold;
+	margin:20px 0;
+}

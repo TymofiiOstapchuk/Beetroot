@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Funcions in JS</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>f1(10,20) => <span id="res1"></span></h3>
+      <h3>f2(10,20) => <span id="res2"></span></h3>
+      <h3>f3(10,20) => <span id="res3"></span></h3>
+
+      <script>
+        /* function declaration */
+
+        function f1(a, b) {
+          return a + b;
+        }
+
+        /* function expressions */
+
+        const f2 = function (a, b) {
+          return a + b;
+        };
+
+        /*  arrow (lamda) function */
+
+        const f3 = (a, b) => a + b;
+
+        /* ============ usage ======  */
+        const res1 = document.getElementById("res1");
+        const res2 = document.getElementById("res2");
+        const res3 = document.getElementById("res3");
+
+        res1.innerHTML = f1(10, 20);
+        res2.innerHTML = f2(10, 20);
+        res3.innerHTML = f3(10, 20);
+      </script>
+    </div>
+    <!--  /.container-->
+  </body>
+</html>

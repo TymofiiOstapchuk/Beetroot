@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Strings</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>String methods</h2>
+    </div>
+
+    <script>
+      let st = "My awesome string"; // NO DELETE
+      let st1 = "Це перша строка"; // NO DELETE
+      let st2 = "Це друга строка"; // NO DELETE
+
+      /*
+        console.log("st -> ", st);
+
+        console.log("Довжина string – властивість st.length: ", st.length);
+      */
+      /* ===========================================  */
+      //Ітерація по рядку
+
+      /*
+            for (let i = 0, len = st.length; i < len; i++) {
+              console.log(st[i]);
+            }
+      */
+      /* ===========================================  */
+      // Конкатенація рядків- метод concat
+
+      /*
+            const newSt = st.concat(st1);
+            const newSt1 = st + st1;
+            const newSt2 = `${st}  ${st1}`;
+            console.log(newSt);
+            console.log(newSt1);
+            console.log(newSt2);
+      */
+      /* ===========================================  */
+      /* indexOf здійснює пошук рядка, вказаного в першому
+          аргумент і повертає числовий індекс її першого входження.
+      Якщо пошук невдалий повертається  -1
+      */
+      /*
+            console.log(st1);
+            let ind = st1.indexOf("рв");
+            console.log("index 'рв': ", ind);
+
+            ind = st1.indexOf("р", 7);
+            console.log("index 'р' - з 7 символа: ", ind);
+
+            ind = st1.indexOf("й");
+            console.log("index 'й' - такого символа немає: ", ind);
+      */
+      /* ===========================================  */
+
+      // Порівняння рядків st1.localeCompare(st2)
+      /*
+            st1 = "abc";
+            st2 = "abc";
+
+            console.log("Порівнюємо рядки st1: ", st1, "st2: ", st2);
+
+            console.log("Рядки однакові", st1.localeCompare(st2));
+      */
+      /* ===========================================  */
+
+      /*
+      строка.slice(index1, index2 ) -  повертає підрядок,
+      починаючи з index1 і закінчуючи index2
+      за винятком останнього символу
+      */
+
+      /*
+            console.log(st1.slice(7, 11));
+            console.log(st1.slice(0, st1.indexOf(" ")));
+            console.log(st1.slice(0, -3));
+      */
+      /*   *************************    E-MAIL */
+      /*
+            const st3 = "mumu@gerasim.com";
+            console.log("Строка: ", st3);
+            console.log("Розбиваємо рядок у масив за символом '@'");
+            i = st3.indexOf("@");
+            name = st3.slice(0, i);
+            domen = st3.slice(i + 1, st3.lastIndexOf("."));
+
+            console.log("name = " + name);
+            console.log("domen = " + domen);
+      */
+      /*
+        строка.substr(index, [length]) - повертає підрядок
+        вихідного рядка починаючи з вказаного індексу та вказаної довжини.
+      */
+
+      /*
+            st = "Hello world";
+            console.log(st.substr(0, 4));
+            console.log(st.substr(0, st.indexOf(" ")));
+      */
+      /*
+       строка.substring(index1, index2)
+       повертає підрядок рядок вихідного рядка починаючи з
+        index1 до index2
+      */
+
+      /*
+            st = "Hello world";
+            console.log(st.substring(0, 6));
+
+            console.log(st.substring(6, 0));
+            console.log(st.substring(0, st.length));
+      */
+
+      /*
+       строка.split(delimiter)
+       Розбиває рядок на частини за вказаним роздільником
+       і поміщає ці частини в масив
+      */
+
+      /*
+            st = "part1 part2 part3";
+
+            let parts = st.split(" ");
+            console.log(parts);
+
+            console.log(
+              "====== Беремо лише перші 2 частини від рядка  -  st.split(' ', 2)"
+            );
+
+            parts = st.split(" ", 2);
+            console.log(parts);
+      */
+      /*
+            console.log(st.toLocaleLowerCase());
+
+            console.log(st.toLowerCase());
+
+            console.log(st.toLocaleUpperCase());
+
+            console.log(st.toLocaleUpperCase());
+
+             */
+
+      /*
+            //  строка.charAt(code) 	повертає символ, що займає в рядку вказану позицію
+
+            st = "Привіт";
+            console.log(st.charAt(3));
+
+            // строка.charCodeAt(symbol) перетворює символ у зазначеній позиції на його код
+
+            console.log(st.charCodeAt(3));
+             */
+    </script>
+  </body>
+</html>
