@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2 - pass list</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Passenger's list</h1>
+      <!--
+Є масив пасажирів поїзда pList
+Написати дві функції
+
+addPassenger(name, list);
+- name -> ім'я пасажира, 
+   list -> масив пасажирів (pList)
+- якщо масив пасажирів порожній, то просто додає 
+  ім'я пасажира name в масив
+- якщо в масиві вже є пасажири, додає ім'я
+ пасажира name на  перший знайдений вільний index 
+  (тобто в масиві не
+  має бути пустих ындексыв)
+
+removePassenger(name, list);
+- здійснює пошук по масиву та видаляє пасажира, ім'я якого
+  передається як аргумент name
+-->
+
+      <script>
+        const pList = [];
+
+        /* ====== variant 1 with using for  */
+
+        function addPassenger(name, list) {
+          const len = list.length;
+          if (!len) {
+            list.push(name);
+            return;
+          }
+          for (let i = 0; i < len; i++) {
+            if (!list[i]) {
+              list[i] = name;
+              return;
+            }
+          }
+          list.push(name);
+        }
+
+        function removePassenger(name, list) {
+          let i = list.indexOf(name);
+          if (i !== -1) {
+            list.splice(i, 1, undefined);
+            return;
+          }
+          console.log("Not found passanger");
+        }
+
+        /* ====== variant 2  */
+
+        /*         
+        function addPassenger(name, list) {
+          const indx = list.indexOf(false);
+          indx !== -1 ? list.splice(indx, 1, name) : list.push(name);
+        }
+        function removePassenger(name, list) {
+          const indx = list.indexOf(name);
+          indx !== -1 && list.splice(indx, 1, false);
+        }
+
+ */ // usage
+        // add passenger
+        addPassenger("Tom", pList);
+        addPassenger("Bill", pList);
+        addPassenger("John", pList);
+        console.log(pList);
+
+        // remove  passenger
+        removePassenger("Bill", pList);
+        console.log(pList);
+
+        addPassenger("Ashley", pList);
+        console.log(pList);
+      </script>
+    </div>
+  </body>
+</html>

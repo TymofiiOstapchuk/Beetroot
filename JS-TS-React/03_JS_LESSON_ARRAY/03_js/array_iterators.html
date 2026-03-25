@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array iterators</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Array Iterators</h1>
+      <ul id="results"></ul>
+    </div>
+    <script>
+      /* ---------------  NO DELETE */
+      const numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+      const persons = [
+        { id: 1, name: "Tom" },
+        { id: 2, name: "Bill" },
+        { id: 3, name: "Ashley" },
+        { id: 4, name: "Ainura" },
+        { id: 5, name: "Greg" },
+      ];
+      let arr;
+      /*   NO DELETE ---------------/  */
+
+      /* ======================== forEach ==========================  */
+      /*
+Метод arr.forEach(функция)  -  застосовує задану у параметрі функцію
+до кожного елементу масиву і нічого не повертає
+
+Тобто цей метод аналогічний функції for()
+*/
+
+      /*
+numbers.forEach( function(item, index, array) {
+    console.log(`${item} * 2 = ${item * 2} `);
+});
+*/
+
+      /* ======================== filter ==========================  */
+      /*
+Метод arr.filter(функция)  -  застосовує задану у параметрі
+функцію до кожного елементу масиву та повертає масив елементів
+для яких функція поверне true
+
+===== task => відфільтрувати елементи масиву  які більше 2 
+*/
+
+      /*
+
+const filteredNums = numbers.filter( function(item, index, array) {
+    return item > 2;
+});
+console.log("numbers: ", numbers);
+console.log("Filtered nums: ", filteredNums);
+*/
+
+      /* ======================== map ==========================  */
+      /*
+Метод arr.map(функция)  -  застосовує задану у параметрі
+функцію до кожного елементу масиву та повертає результат
+виконання цієї функції для кожного елемента
+*/
+
+      /*
+const mappedNumbers = numbers.map(function(item, index, array) {
+      return item * item;
+});
+console.log("numbers: ", numbers);
+console.log("mappedNumbers : ", mappedNumbers);
+*/
+
+      /* ======================== findIndex ==========================  */
+      /*
+Метод findIndex() повертає індекс у масиві, якщо елемент
+задовольняє умови перевірки функції.
+В іншому випадку повертається  -1.
+
+===== Task => В об'єкті persons знайти користувача з індексом 1 та вивести його ім'я
+*/
+
+      /*
+  const idx = persons.findIndex(function(person) {
+  return person.id === 3;
+});
+
+console.log(persons[idx].name);
+*/
+
+      /* ======================== find ==========================  */
+      /*
+Метод find() повертає значення першого знайденого в масиві елемента,
+яке задовольняє умові переданої в callback функції.
+В іншому випадку повертається undefined.
+
+==== task => В об'єкті persons знайти користувача на ім'я Ashley вивести його ім'я 
+*/
+
+      /*
+const person = persons.find( function(person) {
+    return person.name === "Ashley";
+});
+
+console.log("Found: ", person);
+*/
+    </script>
+  </body>
+</html>

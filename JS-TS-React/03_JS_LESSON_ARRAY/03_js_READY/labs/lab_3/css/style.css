@@ -1,0 +1,12 @@
+.sort-box__item {
+  cursor: pointer;
+  margin: 0 1rem;
+}
+.sort-box__item::before {
+  content: "\027A4";
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.sort-box__item_up::before {
+  transform: rotate(-90deg);
+}

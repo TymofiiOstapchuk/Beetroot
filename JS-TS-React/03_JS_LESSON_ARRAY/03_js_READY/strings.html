@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Strings</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>String methods</h2>
+    </div>
+
+    <script>
+      const st = "widget id is a new id widget";
+      const indx = [];
+
+      let pos = -1;
+      /*
+      while (true) {
+        pos = st.indexOf("id", pos + 1);
+        if (pos === -1) {
+          break;
+        }
+        indx.push(pos);
+        pos++;
+      } */
+
+      while ((pos = st.indexOf("id", pos)) !== -1) {
+        indx.push(pos);
+        pos++;
+      }
+
+      console.log(indx);
+    </script>
+  </body>
+</html>

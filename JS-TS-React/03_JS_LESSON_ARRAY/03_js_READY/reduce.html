@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const arr = [1, 2, 3, 4, 5];
+
+      const sum = arr.reduce( (acc, item) => {
+        acc += item;
+        return acc;
+      }, 0);
+
+      console.log(sum); 
+      */
+
+      const votesArr = [
+        "react",
+        "vue",
+        "angular",
+        "react",
+        "vue",
+        "angular",
+        "angular",
+        "react",
+        "react",
+        "vue",
+      ];
+
+      /*  const votes = votesArr.reduce((acc, item) => {
+        if (!acc[item]) {
+          acc[item] = 1;
+        } else {
+          acc[item] += 1;
+        }
+        return acc;
+      }, {});
+
+      console.log(votes); */
+
+      /*       const arr = [];
+      for (let i = 0; i < 10000000; i++) {
+        arr[i] = i;
+      }
+      console.time("VAR1");
+      const res1 = arr.filter((el) => el % 2 === 0).map((el) => el * 2);
+      console.timeEnd("VAR1");
+
+      console.time("VAR2");
+      const res2 = arr.reduce((acc, item) => {
+        if (item % 2 === 0) {
+          acc.push(item * 2);
+        }
+        return acc;
+      }, []);
+      console.timeEnd("VAR2"); 
+      */
+    </script>
+  </body>
+</html>
