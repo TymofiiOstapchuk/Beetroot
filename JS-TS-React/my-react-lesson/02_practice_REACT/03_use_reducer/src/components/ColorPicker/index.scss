@@ -1,0 +1,28 @@
+.picker-container {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.color-swatch {
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+.color-inputs,
+.color-sliders {
+  display: flex;
+
+  margin-bottom: 1rem;
+}
+.color-input,
+.color-slider {
+  padding-right: 1rem;
+  flex: 1;
+}
+label {
+  display: block;
+}
+input {
+  padding: 6px;
+  width: 100%;
+}

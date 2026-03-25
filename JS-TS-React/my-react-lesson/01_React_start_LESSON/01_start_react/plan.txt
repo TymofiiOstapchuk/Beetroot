@@ -1,0 +1,203 @@
+На цьому занятті ми будемо працювати використовуючи сервіс 
+  https://esm.sh/
+
+Справа в тому що React, ReactDOM це npm пакети, тобто містять 
+бінарні файли і їх запуск здійснюється через node 
+
+esm.sh дозволяє імпортувати модулі JSt ES на NPM, GitHub
+за допомогою простого URL.
+Не потрібно жодних кроків по встановленню/складання. 
+
+==============
+1. Основи роботи React -  01_first_app/index.html 
+ - valilla JS vs React 
+
+2. JSX  -  02_jsx/index.html
+
+============================  👩‍🎓 task-1 ЗАВДАННЯ СЛУХАЧАМ:
+ В файле  02_jsx/index.html
+- використовуючи  бібліотеки /js/react.js, /js/react-dom.js створити елемент h1
+   із класом "container"
+- вивести створений елемент елемент <div id="root">
+- використовуючи props елемента h1, вивести в його контент поточну дату
+==================================================================
+
+
+- основи JSX, інтерполяція JS
+- передача атрибутів компоненту
+- передача props як об'єкта
+- перевизначення властивостей props та children
+- React.Fragment
+
+------------------------------------------------------
+3. Робота з компонентами - 03_components/index.html
+https://babeljs.io/repl
+
+- Виведення функції в JSX
+- Виведення функції в React.createElement
+- Створюємо компонент Message
+- pair-tag component, one-tag component with children
+
+---------------------------- 03_components/index.html
+============================ 👩‍🎓 task-2  ЗАВДАННЯ СЛУХАЧАМ:
+- Змінити код компонента Message так, щоб можна було йому через props
+  передавати style HEX-код кольору та fontSize для тексту компонента
+Для перевірки викликати цей компонент двічі з вмістом
+Hello World - #6655cc, 2rem
+Hello React -  #66ccff, 3rem 
+================================================================== 
+
+4. Валідація даних, що передаються через props в компонент
+04_props_validate/index.html
+- типи переданих props
+- створення користувальницької валідації
+- Використання бібліотеки prop-types
+  https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+
+- props за замовчуванням
+- відсутність props у production версії
+
+---------------------------- 04_props_validate/index.html
+
+------------------------------------------------------
+5.Умовний рендеринг   05_conditianally_render/index.html 
+
+------------------------------------------------------
+6. Стилізація компонента
+06_style_component
+- перевизначення існуючих у компонента стилів та класів
+--------------------------------- 06_style_component
+
+========================= 👩‍🎓 task-3  ЗАВДАННЯ СЛУХАЧАМ:
+- реалізувати обчислення класу компонента на основі передається в
+компонент властивості shape="", тобто usage:
+
+<Box shape="circle" style={{ backgroundColor: "pink" }} />
+<Box shape="elipse" style={{ backgroundColor: "lemon" }} />
+<Box shape="lemon" style={{ backgroundColor: "yellow" }} />
+
+
+--------------------------
+7. Event Handler
+ 07_events/index.html
+
+Функції, що передаються в event, не повинні викликатися
+--------------------------------------------------------------------------- 
+       correct 	                      |            incorrect 
+--------------------------------------------------------------------------- 
+<button onClick={handleClick}>        | <button onClick={handleClick()}>
+--------------------------------------------------------------------------- 
+<button onClick={() => alert('...')}>	| <button onClick={alert('...')}>
+--------------------------------------------------------------------------- 
+
+- реалізувати обробку події onChange на елементі textarea
+Обробник події повинен виводити тип події елемент h1
+
+======================= 👩‍🎓 task-4 ЗАВДАННЯ СЛУХАЧАМ
+ - змінюючи events переглянути їх роботу
+onClick, onDoubleClick, onKeyPress, onKeyUp, onCopy, onCut, onPaste,
+onFocus, onBlur,  onMouseDown, onMouseUp, onMouseOver,
+onTouchStart, onTouchMove, onTouchEnd  (for mobile)
+==================================================================
+
+- показати navigator.clipboard.readText()
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in scelerisque elit, ac porta sem. 
+
+==========================  STATE 
+8. State компонента
+
+08_state/index.html 
+
+-------------------------------- 08_state/hook.html 
+- использование функционального компонента с hook useState
+
+======================= 👩‍🎓 task-5 ЗАВДАННЯ СЛУХАЧАМ:
+08_state/state_preserve.html
+
+У компоненті Count
+- написати метод handleClick який збільшуватиме count на 1
+ при click на button
+- написати inline функції під час подій
+     onPointerEnter={() => {}}
+     onPointerLeave={() => {}}
+щоб при наведенні на div мишки йому додавався клас bg-light
+а при видаленні мишки відповідно видалявся
+
+
+======================= 👩‍🎓 task-6 ЗАВДАННЯ СЛУХАЧАМ:
+08_state/state_preserve.html
+У код App додати елемент checkbox, state для нього
+Другий компонент Count повинен показуватися тільки якщо буде
+включений цей checkbox
+
+////  ------------------------- 🖍 
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="toggleCounter">
+  <label class="form-check-label" for="toggleCounter">
+   Toggle Couner 
+  </label>
+</div>
+--------------------------------------------- ////
+
+
+========================= 👩‍🎓 task-7  ЗАВДАННЯ СЛУХАЧАМ:
+1. Додати до коду компонента 08_state/counter.html
+- через React.useState визначити state  -> [count, setCount]
+- вивести значення count у елемент <h1>Count: 0</h1>
+
+2. реалізувати обробку подій на відповідних кнопках
+  - handleIncrement -> збільшення count на 1
+  - handleDecrement->зменьшення count на 1
+  - handleReset -> встановлення count у значення 0
+
+3. Продати вимкнення кнопки reset якщо значення count відмінно від 0 
+
+==================================================================
+
+
+------------- Thinking state (управління UI через зміну state)  
+08_state/counter.html
+- лічильник не може зменшитися  < 0 
+- показати clickable error message при count < 0 
+     marquee (direction="right")  \ud83d\ude20    &#x1f620;  😠                                                                  
+- детально розбираємо useState (пишем свой useState) 
+---------------------------------------------------------------
+
+------------------------- 08_state/form.html 
+========================= 👩‍🎓 task-8 ЗАВДАННЯ СЛУХАЧАМ:
+- у файлі 08_state/form.html використовуючи hook useState реалізувати
+показ пароля, що вводиться в поле password при включенні checkbox Show password
+---------------------------------------------------------------
+
+09.  Використання key prop 
+     09_reconcilation/prop_key.html
+
+
+10. Робота з різними елементами форми типу
+text,  textarea, select, checkboxes
+09_form/index.html
+
+
+11. Refs
+На відміну від state
+- зберігається як current
+- при зміні refs не викликається re-render.
+- Mutable - можна змінювати current value поза rendering процесом
+
+Використовуючи refs реалізувати при натисканні на кнопку
+долучення елементів input
+При цьому фокус повинен завжди повинен бути на крайньому
+доданому елементі
+
+
+
+12. Effects  - 12_effects/index.html
+
+========= Dynamicly generate components
+
+12_effects/swapi.html
+
+https://swapi.co/api/?format=json
+https://swapi.co/api/people/?format=json
+
+

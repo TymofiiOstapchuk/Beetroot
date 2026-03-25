@@ -1,0 +1,137 @@
+==============📣  Install Next.js 
+https://nextjs.org/docs/getting-started/installation#automatic-installation
+
+npx create-next-app@latest  dev-next
+
+!!! Вибиоаємо опції стрілочками left або right
+
+- Would you like to use TypeScript ?        => Yes
+- Would you like to use ESLint?             => Yes
+- Would you like to use Tailwind ?          => NO
+- Would you like to use 'src/' directory ?  => Yes
+- Would you like to use App Router ?        => Yes
+- Would you like to customize default import aliases ?  => NO
+
+
+
+cd next-dev 
+npm run dev
+
+
+==============📣 1. Routing in  Next.js
+https://nextjs.org/docs/app/building-your-application/routing
+
+
+
+URLs
+http://localhost:3000/team
+http://localhost:3000/team/about
+http://localhost:3000/about
+
+src/
+   team/
+        page.tsx
+        about/
+              page
+   about/
+        page.tsx      
+
+
+==============📣 1.1 Layout
+
+==============📣 1.2 Metadata
+https://ogp.me
+
+https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadata-fields
+
+https://nextjs.org/docs/app/building-your-application/optimizing/metadata#file-based-metadata
+
+
+==============📣  1.3 Loading and errors
+
+https://jsonplaceholder.typicode.com/users
+
+---- error.tsx 
+https://nextjs.org/docs/app/api-reference/file-conventions/error
+
+------ Порядок завантаження файлів 
+------ home page 
+Root layout 
+Root error (if error)
+Root loading
+Root page 
+
+------ about page 
+Root layout 
+About layout 
+About loading 
+About page 
+
+
+==============📣  1.4 dynamic routes
+
+
+==============📣  1.5 pokeapi 
+https://graphql-pokeapi.vercel.app/
+
+
+const nextConfig: NextConfig = {
+  images: {
+    domains: ["img.pokemondb.net", "raw.githubusercontent.com"],
+  },
+};
+
+
+
+***************************************************************
+**************** 📣 Blog with database  *****************************
+***************************************************************
+
+http://xata.io
+- реєструємось 
+- в файл .env вносимо connection string 
+
+npm install prisma ts-node @types/node --save-dev
+npm i  @prisma/client zod zod-structured-error react-icons tiny-invariant
+
+==============📣  2. Prisma 
+
+npx prisma init
+
+////  ------------- 🖍 prisma/schema.prisma 
+.........
+
+datasource db {
+  provider = "postgresql"
+  url      = env("XATA_DB_URL")
+}
+
+model Blog {
+  id    Int    @id @default(autoincrement())
+  title String
+  text  String
+}
+--------------------------------- ////
+
+npx prisma db push
+
+npx prisma studio
+
+==============📣  3. render entries
+
+==============📣 4. new entry 
+
+==============📣 5. edit entry
+
+==============📣 6. delete entry
+
+==============📣 7. deploy
+https://vercel.com/guides/nextjs-prisma-postgres#step-11.-add-delete-functionality
+
+==============📣  7.1
+create repo and push project 
+
+==============📣  7.2 in vercel project 
+!!! add in settings
+  env => string connection to DB  
+  npx prisma generate && next build 

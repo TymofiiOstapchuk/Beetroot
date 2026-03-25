@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- ========= HOC => render properties => hooks ==============  -->
+
+    <script type="text/babel" data-type="module">
+      import * as React from "/js/react.js";
+      import { createRoot } from "/js/react-dom.js";
+
+      const root = createRoot(document.getElementById("root"));
+
+      function Counter({ children }) {
+        const [count, setCount] = React.useState(0);
+
+        const increment = () => setCount(count + 1);
+        const decrement = () => setCount(count - 1);
+
+        return children({ count, increment, decrement });
+      }
+
+      function MyCounter() {
+        return (
+          <Counter>
+            {({ count, increment, decrement }) => (
+              <>
+                <div>Counter: {count}</div>
+                <span onClick={increment} className="btn btn-primary me-3">
+                  Increment
+                </span>
+                <span onClick={decrement} className="btn btn-primary">
+                  Decrement
+                </span>
+              </>
+            )}
+          </Counter>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="container">
+            <Counter>
+              {({ count, increment, decrement }) => (
+                <>
+                  <h1>Counter: {count}</h1>
+                  <span onClick={increment} className="btn btn-primary me-3">
+                    Increment
+                  </span>
+                  <span onClick={decrement} className="btn btn-primary">
+                    Decrement
+                  </span>
+                </>
+              )}
+            </Counter>
+            <MyCounter />
+          </div>
+        );
+      }
+
+      root.render(<App />);
+    </script>
+    <script type="module" src="/js/babel-standalone.js"></script>
+  </body>
+</html>

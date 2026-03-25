@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- ========= stale  ==============  -->
+
+    <script type="text/babel" data-type="module">
+      import * as React from "/js/react.js";
+      import { createRoot } from "/js/react-dom.js";
+
+      const root = createRoot(document.getElementById("root"));
+
+      /*  const cache = {};
+      let prevVal;
+
+      const fn = (value) => {
+        if (!cache.current || value !== prevVal) {
+          cache.current = () => {
+            console.log(value);
+          };
+        }
+        prevVal = value;
+        return cache.current;
+      };
+
+      const f1 = fn("first");
+      const f2 = fn("second");
+      const f3 = fn("third");
+
+      f1();
+      f2();
+      f3(); 
+      */
+
+      function App() {
+        const [value, setValue] = React.useState("");
+        const ref = React.useRef();
+
+        React.useEffect(() => {
+          ref.current = () => {
+            console.log(value);
+          };
+        }, [value]);
+
+        const onClick = React.useCallback(() => {
+          ref.current();
+        }, []);
+
+        return (
+          <div className="container">
+            <input
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              className="form-control"
+            />
+            <HeavyComponent title="Address" onClick={onClick} />
+          </div>
+        );
+      }
+
+      const ButtonComponent = ({ title, onClick }) => {
+        console.log("rerender");
+        return (
+          <>
+            <h2>{title}</h2>
+            <button onClick={onClick} className="btn btn-primary">
+              send data
+            </button>
+          </>
+        );
+      };
+
+      const HeavyComponent = React.memo(ButtonComponent, (before, after) => {
+        if (before.title === after.title) return true;
+        return false;
+      });
+
+      root.render(<App />);
+    </script>
+    <script type="module" src="/js/babel-standalone.js"></script>
+  </body>
+</html>

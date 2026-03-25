@@ -1,0 +1,113 @@
+***************************************************************
+**************** 📣 1. Install VSC extensions******************
+*************************************************************** 
+------ ES7+ React/Redux/React-Native snippets
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+------ Tailwind CSS IntelliSense
+https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+
+------ Tailwind Docs
+https://marketplace.visualstudio.com/items?itemName=austenc.tailwind-docs
+
+***************************************************************
+**************** 📣 2. Install  React ************************
+*************************************************************** 
+
+ ==============📣 2.1  create React app 
+https://create-react-app.dev/
+
+
+ ==============📣 2.2 Vite 
+https://vitejs.dev
+https://vitejs.dev/guide/#scaffolding-your-first-vite-project
+
+in PowerShell type 
+
+npm create vite@latest
+
+---- config 
+///  ------------- 🖍 vite.config.ts 
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    open: "/",
+  },
+});
+--------------------------------- ////
+
+ ==============📣 2.3   add tailwind 
+
+https://tailwindcss.com/docs/guides/vite
+
+------------------------------- 
+npm i uuid react-icons prop-types react-toastify react-router-dom dotenv @emotion/react  @emotion/css @emotion/styled styled-components bootstrap @types/uuid @types/node tiny-invariant
+
+
+npm i -D sass sass-embedded  @types/uuid  @emotion/babel-plugin  @types/node  @babel/ vite-plugin-babel-macros plugin-proposal-private-property-in-object npm i -D eslint eslint-plugin-react-hooks
+
+
+==============📣 2.1 
+- delete assets, App.css, 
+
+change App.tsx 
+////  ------------- 🖍 App.tsx 
+function App() {
+  return <div className="container mx-auto">
+    <h1 className="text-red-600 text-lg">Hello React !</h1>
+  </div>
+}
+export default App
+--------------------------------- ////
+
+==============📣  2.3 Add path aliases 
+////  ------------- 🖍 vite.config.ts
+.........
+import path from "path";
+
+
+export default defineConfig({
+  ........., 
+
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
+
+--------------------------------- ////
+
+////  ------------- 🖍 tsconfig.app.json 
+
+"compilerOptions": {
+  .........,
+  "paths": {
+     "@/*": ["./src/*"]
+  }
+}
+--------------------------------- ////
+
+////  ------------- 🖍eslint.config.js 
+
+........,
+rules: {
+  ........,
+      
+ "react-hooks/rules-of-hooks": "error",
+ "react-hooks/exhaustive-deps": "warn",
+},
+
+
+--------------------------------- ////
+
+ ==============📣 2.4 add to repo, create new branch  
+git add .
+git commit -m initial commit
+git checkout -b 01_ts_styles_emotions 
+

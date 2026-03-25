@@ -1,0 +1,28 @@
+.shapes {
+  display: flex;
+  gap: 30px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+.box__circle {
+  border-radius: 150px;
+  background-color: pink;
+}
+.box__shape {
+  width: 300px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+.box__lemon {
+  border-radius: 10px 150px 10px 150px;
+  background-color: yellow;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start React</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        max-width: 80%;
+        margin: auto;
+      }
+      .title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .nav {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        padding-bottom: 2rem;
+      }
+      .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #22556e;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+      }
+      .nav__item:hover {
+        background: #4799b7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Basic React</h1>
+      <div class="nav">
+        <a class="nav__item" href="01_first_app/index.html">01_first_app</a>
+        <a class="nav__item" href="02_jsx/index.html">02_JSX</a>
+        <a class="nav__item" href="02_jsx/time-tick.html">02_time-tick</a>
+        <a class="nav__item" href="03_components/index.html">03_Components</a>
+        <a
+          class="nav__item"
+          href="03_components/pureComponents.html"
+          <a
+          class="nav__item"
+          href="03_components/pureComponents.html"
+          >03_1 Pure Component</a
+        >
+        <a class="nav__item" href="03_components/sideEffect.html"
+          >03_2 Side Effect</a
+        >
+        <a class="nav__item" href="04_props_validate/index.html"
+          >04 props validate</a
+        >
+        <a class="nav__item" href="05_conditionally_render/index.html"
+          >05 conditionally render</a
+        >
+        <a class="nav__item" href="06_style_component/index.html"
+          >06 style component</a
+        >
+      </div>
+      <h1 class="title">Interactivity</h1>
+      <div class="nav">
+        <a class="nav__item" href="07_events/index.html">07 events</a>
+
+        <a class="nav__item" href="08_state/index.html">state</a>
+        <a class="nav__item" href="08_state/events.html">events</a>
+        <a class="nav__item" href="08_state/counter.html">сounter</a>
+        <a class="nav__item" href="08_state/state_preserve.html"
+          >state preserve</a
+        >
+        <a class="nav__item" href="08_state/form.html">form</a>
+      </div>
+
+      <h1 class="title">Keys, refs</h1>
+      <div class="nav">
+        <a class="nav__item" href="09_reconcilation/prop_key.html"
+          >09 prop key</a
+        >
+        <a class="nav__item" href="09_reconcilation/counter.html">09 counter</a>
+
+        <a class="nav__item" href="10_refs/index.html">refs</a>
+        <a class="nav__item" href="10_refs/emails.html">Emails</a>
+        <a class="nav__item" href="10_refs/forwardRef.html">Forward Refs</a>
+      </div>
+
+      <h1 class="title">Effects</h1>
+      <div class="nav">
+        <a class="nav__item" href="11_effects/index.html">12_effects</a>
+        <a class="nav__item" href="11_effects/chat.html">12_chat</a>
+        <a class="nav__item" href="11_effects/tilt.html">12_tilt</a>
+        <a class="nav__item" href="11_effects/swapi.html">12 Swapi</a>
+        <a class="nav__item" href="11_effects/userProfile.html"
+          >12 User Profile</a
+        >
+      </div>
+      <h1 class="title">Consultation</h1>
+      <div class="nav">
+        <a class="nav__item" href="12_consultation/hoc.html">HOC</a>
+        <a class="nav__item" href="12_consultation/render_props.html"
+          >Render props</a
+        >
+        <a class="nav__item" href="12_consultation/closures.html">Closure</a>
+      </div>
+      <h1 class="title">Homework</h1>
+      <div class="nav">
+        <a class="nav__item" href="homework/form.html">Form</a>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <script>
+      document
+        .querySelectorAll(".nav__item")
+        .forEach((item) => (item.target = "_blank"));
+    </script>
+  </body>
+</html>
