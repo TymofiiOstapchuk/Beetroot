@@ -1,0 +1,30 @@
+=========== Ramda 
+
+import { curry, __ } from from "./ramda.js";
+
+==============
+
+let users = [
+ { id: 1, name: "John", age: "20" },
+ { id: 2, name: "Sasha", age: "30" },
+ { id: 3, name: "Bill", age: "40" },
+ { id: 4, name: "Ashley", age: "20" },
+ { id: 5, name: "Rachel", age: "40" },
+ { id: 6, name: "Tom", age: "30" },
+ { id: 7, name: "Steve", age: "30" },
+ { id: 8, name: "Jim", age: "40" },
+ { id: 9, name: "Willy", age: "20" },
+];
+
+==============
+const users = [
+  { name: "Bill", age: 31, height: 165 },
+  { name: "Sally", age: 29, height: 173 },
+  { name: "Tom", age: 32, height: 163 },
+  { name: "Fill", age: 28, height: 161 },
+  { name: "Ashley", age: 29, height: 167 },
+  { name: "Pete", age: 29, height: 166 },
+  { name: "Bill", age: 37, height: 178 },
+];
+
+/* Провести сортировку по height, age, name одночасно */
