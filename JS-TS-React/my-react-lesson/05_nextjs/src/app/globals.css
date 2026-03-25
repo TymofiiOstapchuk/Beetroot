@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.img-fluild {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+nav a:not(.avatar-link) {
+  padding: 6px 12px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  background: #5252d8;
+  color: white;
+}
+nav a.current,
+nav a:hover {
+  background: orange;
+}
+
+nav .avatar-link,
+nav .avatar-link:hover {
+  background: transparent;
+}
+.avatar-link img {
+  border-radius: 100%;
+  background: transparent;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+/* =========== btn */
+
+.btn {
+  padding: 8px 12px;
+  border: 0;
+  background: lightgrey;
+  text-decoration: none;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  cursor: pointer;
+}
+.btn_primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn_primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn_success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn_success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn_danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn_danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+.button-wrap {
+  display: flex;
+  gap: 20px;
+}
+.form-wrap {
+  max-width: 400px;
+  padding: 1rem 0;
+}
+.form-wrap label {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-wrap input,
+.form-wrap textarea {
+  width: 100%;
+  border: 2px solid #007bff;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+
+.form-wrap textarea {
+  height: 100px;
+  resize: none;
+}
+.form-wrap input:focus,
+.form-wrap textarea:focus {
+  outline: none;
+  border-color: #c82333;
+}
+.form-wrap em {
+  color: red;
+}
+/* =============  */
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+.card,
+.dog {
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+
+.card-item {
+  display: flex;
+  gap: 20px;
+}
+.card-item img {
+  width: 180px;
+}
+/* ================= dogs  */
+.dogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dog img {
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center;
+}
+.dog h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.dog a {
+  text-decoration: none;
+  color: violet;
+}
+.delete-form {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.delete-todo-btn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  justify-self: center;
+}
+
+.todos__row .delete-todo-btn svg {
+  fill: red;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+/* =================== profile-form */
+.form {
+  width: 300px;
+}
+.form label {
+  display: block;
+  margin-bottom: 12px;
+}
+.form span {
+  display: block;
+  margin-bottom: 6px;
+}
+input,
+textarea {
+  outline: none;
+}
+.form input:not(checkbox),
+.form input:not(radio),
+.form textarea {
+  padding: 6px 1rem;
+  border: 1px solid black;
+  width: 100%;
+  resize: none;
+}
+.form textarea {
+  height: 80px;
+}
+
+.form input:not(checkbox):focus,
+.form input:not(radio):focus,
+.form textarea:focus {
+  border: 1px solid rgb(114, 7, 71);
+  background: #f6f6f6;
+}
+.form p {
+  color: red;
+  margin: 4px 0;
+}
+
+/* =================== utils */
+.mr-1 {
+  margin-right: 1rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+
+/* optimistic block  */
+
+.optimistic-info {
+  padding: 1rem 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.optimistic-info div:first-of-type {
+  flex-basis: 100%;
+}
+
+.projectsLinks {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projectsLinks a {
+  padding: 10px 22px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border: 1px solid black;
+}
+.projectsLinks a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+/* ============= pokemons  */
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.p-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1px solid #3e63dd;
+}
+.p-title {
+  text-decoration: none;
+  padding: 5px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: #3e63dd;
+}
+.p-img {
+  width: 100%;
+  max-width: 100%;
+}
+.p-item:hover {
+  cursor: pointer;
+  background: #e2e2e2;
+}
+
+.pokemon {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+.pokemon h2 {
+  background: #3e63dd;
+  color: white;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+.pokemon div {
+  padding: 20px;
+}
+.pokemon a {
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #c814dc;
+  color: white;
+}
+.pokemon a:hover {
+  background: #dc70e6;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript - Phone format</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group my-5 col-md-5">
+        <input id="phone" type="text" class="form-control" />
+      </div>
+    </div>
+
+    <script>
+      const phone = document.getElementById("phone");
+
+      phone.addEventListener("input", ({ target }) => {
+        let x = target.value
+          .replace(/\D/g, "")
+          .match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+
+        target.value = !x[2]
+          ? x[1]
+          : "( " + x[1] + " ) " + x[2] + (!x[3] ? "" : " - " + x[3]);
+      });
+    </script>
+  </body>
+</html>

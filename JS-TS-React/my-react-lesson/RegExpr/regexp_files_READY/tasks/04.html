@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <pre id="regpre" class="regpre"></pre>
+    </div>
+
+    <script>
+      const regpre = document.getElementById("regpre");
+      const out = (st, re) =>
+        (regpre.innerHTML = st.replace(re, (st) => `<span>${st}</span>`));
+
+      /*  ===========================================================
+Регулярным выраженим в строке str убрать теги 
+Результат вывести в консоль
+
+bold
+italic
+=================================================================  */
+      st = `<b>bold</b><i>italic</i>`;
+
+      const re = /<(\w)>(.+)<\/\1>/g;
+
+      out(st, re);
+      console.log(st.replace(re, "$2\n"));
+    </script>
+  </body>
+</html>

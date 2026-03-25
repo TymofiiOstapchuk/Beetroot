@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <pre id="regpre" class="regpre"></pre>
+    </div>
+
+    <script>
+      const regpre = document.getElementById("regpre");
+      const out = (st, re) =>
+        (regpre.innerHTML = st.replace(re, (st) => `<span>${st}</span>`));
+
+      /*  ===========================================================
+Регулярным выраженим вытащить из строки str код оператора - первые 3 цифры 
+и вывести эту информацию в консоль в виде
+
+Code: 063
+Code: 067
+Code: 099
+=================================================================  */
+      st = `063-500-4444
+(067) 333-5555
+0994565423`;
+
+      const re = /\(?(\d{3})\)?[\s-]*\d{3}[\s-]*\d{4}/g;
+
+      out(st, re);
+      console.log(st.replace(re, "Code: $1"));
+    </script>
+  </body>
+</html>
