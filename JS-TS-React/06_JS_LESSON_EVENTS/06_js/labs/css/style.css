@@ -1,0 +1,25 @@
+.social-partners-items {
+  display: grid;
+  grid-gap: 3rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}
+.social-partners-items > div {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.social-partners-items img {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.socialDiv {
+  position: absolute;
+  display: block;
+  border: 1px solid #085aae;
+  background: #b2e5ff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}

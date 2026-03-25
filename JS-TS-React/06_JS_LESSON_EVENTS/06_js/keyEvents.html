@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index.html</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+    <script src="_/js/script.js"></script>
+    <style>
+      #content {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>keydown vs keypress</h1>
+        <p>
+          <span class="bg-success-subtle p-1">keydown</span> happens when the
+          key is pressed down, and auto repeats if the key is pressed down for
+          long.
+        </p>
+        <p>
+          <span class="bg-success-subtle p-1">keypress</span> This event is
+          fired when an alphabetic, numeric, or punctuation key is pressed down.
+          <br />
+
+          <a
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keypress_event"
+            >keypress is deprecated now</a
+          >
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="mt-1">
+          <p id="content">
+            <a
+              target="_blank"
+              href="https://www.w3.org/TR/uievents-code/#table-key-code-alphanumeric-writing-system"
+              >e.code</a
+            >
+          </p>
+          <input type="text" id="login" autocomplete="off" />
+        </div>
+        <div class="row mt-3">
+          <div id="res-keydown" class="col-md-3"></div>
+          <div id="res-keyup" class="col-md-3"></div>
+          <div id="res-keypress" class="col-md-3"></div>
+        </div>
+      </div>
+      <!--  ./row -->
+    </div>
+    <!-- ******************************** -->
+
+    <script>
+      function handle(id) {
+        return function (e) {
+          let msg = "",
+            el = document.getElementById(id);
+          el.innerHTML = "";
+          msg += "Event: " + e.type.toUpperCase() + "<br>";
+          msg += "e.key -> " + e.key + "<br>";
+          msg += "e.code -> " + e.code + "<br>";
+          msg += "e.charCode -> " + e.charCode + "<br>";
+          msg += "e.keyCode -> " + e.keyCode + "<br>";
+          msg += "Alt -> " + e.altKey + "<br>";
+          msg += "Ctrl -> " + e.ctrlKey + "<br>";
+          msg += "Shift -> " + e.shiftKey + "<br>";
+
+          el.innerHTML = msg;
+        };
+      }
+
+      document.addEventListener("keypress", handle("res-keypress"), false);
+      document.addEventListener("keydown", handle("res-keydown"), false);
+      document.addEventListener("keyup", handle("res-keyup"), false);
+    </script>
+  </body>
+</html>

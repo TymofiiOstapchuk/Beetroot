@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Events</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .title {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .nav {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      padding-bottom: 2rem;
+    }
+
+    .nav__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #22556e;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .nav__item:hover {
+      background: #4799b7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Events</h1>
+    <div class="nav">
+      <a class="nav__item" href="index_1.html">index_1</a>
+      <a class="nav__item" href="event1.html">event1.html</a>
+      <a class="nav__item" href="event2.html">event2.html</a>
+      <a class="nav__item" href="event3.html">event3.html</a>
+      <a class="nav__item" href="capture_bubling.html">capture_bubling.html</a>
+      <a class="nav__item" href="stoppropagation.html">stoppropagation.html</a>
+      <a class="nav__item" href="keyEvents.html">keyEvents.html</a>
+      <a class="nav__item" href="mouseEvents.html">mouseEvents.html</a>
+      <a class="nav__item" href="onchange.html">onchange.html</a>
+    </div>
+
+    <h1 class="title">LABS</h1>
+    <div class="nav">
+      <a class="nav__item" href="labs/lab_1_1.html">lab_1_1.html</a>
+      <a class="nav__item" href="labs/lab_1_2.html">lab_1_2.html</a>
+      <a class="nav__item" href="labs/lab_2.html">lab_2.html</a>
+      <a class="nav__item" href="labs/lab_3.html">lab_3.html</a>
+    </div>
+
+    <h1 class="title">HOME</h1>
+    <div class="nav">
+      <a class="nav__item" href="home_6js/form/index.html">form.html</a>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <script>
+    document
+      .querySelectorAll(".nav__item")
+      .forEach((item) => (item.target = "_blank"));
+  </script>
+</body>
+
+</html>

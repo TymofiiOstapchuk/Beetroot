@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event 3</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Event 3</h2>
+      <ul id="results"></ul>
+
+      <div class="row mb-3">
+        <ul id="list" class="list-group mb-3">
+          <li class="list-group-item">First</li>
+          <li class="list-group-item">Second</li>
+          <li class="list-group-item">Third</li>
+        </ul>
+      </div>
+      <!--  1. Create clone elements via click on li -->
+      <script>
+        document.addEventListener("click", handle);
+
+        function handle({ target }) {
+          if (target.nodeName.toLowerCase() !== "li") {
+            return;
+          }
+
+          /*  const parentUl = target.closest("#list");
+          if (parentUl) {
+            const newNode = target.cloneNode(true);
+            parentUl.appendChild(newNode);
+          } */
+
+          const newNode = target.cloneNode(true);
+          target.parentNode.appendChild(newNode);
+        }
+      </script>
+
+      <div class="row">
+        <div id="list-2" class="col-md-4 mb-3">
+          <a class="btn btn-primary" href="#">One</a>
+          <a class="btn btn-success" href="#">Two</a>
+          <a class="btn btn-danger" href="#">Three</a>
+        </div>
+        <!-- 2. Написати код, який буде при натисканні на елемент <a>
+   виводити console.log() з змістом цього елемента,
+  використовуючи прив'язку обробника події методом  DOM Level 2
+-->
+        <!-- 3. Написати код, який при натисканні на кнопку буде
+    знімати обробники подій з елементів<a>.
+-->
+        <div class="col-md-4">
+          <input
+            id="btn"
+            type="button"
+            class="btn btn-primary btn-lg"
+            value="Remove Handler"
+          />
+        </div>
+
+        <script>
+          const els = document.querySelectorAll("#list-2 a");
+          const btn = document.getElementById("btn");
+
+          function handleClick() {
+            console.log(this.textContent);
+          }
+
+          els.forEach((el) => el.addEventListener("click", handleClick));
+
+          btn.addEventListener("click", () => {
+            els.forEach((el) => el.removeEventListener("click", handleClick));
+          });
+        </script>
+      </div>
+      <!-- /.row-->
+    </div>
+    <!-- /.container-->
+    <script></script>
+  </body>
+</html>

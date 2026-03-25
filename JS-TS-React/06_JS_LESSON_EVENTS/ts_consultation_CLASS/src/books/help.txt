@@ -1,0 +1,24 @@
+
+Run script
+npx tsx  ./src/books/index.ts
+
+////  ------------- 🖍 Snippet 1
+
+const books = [
+	{ id: 1, title: 'Ulysses', author: 'James Joyce', available: true },
+	{ id: 2, title: 'A Farewell to Arms', author: 'Ernest Hemingway', available: false},
+	{ id: 3, title: 'I Know Why the Caged Bird Sings', author: 'Maya Angelou', available: true},
+    { id: 4, title: 'Moby Dick', author: 'Herman Melville', available: true }
+];
+
+
+--------------------------------- ////
+
+////  ------------- 🖍 Snippet 2 
+
+const magazines  = [
+    { title: 'Programming Language Monthly', publisher: 'Code Mags' },
+    { title: 'Literary Fiction Quarterly', publisher: 'College Press' },
+    { title: 'Five Points', publisher: 'GSU' }
+];
+--------------------------------- ////
