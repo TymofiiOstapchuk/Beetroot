@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Получение даты</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2 class="center">дати и дні тиждня</h2>
+
+    <div class="grid">
+      <div class="item">
+        <div>Cьогодні</div>
+        <p id="today">today</p>
+      </div>
+      <div class="item">
+        <div>Перше число поточного місяця</div>
+        <p id="currentFirst">current First</p>
+      </div>
+      <div class="item">
+        <div>Останнє число поточного місяця</div>
+        <p id="currentLast">current Last</p>
+      </div>
+      <div class="item">
+        <div>Перше число наступного місяця</div>
+        <p id="nextFirst">next</p>
+      </div>
+      <div class="item">
+        <div>Останнє число наступного місяця</div>
+        <p id="nextLast">prev</p>
+      </div>
+      <div class="item">
+        <div>Перше число попереднього місяця</div>
+        <p id="prevFirst">next</p>
+      </div>
+      <div class="item">
+        <div>Останнє число попереднього місяця</div>
+        <p id="prevLast">prev</p>
+      </div>
+      <div class="item">
+        <div>Новий рік</div>
+        <p id="new-year">prev</p>
+      </div>
+      <div class="item">
+        <div>Останнє число січня наступного року</div>
+        <p id="new-year-last">prev</p>
+      </div>
+    </div>
+
+    <script>
+      const daysOfWeek = [
+        "понеділок",
+        "вівторок",
+        "середа",
+        "четвер",
+        "п'ятница",
+        "субота",
+        "неділя",
+      ];
+
+      const d = new Date();
+
+      const nDate = (v) => (v < 10 ? "0" + v : v);
+      const nMonth = (v) => v + 1;
+      const nDat = (v) => (v === 0 ? 6 : v - 1);
+
+      const currFirst = new Date(d.getFullYear(), d.getMonth(), 1);
+      const currLast = new Date(d.getFullYear(), d.getMonth() + 1, 0);
+
+      const nextFirst = new Date(d.getFullYear(), d.getMonth() + 1, 1);
+      const nextLast = new Date(d.getFullYear(), d.getMonth() + 2, 0);
+
+      const prevFirst = new Date(d.getFullYear(), d.getMonth() - 1, 1);
+      const prevLast = new Date(d.getFullYear(), d.getMonth(), 0);
+
+      const newYear = new Date(d.getFullYear() + 1, 0, 1);
+      const newYearLast = new Date(d.getFullYear() + 1, 1, 0);
+
+      function printDate(id, d) {
+        const day = nDate(d.getDate());
+        const m = nDate(nMonth(d.getMonth()));
+        const dw = daysOfWeek[nDat(d.getDay())];
+
+        const res = `${day}.${m}.${d.getFullYear()} <br> ${dw}`;
+
+        document.getElementById(id).innerHTML = res;
+      }
+
+      printDate("today", d);
+      printDate("currentFirst", currFirst);
+      printDate("currentLast", currLast);
+      printDate("nextFirst", nextFirst);
+      printDate("nextLast", nextLast);
+      printDate("prevFirst", prevFirst);
+      printDate("prevLast", prevLast);
+      printDate("new-year", newYear);
+      printDate("new-year-last", newYearLast);
+    </script>
+  </body>
+</html>

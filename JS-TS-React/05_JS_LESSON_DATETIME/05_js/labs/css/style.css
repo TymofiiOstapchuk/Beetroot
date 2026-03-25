@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .center {
+    text-align: center;
+  }
+  .grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item {
+    border: 1px solid #e2e2e2;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .item p:first-of-type {
+    font-weight: bold;
+  }
+  .item p:last-of-type {
+    font-weight: bold;
+    color: tomato;
+    font-size: 1.4rem;
+  }
+
+  

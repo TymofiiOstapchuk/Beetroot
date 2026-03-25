@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Получение даты</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2 class="center">дати и дні тиждня</h2>
+
+    <div class="grid">
+      <div class="item">
+        <div>Cьогодні</div>
+        <p id="today">today</p>
+      </div>
+      <div class="item">
+        <div>Перше число поточного місяця</div>
+        <p id="currentFirst">current First</p>
+      </div>
+      <div class="item">
+        <div>Останнє число поточного місяця</div>
+        <p id="currentLast">current Last</p>
+      </div>
+      <div class="item">
+        <div>Перше число наступного місяця</div>
+        <p id="nextFirst">next</p>
+      </div>
+      <div class="item">
+        <div>Останнє число наступного місяця</div>
+        <p id="nextLast">prev</p>
+      </div>
+      <div class="item">
+        <div>Перше число попереднього місяця</div>
+        <p id="prevFirst">next</p>
+      </div>
+      <div class="item">
+        <div>Останнє число попереднього місяця</div>
+        <p id="prevLast">prev</p>
+      </div>
+      <div class="item">
+        <div>Новий рік</div>
+        <p id="new-year">prev</p>
+      </div>
+      <div class="item">
+        <div>Останнє число січня наступного року</div>
+        <p id="new-year-last">prev</p>
+      </div>
+    </div>
+
+    <script>
+      const daysOfWeek = [
+        "понеділок",
+        "вівторок",
+        "середа",
+        "четвер",
+        "п'ятница",
+        "субота",
+        "неділя",
+      ];
+
+      const d = new Date();
+
+      const currFirst = "Перше число поточного місяця";
+      const currLast = "Останнє число поточного місяця";
+
+      const nextFirst = "Перше число наступного місяця";
+      const nextLast = "Останнє число наступного місяця";
+
+      const prevFirst = "Перше число попереднього місяця";
+      const prevLast = "Останнє число попереднього місяця";
+
+      const newYear = "Новий рік";
+      const newYearLast = "Останнє число січня наступного року";
+
+      function printDate(id, d) {
+        document.getElementById(id).innerHTML = "result here";
+      }
+
+      printDate("today", d);
+      printDate("currentFirst", currFirst);
+      printDate("currentLast", currLast);
+      printDate("nextFirst", nextFirst);
+      printDate("nextLast", nextLast);
+      printDate("prevFirst", prevFirst);
+      printDate("prevLast", prevLast);
+      printDate("new-year", newYear);
+      printDate("new-year-last", newYearLast);
+    </script>
+  </body>
+</html>
