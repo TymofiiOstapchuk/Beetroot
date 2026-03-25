@@ -1,0 +1,6 @@
+1. Самостійно вивчити статтю thinking in React 
+
+https://react.dev/learn/thinking-in-react
+
+2. Після виконання  в класі роботи  homework/form.html 
+виконати завдання яке приведено в в каталозі homework/task.txt  

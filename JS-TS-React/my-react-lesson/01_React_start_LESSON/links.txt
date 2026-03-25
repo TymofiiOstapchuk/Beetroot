@@ -1,0 +1,23 @@
+============== install plugin for Chrome 
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+
+
+
+https://github.com/ryansolid/solid-sierpinski-triangle-demo
+--- react 15
+https://claudiopro.github.io/react-fiber-vs-stack-demo/stack.html
+--- fiber 
+https://claudiopro.github.io/react-fiber-vs-stack-demo/fiber.html
+
+----- React reconcilation
+https://ru.react.js.org/docs/reconciliation.html
+
+---- Andrew Clark 
+https://github.com/acdlite/react-fiber-architecture
+
+----- React Next Conf 2016
+https://www.youtube.com/watch?v=aV1271hd9ew
+
+----- in Clark - A Cartoon Intro to Fiber - React Conf 2017
+https://www.youtube.com/watch?v=ZCuYPiUIONs

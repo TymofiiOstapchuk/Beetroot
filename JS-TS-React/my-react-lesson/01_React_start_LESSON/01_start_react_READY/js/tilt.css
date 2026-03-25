@@ -1,0 +1,12 @@
+.tilt-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 50px;
+  height: 150px;
+  width: 200px;
+  background-color: red;
+  background-image: linear-gradient(135deg, #ff008a 0%, #101c25 100%);
+}

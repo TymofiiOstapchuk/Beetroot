@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refs</title>
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- ================ todos =================  -->
+
+    <script type="text/babel" data-type="module">
+      import * as React from "/js/react.js";
+      import { createRoot } from "/js/react-dom.js";
+
+      const root = createRoot(document.getElementById("root"));
+
+      function Counter() {
+        const countRef = React.useRef(0);
+
+        function handleClick() {
+          countRef.current = countRef.current + 1;
+          console.log(countRef.current);
+        }
+
+        return (
+          <button onClick={handleClick} className="btn btn-secondary">
+            Clicked - {countRef.current}
+          </button>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="container pt-5">
+            <Counter />
+          </div>
+        );
+      }
+
+      root.render(<App />);
+    </script>
+    <script type="module" src="/js/babel-standalone.js"></script>
+  </body>
+</html>

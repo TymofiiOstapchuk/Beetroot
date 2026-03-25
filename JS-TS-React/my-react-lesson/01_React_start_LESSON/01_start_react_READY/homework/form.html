@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- ================ todos =================  -->
+
+    <script type="text/babel" data-type="module">
+      import * as React from "/js/react.js";
+      import { createRoot } from "/js/react-dom.js";
+
+      const root = createRoot(document.getElementById("root"));
+
+      const availableOptions = [
+        "apple",
+        "orange",
+        "grape",
+        "cherry",
+        "peach",
+        "pear",
+      ];
+
+      function arrToObject(arr) {
+        return arr.reduce((acc, item) => {
+          acc[item] = item;
+          return acc;
+        }, {});
+      }
+
+      function App(props) {
+        const [commaSeparated, setCommaSeparated] = React.useState("");
+        const [multiline, setMultiline] = React.useState("");
+        const [multiSelect, setMultiSelect] = React.useState([]);
+        const [multiChecked, setMultiChecked] = React.useState({});
+
+        const handleTextControl = ({ target }) => {
+          const { value } = target;
+          const allVals = value
+            .split(",")
+            .map((v) => v.trim())
+            .filter((v) => v && availableOptions.includes(v));
+
+          setCommaSeparated(value);
+          setMultiline(allVals.join("\n"));
+          setMultiSelect(allVals);
+          setMultiChecked(arrToObject(allVals));
+        };
+
+        const handleMultipleChange = ({ target }) => {
+          const { value } = target;
+          const allVals = value
+            .split("\n")
+            .map((v) => v.trim())
+            .filter((v) => v && availableOptions.includes(v));
+
+          setCommaSeparated(allVals.join(", "));
+          setMultiline(value);
+          setMultiSelect(allVals);
+          setMultiChecked(arrToObject(allVals));
+        };
+
+        const handleMultiSelectChange = ({ target }) => {
+          const allVals = [...target.selectedOptions].map((o) => o.value);
+
+          setCommaSeparated(allVals.join(", "));
+          setMultiline(allVals.join("\n"));
+          setMultiSelect(allVals);
+          setMultiChecked(arrToObject(allVals));
+        };
+
+        const handleMultiChecked = ({ target }) => {
+          const allOpts = { ...multiChecked };
+
+          target.id in allOpts
+            ? delete allOpts[target.id]
+            : (allOpts[target.id] = target.value);
+
+          const allVals = Object.keys(allOpts);
+
+          setCommaSeparated(allVals.join(", "));
+          setMultiline(allVals.join("\n"));
+          setMultiSelect(allVals);
+          setMultiChecked(arrToObject(allVals));
+        };
+
+        return (
+          <div className="container pt-3">
+            <h1 className="mb-3">Form practice</h1>
+            <div className="row">
+              {/* ========== start text input ======== */}
+              <div className="col-md-4">
+                <label className="label-control">Comma separated values</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  onChange={handleTextControl}
+                  value={commaSeparated}
+                />
+              </div>
+              {/* ========== end text input ======== */}
+
+              {/* ========== start text area ======== */}
+              <div className="col-md-4">
+                <label className="label-control">Multi lines values</label>
+                <textarea
+                  rows={availableOptions.length}
+                  onChange={handleMultipleChange}
+                  value={multiline}
+                  className="form-control"
+                />
+              </div>
+              {/* ========== end text input ======== */}
+              {/* ========== start multi-select ======== */}
+              <div className="col-md-4">
+                <label className="label-control">Multi select change</label>
+                <select
+                  className="form-select"
+                  multiple
+                  size={availableOptions.length}
+                  onChange={handleMultiSelectChange}
+                  value={multiSelect}
+                >
+                  {availableOptions.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* ========== end multi-select ======== */}
+
+              <div className="col-md-4">
+                {/* =================== HOMEWORK ======== */}
+                {availableOptions.map((opt) => (
+                  <div key={opt} className="form-check">
+                    <input
+                      onChange={handleMultiChecked}
+                      checked={opt in multiChecked}
+                      id={opt}
+                      className="form-check-input"
+                      type="checkbox"
+                    />
+                    <label htmlFor={opt} className="form-check-label">
+                      {opt}
+                    </label>
+                  </div>
+                ))}
+                {/* =============== /. HOMEWORK ======== */}
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      root.render(<App />);
+    </script>
+    <script type="module" src="/js/babel-standalone.js"></script>
+  </body>
+</html>

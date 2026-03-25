@@ -1,0 +1,26 @@
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.course-item {
+  border: 1px solid lightgrey;
+  padding: 1rem;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  button {
+    padding: 4px 12px;
+    background-color: rgb(189, 13, 195);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+
+    &:hover {
+      background-color: rgb(112, 10, 116);
+    }
+  }
+}
