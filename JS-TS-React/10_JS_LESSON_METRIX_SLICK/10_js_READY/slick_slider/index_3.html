@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Fancy box</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fancy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider" id="slider">
+        <div class="img-box" data-fancybox data-src="img/01.jpg">
+          <img class="img-box__item" src="img/01.jpg" />
+        </div>
+        <div class="img-box" data-fancybox data-src="img/02.jpg">
+          <img class="img-box__item" src="img/02.jpg" />
+        </div>
+        <div class="img-box" data-fancybox data-src="img/03.jpg">
+          <img class="img-box__item" src="img/03.jpg" />
+        </div>
+        <div class="img-box">
+          <img class="img-box__item" src="img/04.jpg" />
+        </div>
+        <div class="img-box">
+          <img class="img-box__item" src="img/05.jpg" />
+        </div>
+        <div class="img-box">
+          <img class="img-box__item" src="img/06.jpg" />
+        </div>
+        <div class="img-box">
+          <img class="img-box__item" src="img/07.jpg" />
+        </div>
+        <div class="img-box">
+          <img class="img-box__item" src="img/08.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+    <!-- /.container -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+      $("#slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      });
+    </script>
+  </body>
+</html>

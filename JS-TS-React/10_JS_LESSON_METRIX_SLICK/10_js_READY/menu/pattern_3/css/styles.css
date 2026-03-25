@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px/1.5 "Roboto", Arial, sans-serif;
+}
+
+/** ---------------------------------------------------------------------------
+ * Navbar.
+ * ------------------------------------------------------------------------- */
+
+.navbar {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: color 200ms ease-in;
+}
+
+.navbar li:hover > a {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.logo img {
+  /* Get rid of the bottom whitespace present on inline elements. */
+  display: block;
+  max-height: 3.5rem;
+}
+
+/** ---------------------------------------------------------------------------
+ * Content.
+ * ------------------------------------------------------------------------- */
+
+.content {
+  padding: 1rem;
+}

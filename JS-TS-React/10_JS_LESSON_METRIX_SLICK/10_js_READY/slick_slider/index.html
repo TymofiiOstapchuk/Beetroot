@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      .img-fluid {
+        width: 100%;
+        max-width: 100%;
+        vertical-align: top;
+      }
+      .mybuttons {
+        padding: 1rem;
+      }
+      .mybuttons__item {
+        padding: 8px 12px;
+        background: #e2e2e2;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .mybuttons__item_next {
+        margin-left: 1rem;
+      }
+      .dots-box {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+      }
+      .dots-box > li {
+        margin-right: 0.5rem;
+      }
+      .dots-box button {
+        background: transparent;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+      .dots-box button:focus {
+        outline: none;
+      }
+      .dots-box .slick-active button {
+        background: #e2e2e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mybuttons"></div>
+      <div id="slider">
+        <div class="slider-item">
+          <img src="img/020.jpg" class="img-fluid" />
+        </div>
+        <div class="slider-item">
+          <img src="img/021.jpg" class="img-fluid" />
+        </div>
+        <div class="slider-item">
+          <img src="img/022.jpg" class="img-fluid" />
+        </div>
+      </div>
+      <div class="mydotts"></div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $("#slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        appendArrows: ".mybuttons",
+        prevArrow:
+          '<span class="mybuttons__item mybuttons__item_prev">Prev</span>',
+        nextArrow:
+          '<span class="mybuttons__item mybuttons__item_next">Next</span>',
+        dots: true,
+        appendDots: ".mydotts",
+        dotsClass: "dots-box",
+      });
+    </script>
+  </body>
+</html>
