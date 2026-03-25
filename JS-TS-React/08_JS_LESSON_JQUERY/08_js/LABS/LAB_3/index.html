@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <title>Lab3 </title>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+     <link rel="stylesheet" href="../../_/css/bulma.min.css">
+     <style>
+         .tabs-box {padding-top: 1rem;}
+     </style>
+</head>
+<body>
+<!--  https://bulma.io/documentation/components/tabs/ -->
+<div class="container">
+
+    <div class="tabs is-centered is-boxed is-medium is-toggle is-toggle-rounded">
+        <ul id="tabs-box" class="tabs-box">
+            <li  data-content="#pictures"><!-- .is-active -->
+                <a>
+                    <span class="icon is-small"><i class="fas fa-images"></i></span>
+                    <span>Pictures</span>
+                </a>
+            </li>
+            <li  data-content="#music">
+                <a>
+                    <span class="icon is-small"><i class="fas fa-music"></i></span>
+                    <span>Music</span>
+                </a>
+            </li>
+            <li  data-content="#videos">
+                <a>
+                    <span class="icon is-small"><i class="fas fa-film"></i></span>
+                    <span>Videos</span>
+                </a>
+            </li>
+            <li data-content="#documents">
+                <a>
+                    <span class="icon is-small"><i class="fas fa-file-signature"></i></span>
+                    <span>Documents</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tabs-content">
+        <div id="pictures" class="tabs-content__item">
+            <h2 class="is-size-3 has-text-primary">Pictures</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque eos est maxime perspiciatis. Ad
+                alias consequatur explicabo impedit inventore iusto, libero minima molestiae nisi, non possimus quaerat
+                quod tempora temporibus vel velit voluptates. Consectetur explicabo harum illo iure libero mollitia odio
+                quaerat, reiciendis ut voluptate. Atque non sit vel?</p>
+        </div>
+        <div id="music" class="tabs-content__item">
+            <h2 class="is-size-3 has-text-primary">Music</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque eos est maxime perspiciatis. Ad
+                alias consequatur explicabo impedit inventore iusto, libero minima molestiae nisi, non possimus quaerat
+                quod tempora temporibus vel velit voluptates. Consectetur explicabo harum illo iure libero mollitia odio
+                quaerat, reiciendis ut voluptate. Atque non sit vel?</p>
+        </div>
+        <div id="videos" class="tabs-content__item">
+            <h2 class="is-size-3 has-text-primary">Videos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque eos est maxime perspiciatis. Ad
+                alias consequatur explicabo impedit inventore iusto, libero minima molestiae nisi, non possimus quaerat
+                quod tempora temporibus vel velit voluptates. Consectetur explicabo harum illo iure libero mollitia odio
+                quaerat, reiciendis ut voluptate. Atque non sit vel?</p>
+        </div>
+        <div id="documents" class="tabs-content__item">
+            <h2 class="is-size-3 has-text-primary">Documents</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque eos est maxime perspiciatis. Ad
+                alias consequatur explicabo impedit inventore iusto, libero minima molestiae nisi, non possimus quaerat
+                quod tempora temporibus vel velit voluptates. Consectetur explicabo harum illo iure libero mollitia odio
+                quaerat, reiciendis ut voluptate. Atque non sit vel?</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="../../_/js/jquery.min.js"></script>
+<script>
+
+ $(function(){
+
+ });
+
+</script>
+
+</body>
+</html>

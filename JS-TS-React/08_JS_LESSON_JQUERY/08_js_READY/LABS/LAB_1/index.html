@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day-night</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Amazing website</h1>
+    <div>
+      <button data-file="day">Day</button>
+      <button data-file="night">Night</button>
+    </div>
+
+    <script src="../../_/js/jquery.min.js"></script>
+    <script>
+      const link = $("<link>", {
+        href: "day.css",
+        rel: "stylesheet",
+      });
+      link.appendTo("head");
+
+      $(document).on("click", "button", handleCss);
+
+      function handleCss() {
+        $this = $(this);
+        const file = $this.data("file") + ".css";
+        link.attr("href", file);
+
+        $this.prop("disabled", true).siblings("button").prop("disabled", false);
+      }
+    </script>
+  </body>
+</html>

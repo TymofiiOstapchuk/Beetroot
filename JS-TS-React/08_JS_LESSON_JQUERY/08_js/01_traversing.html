@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dom traversing</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+    <style>
+      li {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mycls">
+      <div class="row">
+        <ul id="list-one" class="col-md-8 list-group pt-3 mycls">
+          <li class="list-group-item">
+            <b class="codebox">EL.children("li")</b> => відбір
+            <span class="bg-secondary text-white px-3">всіх прямих</span>
+            child<br />
+            <b class="codebox">EL.find("li")</b> => відбір
+            <span class="bg-secondary text-white px-3">всіх</span> child
+          </li>
+          <li class="list-group-item">
+            <b class="codebox">EL.children('li:first-of-type')</b>
+            відбір <span class="bg-dark text-white px-3">першого</span>
+            child
+            <br />
+            <b class="codebox">EL.find("li").first()</b> => відбір
+            <span class="bg-dark text-white px-3">першого</span>
+            child<br /><br />
+
+            <b class="codebox">EL.find('li:nth-child(2)')</b> => відбір
+            <span class="bg-dark text-white px-3">всіх second</span> прямых
+            child, включаючи nested child<br /><br />
+            <b class="codebox">EL.children('li:nth-child(2)')</b> => відбір
+            <span class="bg-dark text-white px-3">прямого</span> 2-го child<br /><b
+              class="codebox"
+              >EL.children('li').eq(1)</b
+            >
+            => відбір <span class="bg-dark text-white px-3">прямого</span> 2-го
+            child
+          </li>
+          <li class="list-group-item">
+            <b class="codebox">EL.children('li').eq(2).next()</b> => відбір
+            <span class="bg-danger text-white px-3">наступного</span> елемента
+            після прямого 3-го child<br />
+            <b class="codebox">EL.children('li').eq(2).prev()</b> => відбір
+            <span class="bg-danger text-white px-3">попереднього</span> елемента
+            післе прямого 3-го child<br />
+            <b class="codebox">EL.children('li').eq(2).siblings()</b> => відбір
+            <span class="bg-danger text-white px-3">всіх соседних</span>
+            елементів після прямого 3-го child<br />
+          </li>
+          <li class="list-group-item">
+            <b class="codebox">$('li').parent()</b> => у всіх элементов li
+            відібрати
+            <span class="bg-secondary text-white px-3">прямых</span>
+            parents<br />
+            <b class="codebox">$('li').parents()</b> => у всіх элементов li
+            відібрати
+            <span class="bg-secondary text-white px-3">всіх</span>
+            parents<br />
+          </li>
+          <li class="list-group-item">
+            <b class="codebox">EL.closest('.mycls')</b> => шукає parent елемент
+            за вказаним селектором <br /><span class="bg-dark text-white px-3"
+              >починаючи з себе</span
+            >
+            Пошук зупиняється, як тільки знайдено перший елемент<br /><br />
+            <b class="codebox">EL.parents('.mycls')</b> => шукає всіх parents по
+            селектору
+            <span class="bg-dark text-white px-3"
+              >починаючи з прямого parent</span
+            >
+            Пошук здійснюється до елемента html
+          </li>
+        </ul>
+
+        <!--  work code here -->
+
+        <div class="col-md-4 mt-3 mycls pl-3">
+          <ul class="list-group level-1 mycls">
+            <li class="list-group-item">First element</li>
+            <li class="list-group-item">Second element</li>
+            <li class="list-group-item">
+              Third element
+              <ul class="level-2 mycls">
+                <li class="list-group-item">Nested element 1</li>
+                <li class="list-group-item level-2__item mycls">
+                  class = level-2__item
+                </li>
+                <li class="list-group-item">Nested element 3</li>
+                <li class="list-group-item">Nested element 4</li>
+              </ul>
+            </li>
+            <li class="list-group-item">Fourth element</li>
+            <li class="list-group-item">Fifth element</li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row-->
+    </div>
+    <!--  / end .container-->
+
+    <script src="_/js/jquery.min.js"></script>
+    <script>
+      $(() => {});
+    </script>
+  </body>
+</html>

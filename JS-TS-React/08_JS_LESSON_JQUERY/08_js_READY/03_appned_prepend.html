@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>03_appned_prepend.html</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="_/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <article class="article-box">
+        <h2 class="article-box__title">Welcome to our site</h2>
+        <p class="article-box__item article-box__item_first">
+          <span class="co">Hello from Java Script</span>
+          Ad corporis harum in. Aut consectetur dicta dolores doloribus error
+          fuga fugiat hic nam nesciunt pariatur quasi quis rem temporibus unde,
+          voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Culpa eius laboriosam nobis perferendis perspiciatis, quae quas
+          quisquam repudiandae rerum sequi similique sit temporibus unde!
+          Aperiam aspernatur fuga id illum incidunt omnis quas quo sunt
+          voluptate? Consectetur laudantium magni mollitia similique?
+        </p>
+        <p class="article-box__item article-box__item_second">
+          <span class="co">Again hello from Java Script</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci
+          aut quod repudiandae unde? Ab dolorum, earum eveniet fugiat in, non
+          numquam officiis, placeat quae quis quisquam recusandae tenetur.
+          Dolorum? Onventore ipsa ipsum iste itaque iusto labore mollitia neque
+          numquam obcaecati odio officiis pariatur quia quidem quod rerum
+          suscipit temporibus velit veniam vitae voluptatum! Asperiores
+          deleniti, perferendis.
+        </p>
+      </article>
+    </div>
+    <!--  / end .container-->
+
+    <script src="_/js/jquery.min.js"></script>
+    <script>
+      /*
+       1. знайти параграфи та додати на початок кожного з них код
+             <h2>Title article</h2>
+        2. створити код <cite class="bg-danger">Appned cite</cite>
+           і додати до кінця кожного параграфа
+        3. Знайти заголовок із класом .article-box__title
+            і поставити його в другий параграф
+        4. Створити blockquote з класом class="co" і додати до кожного параграфу
+           Для тексту використовувати вміст елемента span із класом class="co"
+        */
+
+      //$("p").prepend("<h2>Title article</h2>");
+      //  $('<cite class="bg-danger">Appned cite</cite>').appendTo("p");
+      //  $(".article-box__title").prependTo("p:nth-of-type(2)");
+
+      $("span.co").each((i, item) => {
+        const $item = $(item);
+        $("<blockquote>", {
+          class: "co",
+          text: $item.text(),
+        }).prependTo($item.closest(".article-box__item"));
+      });
+    </script>
+  </body>
+</html>
