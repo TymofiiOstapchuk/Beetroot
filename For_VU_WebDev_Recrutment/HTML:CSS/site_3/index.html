@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My website</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="top">
+        <header class="header-box">
+          <h1 class="header-box__head">My awesome website</h1>
+          <p class="header-box__slogan">Pretty Good Tacos!</p>
+        </header>
+
+        <div class="cta cta_1">
+          <p class="cta__price">$1.99</p>
+          <p class="cta__content">Tacos</p>
+        </div>
+        <div class="cta cta_2">
+          <p class="cta__price">$3.99</p>
+          <p class="cta__content">Kombucha</p>
+        </div>
+      </section>
+
+      <nav class="menu">
+        <button
+          id="menu-btn"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-list"
+        >
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul id="menu-list" class="menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Tacos</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Beers</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Wines</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Desserts</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="features">
+        <article class="feature">
+          <h3 class="feature__title">Tacos</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            assumenda.
+          </p>
+          <span class="feature__icon feature__icon_tacos">🌮</span>
+        </article>
+        <article class="feature">
+          <h3 class="feature__title">Beer</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            assumenda.
+          </p>
+          <span class="feature__icon feature__icon_bear">🍺</span>
+        </article>
+
+        <article class="feature">
+          <h3 class="feature__title">Wine</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            assumenda.
+          </p>
+          <span class="feature__icon feature__icon_wine">🍷</span>
+        </article>
+        <article class="feature">
+          <h3 class="feature__title">Music</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            assumenda.
+          </p>
+          <span class="feature__icon feature__icon_music">🎵</span>
+        </article>
+      </section>
+
+      <article class="about">
+        <img src="i/queso-taco.png" class="about__img" />
+        <div class="about-details">
+          <h2 class="about-details__title">Featured Taco</h2>
+          <div>
+            <p class="about-details__content">
+              Slim Profile, easy to hold and loaded with cheese.
+            </p>
+            <p class="about-details__content">
+              This is the one you have been waiting for
+            </p>
+          </div>
+          <button class="about-details__button">Learn More →</button>
+        </div>
+      </article>
+
+      <section class="gallery">
+        <h2 class="gallery__title">Instant Grams</h2>
+        <img src="i/im1.jpg" class="gallery__img" />
+        <img src="i/im2.jpg" class="gallery__img" />
+        <img src="i/im3.jpg" class="gallery__img" />
+        <img src="i/im4.jpg" class="gallery__img" />
+        <img src="i/im5.jpg" class="gallery__img" />
+        <img src="i/im6.jpg" class="gallery__img" />
+        <img src="i/im7.jpg" class="gallery__img" />
+        <img src="i/im8.jpg" class="gallery__img" />
+        <img src="i/im9.jpg" class="gallery__img" />
+        <img src="i/im10.jpg" class="gallery__img" />
+      </section>
+    </div>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      btn.addEventListener("click", toggleMenu);
+
+      function toggleMenu() {
+        const isOpen = this.getAttribute("aria-expanded") === "true" || false;
+        this.setAttribute("aria-expanded", !isOpen);
+      }
+    </script>
+  </body>
+</html>

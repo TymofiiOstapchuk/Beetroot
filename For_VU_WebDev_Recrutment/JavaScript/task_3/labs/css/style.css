@@ -1,0 +1,20 @@
+/*  lab 1 */
+.clicked {
+  background: yellow;
+}
+.catalog {
+  background: orange;
+}
+.info {
+  background: #ddd;
+}
+/*  lab 2 */
+.red {
+  color: red;
+}
+.gray {
+  background: lightgray;
+}
+.orange {
+  background: orange;
+}

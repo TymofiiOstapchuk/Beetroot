@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transitions</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .box {
+        transition: margin 2s cubic-bezier(1, 0.03, 0.67, 1.64);
+      }
+      .wrap:hover .box {
+        margin-left: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box box_simple"></div>
+    </div>
+  </body>
+</html>

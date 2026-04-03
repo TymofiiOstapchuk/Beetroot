@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margins collapse</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .box {
+        padding: 2rem 0;
+      }
+      .box__item {
+        float: left;
+      }
+
+      .box__item_left {
+        background-color: #69c;
+      }
+
+      .box__item_right {
+        background-color: #fcf;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box__item box__item_left">Left<br />.box__item_left</div>
+        <div class="box__item box__item_right">Right<br />.box__item_right</div>
+      </div>
+
+      <ol class="right-tasks">
+        <li class="right-tasks__item">
+          Set to block with <span class="blue">box__item_left</span>
+          <code class="code">margin-right: -100px</code>
+          block <span class="blue">Left</span> allows to enter on its territory
+          adjacent bottom block
+          <span class="blue">Right</span>
+        </li>
+
+        <li class="right-tasks__item">
+          Set to block with class <span class="blue">box__item_left</span>
+          <code class="code">margin-left: -100px</code>
+          Block <span class="blue">Left</span> will move to left
+        </li>
+
+        <li class="right-tasks__item">
+          Set to block class <span class="blue">box__item_right</span>
+          <code class="code">margin-left: -100px</code>
+          Block <span class="blue">Right</span> will enter on territory block
+          <span class="blue">Left</span>
+        </li>
+      </ol>
+    </div>
+
+    <h2>Conclusion</h2>
+    <ol class="final">
+      <li class="final__item">
+        If set to block negative <span class="blue">LEFT margin</span> - block
+        will move to left
+      </li>
+      <li class="final__item">
+        If set to block negative <span class="blue">RIGHT margin</span>
+        - block allows to enter on its territory adjacent right block
+      </li>
+
+      <li class="final__item">
+        If set to block negative
+        <span class="blue">TOP margin</span> - block will move to top
+      </li>
+      <li class="final__item">
+        If set to block negative
+        <span class="blue">BOTTOM margin</span>
+        - block allows to enter on its territory adjacent bottom block
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slick slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <style>
+      .fancy-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .fancy-container a {
+        height: 300px;
+      }
+      .fancy-container img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fancy-container">
+        <a
+          class="img-box"
+          data-fancybox="gallery"
+          data-src="img/01.jpg"
+          data-caption="Single image 1"
+        >
+          <img src="img/01.jpg" />
+        </a>
+        <a
+          class="img-box"
+          data-fancybox="gallery"
+          data-src="img/02.jpg"
+          data-caption="Single image 2"
+        >
+          <img src="img/02.jpg" />
+        </a>
+        <a
+          class="img-box"
+          data-fancybox="gallery"
+          data-src="img/03.jpg"
+          data-caption="Single image 3"
+        >
+          <img src="img/03.jpg" />
+        </a>
+      </div>
+    </div>
+    <!-- /.container -->
+    <!-- /.container -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+      Fancybox.bind("[data-fancybox='gallery']", {});
+    </script>
+  </body>
+</html>

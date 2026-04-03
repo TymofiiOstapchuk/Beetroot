@@ -1,0 +1,161 @@
+http://kenwheeler.github.io/slick/
+https://github.com/kenwheeler/slick/
+
+
+
+1. Initialization - index.html
+  - скачать slick slider
+  - подключить стили, скрипты
+  - написать html разметку c изображениями
+            020.jpg, 021.jpg, 022.jpg
+   - инициализировать слайдер
+
+----- Исходный код
+<div class="slider">
+    <div class="slider__item">Наш элемент</div>                 
+</div>
+
+----- код который генерирует slick slider
+<div class="slider">
+
+<!-- slick generate -->
+     <div class="slick-list draggable">
+        <div class="slick-track">
+            <div class="slick-slide slick-cloned">
+                <div>
+                        <div  class="slider__item">Наш элемент</div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- slick generate -->
+
+</div>
+
+
+****************************************** 
+
+ВНИМАНИЕ !!!
+  -по умолчанию кнопки prev, next включены,
+  поэтому у страницы может появиться горизонтальный scroll
+
+  - не надо задавать ширину для элемента слайдер,
+    лучше задавать ширину для его контенйнера
+
+  - если показывать несколько слайдов, то надо сделать
+    изображения  резиновыми (max-width: 100%; width: 100%;)
+
+  - если ширина несколько рядом стоящих изображений получается
+    больше ширины контейнера по размеру - то max-width: 100%
+    указывать обязательно
+
+------------------------------------------------------
+   Основные настройки слайдера
+   - infinity:  true  - бесконечная прокрутка
+   - slidesToShow: ЧИСЛО - сколько слайдеров показывать
+   - slidesToScroll: ЧИСЛО - на сколько слайдеров прокручивать
+   - autoplay:  (false | true)  - автоматически прокручивать
+   - autoplaySpeed: ЧИСЛО  ms - интервал прокрутки  (по умолчанию 3000)
+   - speed : ЧИСЛО ms -  скорость прокрукти (смены) слайдеров  в 
+
+   - fade :  (false | true) - вместо прокрутки использовать затухание
+      Если установить в true то настройки slidesToShow, slidesToScroll 
+      игнорируются
+   
+
+   - dots:   (false | true) - показывать точки
+   - dotsClass: string  - имя своего класса для точек
+   - appendDots: Selector | htmlString | Array Element | jQuery object
+      в какой элемент добавлять точки
+      Например:
+       - добавляем в разметку <div class="mydotts"></div> в нужном нам месте
+       - в настройках указываем
+            appendDots: '.myadots'
+
+
+   - arrows: (true | false) - показывать кнопки prev, next
+   - appendArrows: Selector | htmlString | Array Element | jQuery object
+      в какой элемент добавлять кнопки prev,next
+      Аналогично appendDots
+      
+
+    - prevArrow, nextArrow : String (html|jQuery selector) | object (DOM node | jQuery object)
+      это свои кнопки prev, next
+
+2.  Responsive slick slider - index1.html
+
+   Если высота изображений разная, то высота slick-контейнера
+   будет выставлена по высоте самого высокого изображения
+    Чтобы высота slider-контейнера менялась надо выставить в true
+    - adaptiveHeight (false | true )
+    При этом slidesToShow : 1 
+
+  =============== Responsive display
+  В настройках - это массив, состоящий из объектов для каждого breakpoint
+        responsive: [ {}, {}, ....]
+
+  Каждый объект  - это 2 свойства breakpoint, settings
+  responsive: [
+                {
+                    breakpoint: ЧИСЛО,
+                    settings: {}
+                },
+                .....
+            ]
+  Пример - в документации
+
+
+По умолчанию breakpoint - это max-width
+Чтобы установить min-width - надо  установить свойство
+
+ - mobileFirst: true
+
+-------------------------------
+Можно убирать инициализацию слайдера на каком либо breakpoint
+Для этого надо в настройках этого breakpoint записать
+   {
+        breakpoint: 500,
+        settings: 'unslick'
+   }
+
+------ Reinitialize slider after unslick
+/// https://github.com/kenwheeler/slick/issues/2123
+
+$(window).on('resize', function(){
+   if($(window).width() > 600 && !sl.hasClass('slick-initialized')) {
+         $('.slider').slick(settings);
+    }
+});
+
+
+
+--------------------------------
+ - variableWidth: (false | true) - установит ширину слайда равную ширине изображения (контента)
+
+
+ - centerMode: (false | true) - изначально средний по счету слайд будет в центре
+    центральному слайду добавляется класс slick-center
+    
+    Эту настройку желательно использовать при показе нечетного
+     количества изображений (slidesToShow)
+    Тогда каждое следующее прокрученное изображение будет по центру slider-контейнера
+    
+
+ - centerPadding: '50px' (или например 10 -> это  % ) -> работает только с предыдущей настройкой
+ 
+---------------------------------
+
+
+3. Slider Syncing - index_2.html
+=================================== ЗАДАНИЕ СЛУШАТЕЛЯМ:
+В каталоге i/ есть right-arrow.png (right-arrow.svg)
+
+1. Поставить их как изображения для arrows 
+При этом они должны быть "спрятаны", и выезжать справа-слева соответственно 
+при наведении на элемент .slider-nav
+2. Стилизировать dots 
+==================================================================
+
+
+

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: black;
+  font-family: "PT Sans";
+  font-size: 28px;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+header {
+  margin-bottom: 70px;
+  margin-top: 26px;
+}
+.chapter {
+  margin-bottom: 70px;
+}
+
+.text-content {
+  line-height: 48px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
+}
+
+.lang__item {
+  font-size: 22px;
+  font-family: Tourney;
+  text-decoration: none;
+  color: #000;
+}
+
+.top-menu__link {
+  font-family: Staatliches;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+}
+
+.p-link {
+  color: #000;
+}
+
+.ital-text {
+  font-style: oblique;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.chapter-number {
+  font-family: Farro;
+  font-size: 30px;
+  vertical-align: top;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+.lang {
+  display: inline;
+  margin-right: 50px;
+}
+nav {
+  display: inline;
+}
+
+.react-component {
+  font-weight: bold;
+}
+
+.gray-back {
+  background-color: #dadada;
+}
+
+.pizza-icon {
+  width: 28px;
+}

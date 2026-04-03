@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Transitions</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/backwards.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <code
+        ><b>animation-fill-mode: none | forwards | backwards | both</b></code
+      >
+      <p>
+        Визначає, які стилі повинні застосовуватися до елемента, коли анімація
+        не відтворюється. Наприклад, після її завершення або при зупинці. За
+        замовчуванням, в момент закінчення анімації стиль елемента повертається
+        до вихідного
+      </p>
+      <p>
+        <b>forwards</b> Використовуючи це значення, ми повідомляємо браузеру, що
+        ми хочемо, щоб об'єкт зберігав кінцеву форму.
+      </p>
+      <p>
+        <b>backwards</b> Протягом часу, зазначеного як затримка анімації,
+        відображатиметься початковий ключовий кадр анімації. <br />У 3-му
+        прямокутнику додано зміну його кольору до початку обертання, а також
+        вказано затримку. <br />використання backwards без додаткового вказівки
+        затримки безглуздо.
+      </p>
+      <p>
+        <b>both</b> період затримки до об'єкта застосовуються нові властивості,
+        а в в результаті об'єкт зберігає такі ж настройки, як у фінального кадру
+        анімації.
+      </p>
+    </div>
+
+    <div class="wrap row">
+      <div class="container">
+        <div class="module">
+          <p><code>none</code></p>
+          <div class="wrapper">
+            <div class="element element-1"></div>
+          </div>
+        </div>
+        <div class="module">
+          <p><code>forwards</code></p>
+          <div class="wrapper">
+            <div class="element element-2"></div>
+          </div>
+        </div>
+        <div class="module">
+          <p><code>backwards</code></p>
+          <div class="wrapper">
+            <div class="element element-3"></div>
+          </div>
+        </div>
+        <div class="module">
+          <p><code>both</code></p>
+          <div class="wrapper">
+            <div class="element element-4"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-left -->
+
+      <div class="col-right">
+        <code>
+          <pre>
+        @keyframes rotate {
+            0% {
+                background-color: <span style="color: orange">orange;</span>
+                transform: rotate(0deg);
+            }
+            100% {
+                background-color: <span style="color: #0099CC">blue;</span>
+                transform: rotate(90deg);
+            }
+        }
+
+        container:hover .element {
+            animation-name: rotate;
+            animation-duration: 1s;
+        }
+        .element-2 {
+            animation-fill-mode: forwards;
+        }
+        .element-3 {
+            animation-delay: 1s;
+            animation-fill-mode: backwards;
+        }
+        .element-4 {
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+            </pre>
+        </code>
+      </div>
+    </div>
+    <!-- wrap-->
+  </body>
+</html>

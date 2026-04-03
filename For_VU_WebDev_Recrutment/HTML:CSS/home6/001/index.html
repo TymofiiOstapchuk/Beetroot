@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate blok's with</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 1200px;
+        padding: 0 12px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .container_800 {
+        max-width: 800px;
+      }
+      .item {
+        padding: 1px 0;
+      }
+      .item__title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      .item__content {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .container-fluid_yellow {
+        background: yellow;
+      }
+      .container-fluid_lightgreen {
+        background: lightgrey;
+      }
+      .header {
+        background: lightcyan;
+      }
+      .title {
+        margin-top: 0;
+      }
+      .item-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+      }
+      .item-grid__item {
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Hello !!!</h1>
+      </div>
+    </header>
+    <div class="container">
+      <section class="item">
+        <h2 class="item__title">this is h2</h2>
+        <p class="item__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+          cumque aspernatur, tenetur quis totam voluptatibus distinctio dolorem
+          nam, nisi ullam.
+        </p>
+        <p class="item__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+          cumque aspernatur, tenetur quis totam voluptatibus distinctio dolorem
+          nam, nisi ullam.
+        </p>
+        <p class="item__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+          cumque aspernatur, tenetur quis totam voluptatibus distinctio dolorem
+          nam, nisi ullam.
+        </p>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="item-grid">
+        <p class="item-grid__item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+          cumque aspernatur, tenetur quis totam voluptatibus distinctio dolorem
+          nam, nisi ullam.
+        </p>
+        <p class="item-grid__item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+          cumque aspernatur, tenetur quis totam voluptatibus distinctio dolorem
+          nam, nisi ullam.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid container-fluid_yellow">
+      <div class="container">
+        <div class="item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+            cumque aspernatur, tenetur quis totam voluptatibus distinctio
+            dolorem nam, nisi ullam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+            cumque aspernatur, tenetur quis totam voluptatibus distinctio
+            dolorem nam, nisi ullam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-fluid_lightgreen">
+      <div class="container container_800">
+        <div class="item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            eligendi ex ipsam vitae esse voluptas maxime accusantium atque hic
+            cumque aspernatur, tenetur quis totam voluptatibus distinctio
+            dolorem nam, nisi ullam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

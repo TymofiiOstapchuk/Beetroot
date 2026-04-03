@@ -1,0 +1,16 @@
+
+==== Transition
+https://www.w3.org/TR/css-transitions-1
+---- properties
+https://www.w3.org/TR/css-transitions-1/#properties-from-css-
+----- timing-function
+https://www.w3.org/TR/css-timing-1/
+
+
+
+http://cubic-bezier.com/#.17,.67,.83,.67
+https://matthewlein.com/tools/ceaser
+
+===== Transforms
+https://www.w3.org/TR/css-transforms-1/
+https://drafts.csswg.org/css-transforms-2/#perspective

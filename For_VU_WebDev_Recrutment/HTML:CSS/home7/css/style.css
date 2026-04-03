@@ -1,0 +1,115 @@
+:root {
+  --container-max-width: 1200px;
+  --container-padding: 12px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+.address {
+  display: grid;
+  grid-template-columns: 625px auto;
+  row-gap: 30px;
+  padding: 12px 0;
+}
+
+.address-left__title {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.address-left__title-addresse {
+  font-size: 40px;
+  font-weight: 500;
+  padding-left: 150px;
+  position: relative;
+}
+.address-left__title-addresse::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+}
+.address-left__subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 60px;
+  font-size: 38px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.boxes-info {
+  padding-left: 130px;
+}
+.box-address__content {
+  margin: 0;
+  font-size: 18px;
+}
+.box-address__content:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.boxes-info__box {
+  position: relative;
+  margin-bottom: 30px;
+}
+.boxes-info__box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: -40px;
+}
+.boxes-info__box_address::before {
+  background: url(../img/ico1.png) no-repeat;
+  width: 18px;
+  height: 26px;
+  top: 0;
+}
+
+.boxes-info__box_email::before {
+  background: url(../img/ico2.png) no-repeat;
+  width: 22px;
+  height: 18px;
+}
+
+.boxes-info__box_clock::before {
+  background: url(../img/ico3.png) no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.boxes-info__box_clock {
+  display: inline-block;
+}
+.box-clock__content {
+  display: flex;
+  margin: 0;
+}
+.box-clock__time {
+  margin-left: auto;
+  padding-left: 1rem;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
