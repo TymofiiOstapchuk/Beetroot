@@ -1,0 +1,138 @@
+.questions {
+  background-color: #586d43;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.questions__title {
+  color: rgb(255, 255, 255);
+  font-family: "Alegreya SC", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 41.799999px;
+  padding: 0 15px;
+}
+.questions__hotline-merged {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.questions__hotline-merged > svg {
+  fill: #ffffff;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.questions__hotline-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 10px;
+}
+.questions__hotline-num {
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.que-button-wrapper {
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  margin-top: 40px;
+}
+.que-btn > svg {
+  margin-left: 10px;
+}
+.que-btn {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 10px 0px;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  fill: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 16px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+
+
+#contact {
+  cursor: pointer;
+}
+
+#contact:hover {
+  background: #3a482c;
+}
+#contact:active {
+  background: #444;
+}
+
+#contactForm {
+  display: none;
+  border: 6px solid #3a482c;
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+input,
+textarea {
+  margin: 0.8em auto;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  border: 1px solid gray;
+  display: block;
+  width: 280px;
+  padding: 0.4em;
+}
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.formBtn {
+  width: 120px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  border: none;
+  padding: 5px 20px;
+}
+
+.firstBtn {
+  margin-right: 20px;
+  background-color: #3a482c;
+}
+.secondBtn {
+  background-color: #d04030;
+}
+
+body.lock-scroll {
+  overflow: hidden;
+}

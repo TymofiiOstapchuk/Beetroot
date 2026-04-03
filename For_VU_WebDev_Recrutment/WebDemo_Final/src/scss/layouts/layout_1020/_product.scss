@@ -1,0 +1,41 @@
+.main-title {
+  font-size: 102px;
+  line-height: 102px;
+}
+.title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.btn {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 20px 20px;
+  margin-bottom: 60px;
+}
+.product__points {
+  margin-top: 60px;
+  padding: 0 30px;
+}
+.product__each-point {
+  margin-bottom: 20px;
+  padding: 5px;
+
+}
+.product__each-point:first-child{
+  margin-left: 60px;
+}
+.product__each-point:last-child{
+  margin-right: 60px;
+}
+
+.product__each-point > svg{
+  width: 32px;
+  height: 32px;
+}
+.box-heading {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0 5px;
+}

@@ -1,0 +1,35 @@
+.pros {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.pros__wrapper {
+padding: 0 20px;
+}
+.pros__wrapper-each {
+    margin-top: 60px;
+}
+.pros__wrapper-each > svg {
+  fill: #586d43;
+  color: #586d43;
+  width: 40px;
+  height: 40px;
+}
+.pros-heading {
+  color: rgb(44, 55, 34);
+  font-family: Alegreya, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.200001px;
+  text-align: left;
+  margin-bottom:20px;
+  margin-top: 25px;
+}
+.pros-description {
+  color: rgb(108, 120, 99);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  margin-top: 0;
+}

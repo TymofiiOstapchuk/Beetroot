@@ -1,0 +1,39 @@
+.header__hotline {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f4ef;
+  font-family: Inter, sans-serif;
+}
+.box-heading {
+  color: rgb(108, 120, 99);
+  margin-left: 6px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.elementor-icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.hotline {
+  color: rgb(108, 120, 99);
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5;
+}
+.elementor-icon > svg {
+  fill: #69727d;
+  color: #69727d;
+  margin-right: 0px;
+  margin-bottom: 2px;
+}
+.elementor-icon-second{
+  display: none;
+}
+.elementor-icon-third{
+  display: none;
+}
+.tablet-menu{
+  display: none;
+}

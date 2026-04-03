@@ -1,0 +1,34 @@
+.header {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.header__menu {
+  display: none;
+}
+.tablet-menu {
+  display: block;
+}
+.tablet-menu-each {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  color: #69727d;
+  margin-right: 20px;
+}
+.tablet-menu-each:hover {
+  color: #383c41;
+}
+.header__logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 260px;
+}
+
+.menu-button {
+  display: none;
+}
+.overlay-navigation {
+  display: none;
+}
+

@@ -1,0 +1,29 @@
+.main-title {
+  font-size: 82px;
+  line-height: 82px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.btn {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.product__points {
+  margin-top: 60px;
+ padding: 0 30px;
+}
+.product__each-point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+.box-heading {
+  font-size: 16px;
+  line-height: 21px; 
+  padding: 0 5px;
+}

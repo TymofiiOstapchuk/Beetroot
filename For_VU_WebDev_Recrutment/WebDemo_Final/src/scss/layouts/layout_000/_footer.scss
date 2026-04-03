@@ -1,0 +1,123 @@
+.footer {
+  background-color: #2c3722;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../../../i/flart.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @include e(image) {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  @include e(image-img) {
+    width: 100%;
+  }
+  @include e(social) {
+    margin-top: 40px;
+    margin-right: 6px;
+  }
+  @include e(info) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  @include e(info-title) {
+    color: rgb(255, 255, 255);
+    font-family: Alegreya, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.200001px;
+    margin-bottom: 25px;
+  }
+  @include e(info-contact) {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-bottom: 10px;
+  }
+  @include e(newsletter-title) {
+    color: rgb(255, 255, 255);
+    font-family: Alegreya, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.200001px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+  }
+  @include e(newsletter-text) {
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    padding: 0 70px;
+  }
+}
+.footer__social > svg {
+  fill: white;
+  color: white;
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+.svg-first-footer {
+  margin-left: 0px;
+  margin: 0;
+}
+.footer__info-contact:hover {
+  color: rgb(182, 102, 80);
+}
+.input-email {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: start;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  vertical-align: middle;
+  max-width: 500px;
+  width: 70%;
+}
+.button-footer {
+  align-items: center;
+  background-color: rgb(111, 135, 86);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 10px 0px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  text-align: center;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  vertical-align: baseline;
+  max-width: 500px;
+  width: 70%;
+  margin-top: 10px;
+}

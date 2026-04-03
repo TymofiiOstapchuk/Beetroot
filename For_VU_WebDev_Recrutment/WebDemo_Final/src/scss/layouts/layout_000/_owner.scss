@@ -1,0 +1,69 @@
+.owner {
+  padding-top: 60px;
+  margin-top: 120px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.owner__image {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.owner__image-girl {
+  width: 100%;
+  transform: scale(1.1);
+}
+.owner__description {
+  padding: 0 30px;
+  text-align: left;
+  margin-top: 55px;
+  padding-bottom: 50px;
+}
+.owner__title {
+  color: rgb(44, 55, 34);
+  font-family: "Alegreya SC", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 41.799999px;
+  margin-bottom: 25px;
+}
+.owner__position {
+  color: rgb(88, 109, 67);
+  font-family: Alegreya, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.200001px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.owner__text {
+  color: rgb(108, 120, 99);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.799999px;
+}
+.owner__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.owner__social > svg {
+  fill: #586d43;
+  color: #586d43;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.owner__quotes {
+  fill: hsla(101, 9%, 47%, 0.08);
+  color: hsla(101, 9%, 47%, 0.08);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}

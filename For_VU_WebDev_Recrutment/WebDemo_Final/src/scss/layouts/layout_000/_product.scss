@@ -1,0 +1,81 @@
+.product {
+  background-image: url(../../../i/bgc-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+}
+.main-title {
+  color: rgb(255, 255, 255);
+  font-family: "alegreya sc", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 40px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 110px;
+  margin-bottom: 0;
+}
+.title {
+  color: rgb(255, 255, 255);
+  font-family: "alegreya sc", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 32.5px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 40px;
+  margin-top: 15px;
+}
+.btn {
+  align-items: center;
+  background-color: rgb(111, 135, 86);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 40px 0px;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 16px;
+  outline-color: rgb(255, 255, 255);
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 18px;
+  margin-top: 10px;
+}
+.product__points {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+.product__each-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box-heading {
+  color: rgb(255, 255, 255);
+  font-family: inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 8px;
+  margin-left: 0;
+  padding: 0 5px;
+}
+.product__merge{
+padding-left: 15px;
+padding-right: 15px;
+}
+.product__each-point > svg{
+  color: white;
+  fill: white;
+}

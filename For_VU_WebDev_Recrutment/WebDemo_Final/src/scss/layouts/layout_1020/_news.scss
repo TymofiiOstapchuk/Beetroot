@@ -1,0 +1,25 @@
+.news__image {
+  position: relative; 
+}
+.news__title {
+  padding: 0 50px;
+  position: absolute;
+  top: 220px;
+  margin-left: 58px;
+  background-color: white;
+  padding: 20px 5px;
+  font-size: 27px;
+}
+.news__date {
+  position: absolute;
+  top: 300px;
+  margin-left: 65px;
+  font-size: 14px;
+}
+.news__button {
+  margin-top: 30px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 13px;
+}

@@ -1,0 +1,9 @@
+.pros__wrapper {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.pros__wrapper-each {
+  margin-top: 40px;
+  padding: 0 20px;
+}

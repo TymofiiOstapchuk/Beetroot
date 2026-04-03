@@ -1,0 +1,30 @@
+.list {
+  margin-top: 110px;
+}
+.features__title {
+  font-size: 48px;
+}
+.list__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 60px;
+}
+.list__products-each {
+  margin-top: 35px;
+}
+.list__reduce-price {
+  font-size: 16px;
+}
+.list__new-price {
+  font-size: 16px;
+}
+.mod {
+  font-size: 16px;
+}
+.list__button-add {
+  font-size: 13px;
+}
+.list-btn {
+  margin-top: 80px;
+}
